@@ -1,0 +1,7 @@
+# About us
+
+The Finnish Society for Bioinformatics was founded in 2006 with the aim of bringing together everyone interested in bioinformatics. For almost two decades, our mission has remained the same: We aim to support research, share the latest scientific discoveries, and provide opportunities for exchanging ideas and knowledge.
+
+We organize regular webinars, seminars, and training sessions. We share job opportunities for our society members and host networking and collaboration events. Every two years, we proudly recognize outstanding work by awarding the Best Bioinformatics Thesis Award. Our monthly BioBeers gatherings in Helsinki, Turku, and occasionally other locations offer a relaxed way to meet and connect with fellow bioinformaticians.
+
+Whether you’re an experienced researcher, an early-career student, a research group, or a company, we warmly welcome you to join our community and be part of this exciting network of bioinformaticians.

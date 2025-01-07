@@ -1,0 +1,27 @@
+project:
+  type: website
+
+website:
+  title: "The Finnish Society for Bioinformatics"
+  navbar:
+    toggle-position: right
+    logo: images/logo.jpg
+    title: false
+    right:
+      # - href: index.qmd
+      #   text: Home
+      - href: pages/about.qmd
+      - href: pages/join-the-society.qmd
+        text: Join the Society
+
+  page-footer:
+      left: "We would love to hear from you! Send us an email: fsfbioinf@gmail.com"
+      center: Copyright &copy; 2025 The Finnish Society for Bioinformatics
+      right: "Follow us on [Linkedin](https://www.linkedin.com/company/finnish-society-for-bioinformatics)"
+
+format:
+  html:
+    theme:
+      - flatly
+      - styles.scss
+    toc: true
