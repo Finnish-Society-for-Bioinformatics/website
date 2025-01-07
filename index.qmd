@@ -1,7 +1,10 @@
 ---
 title: Finnish Society for Bioinformatics
+css: styles.scss
 engine: knitr
 ---
 <left>
 The Finnish Society for Bioinformatics is for everyone interested in bioinformatics. Whether you’re an experienced researcher, an early-career student, a research group, or a company, we warmly welcome you to join our community. And you don’t have to be a bioinformatician as long as you think bioinformatics is as cool as we think it is!
 <left>
+
+<center><a class="follow-button" href="https://www.linkedin.com/company/finnish-society-for-bioinformatics"><span>Follow us on LinkedIn!</span></a>

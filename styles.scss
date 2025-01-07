@@ -2,3 +2,20 @@
 $h1-font-size: 1.8rem !default;
 $navbar-color: #1141f3;
 $navbar-hover-color: #1141f3;
+
+/*-- scss:rules --*/
+.follow-button {
+    background-color: #1515be;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    font-size: 25px;
+    margin: 4px 2px;
+    padding: 15px;
+    text-align: center;
+}
+
+.follow-button:hover {
+    color: hsl(0, 0%, 100%);
+    background-color: #1515bee3;
+}
