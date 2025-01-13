@@ -12,3 +12,6 @@ engine: knitr
 <left>
 
 <center><a class="follow-button" href="https://www.linkedin.com/company/finnish-society-for-bioinformatics"><span>Follow us on LinkedIn!</span></a>
+
+<div class="image-container"><img src="images/biobeer.jpg" alt="Image 1" class="image" width=500 height=281>
+<img src="images/webinar.jpg" alt="Image 2" class="image" width=500 height=281></div>
