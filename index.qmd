@@ -6,12 +6,11 @@ engine: knitr
 
 
 <left>
-<h1>Hi there!Welcome to the Finnish Society for Bioinformatics</h1>
+<h1>Hi there! Welcome to the Finnish Society for Bioinformatics</h1>
 
-<div class="paragraph1 highlight">The Finnish Society for Bioinformatics is for everyone interested in bioinformatics. Whether you’re an experienced researcher, an early-career student, a research group, or a company,  we warmly welcome you to join our community. And you don’t have to be a bioinformatician as long as you think bioinformatics is as cool as we think it is!</div>
+<div  width=50px class="paragraph1 highlight">The Finnish Society for Bioinformatics is for everyone interested in bioinformatics. Whether you’re an experienced researcher, an early-career student, a research group, or a company,  we warmly welcome you to join our community. And you don’t have to be a bioinformatician as long as you think bioinformatics is as cool as we think it is!</div>
 <left>
 
 <center><a class="follow-button" href="https://www.linkedin.com/company/finnish-society-for-bioinformatics"><span>Follow us on LinkedIn!</span></a>
 
-<div class="image-container"><img src="images/biobeer.jpg" alt="Image 1" class="image" width=500 height=281>
-<img src="images/webinar.jpg" alt="Image 2" class="image" width=500 height=281></div>
+<div class="image-container"><img src="images/biobeer.jpg" class="image" width=400 height=225><img src="images/webinar.jpg" class="image" width=200 height=200><img src="images/logo.jpg" class="image" width=400 height=225></div>
