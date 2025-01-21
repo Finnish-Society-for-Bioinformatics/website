@@ -4,6 +4,13 @@ css: styles.scss
 engine: knitr
 ---
 
+<style>
+    figcaption {
+        font-size: 16px;
+        text-align: left;
+    }
+</style>
+
 
 <left>
 <h1>Hi there! Welcome to the Finnish Society for Bioinformatics</h1>
@@ -13,4 +20,4 @@ engine: knitr
 
 <center><a class="follow-button" href="https://www.linkedin.com/company/finnish-society-for-bioinformatics"><span>Follow us on LinkedIn!</span></a>
 
-<div class="image-container"><img src="images/biobeer.jpg" class="image" width=400 height=225><img src="images/webinar.jpg" class="image" width=200 height=200><img src="images/logo.jpg" class="image" width=400 height=225></div>
+<div class="image-container"><figure><img src="images/biobeer.jpg" class="image" width=480 height=270><figcaption>Fri, Feb 7, 2025 @ 18 <br><strong Turku </strong>: Saaristobaari, Aurakatu 14, Turku.</figcaption></figure><img src="images/webinar.jpg" class="image" width=480 height=270><img src="images/logo.jpg" class="image" width=480 height=270></div>

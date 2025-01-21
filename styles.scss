@@ -7,11 +7,13 @@ $navbar-hover-color: #1141f3;
 
 .highlight {
     background-color: #ff1e0008;
+    margin-bottom: 40px;
 }
 
 .image-container {
     display: flex;
     gap: 15px;
+    margin-top: 40px;
 }
 
 .paragraph1 {
@@ -19,7 +21,7 @@ $navbar-hover-color: #1141f3;
 }
 
 .follow-button {
-    background-color: #1515be;
+    background-color: #ffffff;
     color: #ffffff;
     border: none;
     border-radius: 10px;
@@ -31,5 +33,9 @@ $navbar-hover-color: #1141f3;
 
 .follow-button:hover {
     color: hsl(0, 0%, 100%);
-    background-color: #1515bee3;
+    background-color: #92727226;
+}
+
+.city-label {
+    font-size: 18px;
 }
