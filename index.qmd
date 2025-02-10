@@ -41,7 +41,6 @@ The Finnish Society for Bioinformatics is for everyone interested in bioinformat
 <br>
 
 <div class="image-container">
-<figure><img src="images/biobeer.jpg" class="image" width=480 height=270><figcaption>Fri, Feb 7, 2025 @ 18 <br><strong>Turku</strong>: Saaristobaari, Aurakatu 14, Turku.</figcaption>
-</figure><img src="images/webinar.jpg" class="image" width=480 height=270><figcaption>Saaristobaari, Aurakatu 14, Turku.<br></figcaption></div>
+<figure><img src="images/biobeer.jpg" class="image" width=480 height=270><figcaption>Fri, Feb 7, 2025 @ 18 <br><strong>Turku</strong>: Saaristobaari, Aurakatu 14, Turku.</figcaption></figure><img src="images/webinar.jpg" class="image" width=480 height=270><figcaption>Saaristobaari, Aurakatu 14, Turku.</figcaption></div>
 
 <!-- <img src="images/logo.jpg" class="image" width=330 height=270></div> -->
