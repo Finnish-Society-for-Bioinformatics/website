@@ -21,7 +21,7 @@ $navbar-hover-color: #1141f3;
 }
 
 .follow-button {
-    background-color: #ffffff;
+    background-color: #000000;
     color: #ffffff;
     border: none;
     border-radius: 10px;
@@ -32,10 +32,16 @@ $navbar-hover-color: #1141f3;
 }
 
 .follow-button:hover {
-    color: hsl(0, 0%, 100%);
-    background-color: #92727226;
+    color: hsl(0, 0%, 0%);
+    background-color: #16161626;
 }
 
 .city-label {
     font-size: 18px;
+}
+
+.full-width-paragraph {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
 }
