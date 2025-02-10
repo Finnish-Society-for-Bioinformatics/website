@@ -21,9 +21,8 @@ website:
 
 format:
   html:
-    grid:
-      body-width: 1000px
+    page-layout: full
     theme:
-      - flatly
+      - cosmo
       - styles.scss
     toc: true
