@@ -74,7 +74,7 @@ you don't have to be a bioinformatician as long as you think bioinformatics is a
       We cannot wait for you to become one of us!
       <br>
       <br>
-      <a class="follow-button" href="https://www.linkedin.com/company/finnish-society-for-bioinformatics"><span>Join the Society!</span></a>
+      <a class="follow-button" href="pages/join-the-society.html"><span>Join the Society!</span></a>
     </figcaption>
   </figure>
 </div>
