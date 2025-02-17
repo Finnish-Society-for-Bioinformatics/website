@@ -45,3 +45,12 @@ $navbar-hover-color: #1141f3;
     box-sizing: border-box;
     margin: 0 auto;
 }
+
+@mixin text-size($size: 20px) {
+    font-size: $size;
+    line-height: 1.5;
+}
+
+.text-medium {
+    @include text-size;
+}

@@ -23,24 +23,41 @@ about:
 ---
 
 <style>
-    figcaption {
-        font-size: 16px;
-        text-align: left;
-    }
+  figcaption {
+    font-size: 16px;
+    text-align: left;
+  }
 </style>
 
 
 <h1>Hi there! Welcome to the Finnish Society for Bioinformatics</h1>
 
-The Finnish Society for Bioinformatics is for everyone interested in bioinformatics. Whether you're an experienced researcher, an early-career student, a research group, or a company, we warmly welcome you to join our community. And you don't have to be a bioinformatician as long as you think bioinformatics is as cool as we think it is!
+The Finnish Society for Bioinformatics is for everyone interested in bioinformatics. Whether you're an experienced
+researcher, an early-career student, a research group, or a company, we warmly welcome you to join our community. And
+you don't have to be a bioinformatician as long as you think bioinformatics is as cool as we think it is!
 
 <br>
 
-<center><a class="follow-button" href="https://www.linkedin.com/company/finnish-society-for-bioinformatics"><span>Follow us on LinkedIn!</span></a>
+<center><a class="follow-button" href="https://www.linkedin.com/company/finnish-society-for-bioinformatics"><span>Follow
+      us on LinkedIn!</span></a>
 
 <br>
 
 <div class="image-container">
-<figure><img src="images/biobeer.jpg" class="image" width=480 height=270><figcaption>Fri, Feb 7, 2025 @ 18 <br><strong>Turku</strong>: Saaristobaari, Aurakatu 14, Turku.</figcaption></figure><img src="images/webinar.jpg" class="image" width=480 height=270><figcaption>Saaristobaari, Aurakatu 14, Turku.</figcaption></div>
-
-<!-- <img src="images/logo.jpg" class="image" width=330 height=270></div> -->
+  <figure>
+    <img src="images/biobeer.jpg" class="image" width=480 height=270>
+    <figcaption>
+      TURKU: Fri, March 7, 2025 @ 18
+      <br>
+      HELSINKI: Thu, March 6, 2025 @ 18
+      <br>
+      <strong class="text-medium">TURKU:</strong><span class="text-medium"> Saaristobaari, Aurakatu 14</span>
+      <br>
+      <strong class="text-medium">HELSINKI:</strong><span class="text-medium"> To be announced</span>
+    </figcaption>
+  </figure>
+  <figure>
+    <img src="images/webinar.jpg" class="image" width=480 height=270>
+    <figcaption>My Captions</figcaption>
+  </figure>
+</div>
