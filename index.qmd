@@ -51,13 +51,19 @@ you don't have to be a bioinformatician as long as you think bioinformatics is a
       <br>
       HELSINKI: Thu, March 6, 2025 @ 18
       <br>
-      <strong class="text-medium">TURKU:</strong><span class="text-medium"> Saaristobaari, Aurakatu 14</span>
+      <strong class="text-medium">Turku:</strong><span class="text-medium"> Saaristobaari, Aurakatu 14</span>
       <br>
-      <strong class="text-medium">HELSINKI:</strong><span class="text-medium"> To be announced</span>
+      <strong class="text-medium">Helsinki:</strong><span class="text-medium"> To be announced</span>
     </figcaption>
   </figure>
   <figure>
     <img src="images/webinar.jpg" class="image" width=480 height=270>
-    <figcaption>My Captions</figcaption>
+    <figcaption>
+      Thu, March 6, 2025 @ 14
+      <br>
+      <span class="text-medium">Speaker: Chengbo Fu from Aalto University</span>
+      <br>
+      <i><span class="text-medium">KMAP: Kmer Manifold Approximation and Projectionfor visualizing<br>DNA sequence</span>s</i>
+    </figcaption>
   </figure>
 </div>
