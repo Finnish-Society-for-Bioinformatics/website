@@ -63,7 +63,18 @@ you don't have to be a bioinformatician as long as you think bioinformatics is a
       <br>
       <span class="text-medium">Speaker: Chengbo Fu from Aalto University</span>
       <br>
-      <i><span class="text-medium">KMAP: Kmer Manifold Approximation and Projectionfor visualizing<br>DNA sequence</span>s</i>
+      <i><span class="text-medium">KMAP: Kmer Manifold Approximation and Projection for<br> visualizing DNA sequence</span>s</i>
+    </figcaption>
+  </figure>
+  <figure>
+    <img src="images/logo.png" class="image" width=472 height=167>
+    <figcaption>
+      Join the Society!
+      <br>
+      We cannot wait for you to become one of us!
+      <br>
+      <br>
+      <a class="follow-button" href="https://www.linkedin.com/company/finnish-society-for-bioinformatics"><span>Join the Society!</span></a>
     </figcaption>
   </figure>
 </div>
