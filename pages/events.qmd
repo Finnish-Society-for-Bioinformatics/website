@@ -1,0 +1,34 @@
+# Events
+
+## Bioinformatics Day on the 6.6.2025 in BioCity Turku
+
+Stay tuned for more information!
+
+:::: {.columns}
+
+::: {.column width="5%"}
+
+:::
+
+::: {.column width="50%"}
+::: {style="text-align:center;"}
+
+<!-- ![](../images/biobeer.jpg) -->
+  <!-- <figure> -->
+    <!-- <img src="../images/logo.png" class="image" width=472 height=167> -->
+  <!-- </figure> -->
+:::
+:::
+
+::: {.column width="4%"}
+
+:::
+
+::: {.column width="43%"}
+:::
+
+::: {.column width="5%"}
+
+:::
+
+::::
