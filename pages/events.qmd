@@ -11,7 +11,19 @@ format:
 
 Stay tuned for more information!
 
-<div class="grid" style="--bs-columns: 10; --bs-gap: 1rem;">
-  <div class="g-col-5"><img src="../images/biobeer.jpg" class="image" width=528 height=297></div>
-  <div class="g-col-5"><span class="text-large" style="font-size:40px;">The Next BioBeer in March 2025</span></div>
+::: {.columns}
+
+::: {.column width="50%"}
+<img src="../images/biobeer.jpg" class="image" width="528" height="297" alt="BioBeer event">
+:::
+
+::: {.column width="50%"}
+<div class="text-large" style="font-size:27px;">
+<p>The Next BioBeer is happening in March 2025!</p>
+<div class="text-medium">
+<p>Join us for an amazing event with special talks, networking opportunities, and, of course, beer!</p>
+<p>Turku – Fri 7th of March at 18: Saaristobaari, Aurakatu 14, Turku. Discounts for foods and drinks at BioBeer events.</p>
+<p>Helsinki – Thu 6th of March at 18: To be announced later<p>
+<p>Helsinki BioBeer aims to try different restaurants and bars at each BioBeer. Suggest a place for the next Helsinki BioBeer here: https://link.webropolsurveys.com/S/54EAE005F8199416</p>
+</div>
 </div>
