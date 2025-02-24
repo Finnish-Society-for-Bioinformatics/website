@@ -4,31 +4,7 @@
 
 Stay tuned for more information!
 
-:::: {.columns}
-
-::: {.column width="5%"}
-
-:::
-
-::: {.column width="50%"}
-::: {style="text-align:center;"}
-
-<!-- ![](../images/biobeer.jpg) -->
-  <!-- <figure> -->
-    <!-- <img src="../images/logo.png" class="image" width=472 height=167> -->
-  <!-- </figure> -->
-:::
-:::
-
-::: {.column width="4%"}
-
-:::
-
-::: {.column width="43%"}
-:::
-
-::: {.column width="5%"}
-
-:::
-
-::::
+<div class="grid" style="--bs-columns: 10; --bs-gap: 1rem;">
+  <div class="g-col-6"><img src="../images/biobeer.jpg" class="image" width=480 height=270></div>
+  <div class="g-col-4"><span class="text-large" style="font-size:40px;">The Next BioBeer in March 2025</span></div>
+</div>

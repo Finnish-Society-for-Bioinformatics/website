@@ -61,3 +61,7 @@ $navbar-hover-color: #1141f3;
 .text-medium {
     @include text-size;
 }
+
+.text-large {
+    @include text-size(48px);
+}
