@@ -27,3 +27,22 @@ Stay tuned for more information!
 <p>Helsinki BioBeer aims to try different restaurants and bars at each BioBeer. Suggest a place for the next Helsinki BioBeer here: https://link.webropolsurveys.com/S/54EAE005F8199416</p>
 </div>
 </div>
+
+::: {.columns}
+
+::: {.column width="50%"}
+<div class="text-large" style="font-size:27px;">
+<p>More Events Coming Soon!</p>
+<div class="text-medium">
+<p>test</p>
+<p>test</p>
+<p>Find more details here: </p>
+</div>
+</div>
+:::
+
+::: {.column width="50%"}
+<img src="../images/test.jpg" class="image" width="528" height="297" alt="Another event image">
+:::
+
+:::
