@@ -7,14 +7,22 @@ format:
 
 # Events
 
-## Bioinformatics Day on the 6.6.2025 in BioCity Turku
+<div class="text-large" style="font-size:53px;">
+  <p>Bioinformatics Day on the 6.6.2025 in BioCity Turku</p>
+</div>
 
-Stay tuned for more information!
+<div class="text-large" style="font-size:53px;">
+  <center><p>Stay tuned for more information!</p></center>
+</div>
 
+
+<!-- <div class="text-large" style="font-size=10px;"><p</p></div> -->
+
+<!-- First Event -->
 <div class="grid" style="--bs-gap: .25rem 1rem;">
   <div class="g-col-6"><img src="../images/biobeer.jpg" class="image" width="528" height="297" alt="BioBeer event"></img></div>
   <div class="g-col-6">
-  <div class="text-large" style="font-size:27px;">
+  <div class="text-large" style="font-size:33px;">
   <p>The Next BioBeer is happening in March 2025!</p>
   <div class="text-medium">
   <p>Join us for an amazing event with special talks, networking opportunities, and, of course, beer!</p>
@@ -25,8 +33,9 @@ Stay tuned for more information!
   </div>
   </div>
 
+  <!-- Second event -->
   <div class="g-col-6">
-  <div class="text-large" style="font-size:27px;">
+  <div class="text-large" style="font-size:33px;">
   <p>The Bioinformatics Hackathon in TURKU 11th of MARCH @ 15</p>
   </div>
   <div class="text-large" style="font-size:22px;">
@@ -44,5 +53,25 @@ Stay tuned for more information!
   <p>No registration needed, just appear in BioCity 4th floor seminar room and bring
   your laptop, you might end up writing your first line of code!</p>
   </div>
-  <div class="g-col-6"><img src="../images/hackaton.jpg" class="image" width="528" height="297" alt="BioBeer event"></img></div>
+  <div class="g-col-6">
+  <img src="../images/hackaton.jpg" class="image" width="528" height="297" alt="BioBeer event"></img>
+  <br><br>
+  <center><a class="custom-black-btn" href="https://inflameshackathon.slack.com/"><span>Join the Hackathon Slack channel!</span></a>
+  </div>
+
+  <!-- Third event -->
+  <div class="g-col-6"><img src="../images/webinar.jpg" class="image" width="528" height="297" alt="Webinar"></img></div>
+  <div class="g-col-6">
+  <div class="text-large" style="font-size:33px;">
+  <p>The Bioinformatics Webinar 6th of March 2025 @ 14</p>
+  </div>
+  <div class="text-medium" style="font-size:22px;">
+  <p><strong>NEXT</strong>: 8th of APRIL , 15th of MAY, 3rd of JUNE</p>
+  </div>
+  <div class="text-medium" style="font-size:22px;">
+  <p><strong>Topic</strong>: KMAP: Kmer Manifold Approximation and Projection for visualizing DNA sequences</p>
+  </div><strong>Abstract</strong>: Identifying and illustrating patterns in DNA sequences is a crucial task in various biological data analyses. In this task, patterns are often represented by sets of kmers, the fundamental building blocks of DNA sequences. To visually unveil these patterns, we could project each kmer onto a point in two-dimensional (2D) space. However, this projection poses challenges due to the high-dimensional nature of kmers and their unique mathematical properties. Here, we established a mathematical system to address the peculiarities of the kmer manifold. Leveraging this kmer manifold theory, we developed a statistical method named KMAP for detecting kmer patterns and visualizing them in 2D space. We applied KMAP to three distinct datasets to showcase its utility. KMAP achieved a comparable performance to the classical method MEME, with approximately 90% similarity in motif discovery from HT-SELEX data. In the analysis of H3K27ac ChIP-seq data from Ewing Sarcoma (EWS), we found that BACH1, OTX2 and ERG1 might affect EWS prognosis by binding to promoter and enhancer regions across the genome. We also found that FLI1 bound to the enhancer regions after ETV6 degradation, which showed the competitive binding between ETV6 and FLI1. Moreover, KMAP identified four prevalent patterns in gene editing data of the AAVS1 locus, aligning with findings reported in the literature. These applications underscore that KMAP could be a valuable tool across various biological contexts.</div>
+  </div>
+  </div>
+  </div>
 </div>
