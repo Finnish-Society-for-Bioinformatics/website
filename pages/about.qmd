@@ -75,3 +75,31 @@ Picture 4
 
 :::
 
+
+<br>
+
+<div class="text-large" style="font-size:32px;">
+  <center><p>Former members</p></center>
+</div>
+
+::: {.grid}
+
+::: {.g-col-4}
+* Ebrahim Afyounian (2016-2021)
+* Agrawal Nitin (2013)
+* Ali Heidi (2011-2012)
+:::
+
+::: {.g-col-4}
+* Kivioja  Teemu (2007)
+* Kukkurainen Sampo (2011-2013)
+* Laaksonen Maria (2015-2023)
+:::
+
+::: {.g-col-4}
+* Oja Merja (2006, 2013-2015, 2018-2023)
+* Onkamo Päivi (2005-2007)
+* Ortutay Csaba (2014-2015)
+:::
+
+:::
