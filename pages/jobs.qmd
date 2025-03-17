@@ -1,0 +1,55 @@
+---
+toc: false
+format:
+  html:
+    page-layout: full
+---
+
+# Jobs
+
+
+<div class="text-large" style="font-size:32px;">
+  <left><p>Open Bioinformatics positions</p></left>
+</div>
+
+<br>
+
+::: {.grid}
+
+::: {.g-col-4  .d-flex .flex-column}
+![](../images/scilifelab.jpg){style="height:300px; object-fit:cover;"}
+
+**Postdoc funding opportunities at SciLifeLab in Sweden**
+
+**The call opens on 7 January 2025**
+
+Candidates are eligible to apply if they have not been in Sweden for more than
+12 months in the last 3 years and have received their PhD less than 3 years
+ago. They provide a match-making portfolio to find a suitable research group for
+a candidate’s project.
+<br>
+<br>
+<a class="custom-black-btn" style="font-size: 25px;"href="https://www.scilifelab.se/research/pulse/application/"><span>Read More and Apply</span></a>
+:::
+
+::: {.g-col-4 .d-flex .flex-column}
+![](../images/university_of_skovde.jpg){style="height:300px; object-fit:cover;"}
+<br>
+
+
+
+**more text in bold**
+
+normal text
+:::
+
+::: {.g-col-4 .d-flex .flex-column}
+![](../images/round_logo.jpg){style="height:300px; object-fit:cover;"}
+
+**Some text in bold**
+
+**more text in bold**
+
+normal text
+
+:::
