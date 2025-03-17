@@ -137,3 +137,34 @@ format:
   </div> -->
   </div>
 </div>
+
+
+<!-- FAQ section -->
+<div class="container">
+<h2>FAQ</h2>
+<div class="grid" style="--bs-gap: .25rem 1rem;">
+<!-- First question -->
+<div class="g-col-6">
+  <h3>What is The BioBeer about?</h3>
+  <p>We organize BioBeers to offer Bioinformaticians and everyone interested in Bioinformatics a possibility to network with like-minded people. Its a great opportunity to talk about bioinformatics or just come an meet new people and old friends. BioBeer events are organized every first Friday of the month.</p>
+</div>
+
+<!-- Second question -->
+<div class="g-col-6">
+  <h3>What is the Bioinformatics Webinar about?</h3>
+  <p>We organize Bioinformatics Webinars for our members and for everyone interested in Bioinformatics as part of our goal to support bioinformatics research, share the latest scientific discoveries, and provide opportunities for exchanging ideas and knowledge, thus spread open knowledge in bioinformatics.</p>
+</div>
+
+<!-- Third question -->
+<div class="g-col-6">
+  <h3>Do I get free beer at the BioBeer events?</h3>
+  <p>Unfortunately, the society cannot (afford to) offer free drinks at the BioBeers. However, in Turku BioBeers Bioinformaticans get a nice discount for the foods and drinks at Saaristobaari. Also, it is not required to buy anything at the BioBeer events and there is always free water available at the restaurants and bars.</p>
+</div>
+
+<!-- Forth question -->
+<div class="g-col-6">
+  <h3>Who are can participate the webinar?</h3>
+  <p>The webinar is aimed for all bioinformaticians and everyone interested in bioinformatics. If you know someone interested in bioinformatics or in the topic of a specific webinar, you can share the webinar link with them. Our webinar link is always the same: https://utu.zoom.us/my/finnish.bioinformatics.society.webinar</p>
+</div>
+</div>
+</div>
