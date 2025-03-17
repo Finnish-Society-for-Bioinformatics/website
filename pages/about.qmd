@@ -1,7 +1,77 @@
+---
+toc: false
+format:
+  html:
+    page-layout: full
+---
+
 # About us
 
-The Finnish Society for Bioinformatics was founded in 2006 with the aim of bringing together everyone interested in bioinformatics. For almost two decades, our mission has remained the same: We aim to support research, share the latest scientific discoveries, and provide opportunities for exchanging ideas and knowledge.
+<div class="text-large" style="font-size:32px;">
+  <center><p>Get to know the Finnish Society for Bioinformatics and meet the
+             board members.</p></center>
+</div>
 
-We organize regular webinars, seminars, and training sessions. We share job opportunities for our society members and host networking and collaboration events. Every two years, we proudly recognize outstanding work by awarding the Best Bioinformatics Thesis Award. Our monthly BioBeers gatherings in Helsinki, Turku, and occasionally other locations offer a relaxed way to meet and connect with fellow bioinformaticians.
+::: {.grid}
 
-Whether you’re an experienced researcher, an early-career student, a research group, or a company, we warmly welcome you to join our community and be part of this exciting network of bioinformaticians.
+::: {.g-col-6}
+![](../images/about_picture.jpeg)
+:::
+
+::: {.g-col-6 style="font-size: 1.2rem;"}
+The Finnish Society for Bioinformatics was founded in 2006 with the aim
+of bringing together everyone interested in bioinformatics. For almost
+two decades, our mission has remained the same: We aim to support research,
+share the latest scientific discoveries, and provide opportunities for
+exchanging ideas and knowledge.
+
+We organize regular webinars, seminars, and training sessions. We share
+job opportunities for our society members and host networking and
+collaboration events. Every two years, we proudly recognize outstanding
+work by awarding the Best Bioinformatics Thesis Award. Our monthly BioBeers
+ gatherings in Helsinki, Turku, and occasionally other locations offer a
+ relaxed way to meet and connect with fellow bioinformaticians.
+
+Whether you’re an experienced researcher, an early-career student, a
+research group, or a company, we warmly welcome you to join our community
+and be part of this exciting network of bioinformaticians.
+
+:::
+
+:::
+
+<br>
+
+::: {.grid}
+
+::: {.g-col-4 style="font-size: 1.9rem;"}
+Board Members
+:::
+
+::: {.g-col-4}
+Picture 1
+:::
+
+::: {.g-col-4}
+Picture 2
+:::
+
+:::
+
+<br>
+
+::: {.grid}
+
+::: {.g-col-4}
+:::
+
+::: {.g-col-4}
+Picture 3
+:::
+
+::: {.g-col-4}
+Picture 4
+:::
+
+:::
+
