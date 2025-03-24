@@ -5,8 +5,14 @@ format:
     page-layout: full
 ---
 
-# Jobs
+<!-- Remove underscore from the link -->
+<style>
+  	a {
+  		text-decoration: none;
+  	}
+</style>
 
+# Jobs
 
 <div class="text-large" style="font-size:32px;">
   <left><p>Open Bioinformatics positions</p></left>
@@ -36,20 +42,23 @@ a candidate’s project.
 ![](../images/university_of_skovde.jpg){style="height:300px; object-fit:cover;"}
 <br>
 
+**Lectureship in Bioinformatics at the University of Skövde, Sweden**
 
+**Dead-line for applications is 6th of January 2025**
 
-**more text in bold**
+The position as a lecturer primarily involves teaching in bioinformatics and the
+administration associated with these tasks. Additional duties may also be
+included in the position.
 
-normal text
 :::
 
 ::: {.g-col-4 .d-flex .flex-column}
 ![](../images/round_logo.jpg){style="height:300px; object-fit:cover;"}
 
-**Some text in bold**
+**Want to see your open positions here?**
 
-**more text in bold**
-
-normal text
+Reach bioinformaticians right where they are and fill your open positions
+with the best talents in the field. Send us an email and we will add your
+open position here! fsfbioinf@gmail.com
 
 :::
