@@ -12,6 +12,7 @@ website:
       #   text: Home
       - href: pages/about.qmd
       - href: pages/events.qmd
+      - href: pages/jobs.qmd
       - href: pages/join-the-society.qmd
         text: Join the Society
 
