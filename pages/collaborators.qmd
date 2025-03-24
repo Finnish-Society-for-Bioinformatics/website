@@ -1,0 +1,39 @@
+---
+toc: false
+format:
+  html:
+    page-layout: full
+---
+
+<!-- Remove underscore from the link -->
+<style>
+  	a {
+  		text-decoration: none;
+  	}
+</style>
+
+# Collaborators
+
+<div class="text-large" style="font-size:32px;">
+  <left><p>Our collaborators and sponsors</p></left>
+</div>
+<br>
+
+::: {.grid}
+
+::: {.g-col-4 .d-flex .flex-column}
+![](../images/ComplifeSci.jpg){style="height:300px; object-fit:cover;"}
+<a class="custom-black-btn" style="font-size: 20px;"href="https://biocityturku.fi/research-programs/complifesci/"><span>Read more about CompLifeSci</span></a>
+:::
+
+::: {.g-col-4 .d-flex .flex-column}
+![](../images/modulight.jpg){style="height:300px; object-fit:cover;"}
+<a class="custom-black-btn" style="font-size: 20px;"href="https://modulight.com/"><span>Read more about Modulight</span></a>
+:::
+
+::: {.g-col-4 .d-flex .flex-column}
+![](../images/Blueprint.jpg){style="height:300px; object-fit:cover;"}
+<a class="custom-black-btn" style="font-size: 20px;"href="https://blueprintgenetics.com/"><span>Read more about Blueprint Genetics</span></a>
+:::
+
+:::

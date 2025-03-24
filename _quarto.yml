@@ -13,6 +13,8 @@ website:
       - href: pages/about.qmd
       - href: pages/events.qmd
       - href: pages/jobs.qmd
+      - href: pages/collaborators.qmd
+        text: Collaborators
       - href: pages/join-the-society.qmd
         text: Join the Society
 
