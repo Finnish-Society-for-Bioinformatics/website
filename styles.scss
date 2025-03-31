@@ -82,3 +82,8 @@ $navbar-hover-color: #1141f3;
 .text-large {
     @include text-size(48px);
 }
+
+// Remove underscore from the link
+a {
+    text-decoration: none;
+}

@@ -1,0 +1,15 @@
+---
+toc: false
+format:
+  html:
+    page-layout: full
+---
+
+# Research Highlights
+
+::: {.text-left}
+<p class="text-large" style="font-size:32px;">
+Here you can find the best PhD thesis award winners as well as research highlights from our community.
+Suggest an outstanding research to be highlighted here by sending us an email: <a href="mailto:fsfbioinf@gmail.com">fsfbioinf@gmail.com</a>
+</p>
+:::

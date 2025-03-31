@@ -5,13 +5,6 @@ format:
     page-layout: full
 ---
 
-<!-- Remove underscore from the link -->
-<style>
-  	a {
-  		text-decoration: none;
-  	}
-</style>
-
 # Jobs
 
 <div class="text-large" style="font-size:32px;">
