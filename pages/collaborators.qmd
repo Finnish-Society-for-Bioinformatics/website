@@ -17,23 +17,33 @@ format:
 <div class="text-large" style="font-size:32px;">
   <left><p>Our collaborators and sponsors</p></left>
 </div>
-<br>
 
+<!-- First row -->
 ::: {.grid}
 
-::: {.g-col-4 .d-flex .flex-column}
+::: {.g-col-4 .d-flex .flex-column .text-center}
 ![](../images/ComplifeSci.jpg){style="height:300px; object-fit:cover;"}
 <a class="custom-black-btn" style="font-size: 20px;"href="https://biocityturku.fi/research-programs/complifesci/"><span>Read more about CompLifeSci</span></a>
 :::
 
-::: {.g-col-4 .d-flex .flex-column}
+::: {.g-col-4 .d-flex .flex-column .text-center}
 ![](../images/modulight.jpg){style="height:300px; object-fit:cover;"}
 <a class="custom-black-btn" style="font-size: 20px;"href="https://modulight.com/"><span>Read more about Modulight</span></a>
 :::
 
-::: {.g-col-4 .d-flex .flex-column}
+::: {.g-col-4 .d-flex .flex-column .text-center}
 ![](../images/Blueprint.jpg){style="height:300px; object-fit:cover;"}
 <a class="custom-black-btn" style="font-size: 20px;"href="https://blueprintgenetics.com/"><span>Read more about Blueprint Genetics</span></a>
+:::
+
+:::
+
+<!-- Second row -->
+::: {.grid}
+
+::: {.g-col-4 .d-flex .flex-column .text-center}
+![](../images/inflames.jpg ){style="height:300px; object-fit:cover;"}
+<a class="custom-black-btn" style="font-size: 20px;"href="https://inflames.utu.fi/"><span>Read more about InFlames</span></a>
 :::
 
 :::
