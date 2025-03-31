@@ -15,7 +15,7 @@ format:
 
 ::: {.grid}
 
-::: {.g-col-4  .d-flex .flex-column}
+::: {.g-col-4 .d-flex .flex-column}
 ![](../images/scilifelab.jpg){style="height:300px; object-fit:cover;"}
 
 **Postdoc funding opportunities at SciLifeLab in Sweden**
