@@ -47,3 +47,18 @@ format:
 :::
 
 :::
+
+<br>
+
+<!-- Collaboration section -->
+::: {.text-center}
+<div class="text-large" style="font-weight: bold;">
+  Want to collaborate?
+</div>
+
+<p style="font-size: 20px;">
+  We are looking for a sponsor to our Bioinformatics Day in Turku in June 2025. Contact us for more information:
+</p>
+
+<a href="mailto:fsfbioinf@gmail.com">fsfbioinf@gmail.com</a>
+:::
