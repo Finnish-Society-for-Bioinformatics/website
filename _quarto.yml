@@ -15,13 +15,15 @@ website:
       - href: pages/jobs.qmd
       - href: pages/collaborators.qmd
         text: Collaborators
+      - href: pages/research-highlights.qmd
+        text: Research Highlights
       - href: pages/join-the-society.qmd
         text: Join the Society
 
   page-footer:
-      left: "We would love to hear from you! Send us an email: fsfbioinf@gmail.com"
-      center: Copyright &copy; 2025 The Finnish Society for Bioinformatics
-      right: "Follow us on [Linkedin](https://www.linkedin.com/company/finnish-society-for-bioinformatics)"
+    left: "We would love to hear from you! Send us an email: fsfbioinf@gmail.com"
+    center: Copyright &copy; 2025 The Finnish Society for Bioinformatics
+    right: "Follow us on [Linkedin](https://www.linkedin.com/company/finnish-society-for-bioinformatics)"
 
 format:
   html:

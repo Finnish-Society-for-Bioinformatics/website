@@ -13,3 +13,25 @@ Here you can find the best PhD thesis award winners as well as research highligh
 Suggest an outstanding research to be highlighted here by sending us an email: <a href="mailto:fsfbioinf@gmail.com">fsfbioinf@gmail.com</a>
 </p>
 :::
+<br>
+
+::: {.grid style="background-color: #f8f6ef;"}
+::: {.g-col-6 .d-flex .flex-column}
+![](../images/the-best-thesis.jpg){style="height:100%; margin:0; object-fit:cover;"}
+:::
+
+::: {.g-col-6 .d-flex .flex-column}
+<div class="text-large" style="font-size:32px;">Tuomo Hartonen</div>
+
+<div class="text-large" style="font-size:24px;">
+**Novel computational methods for studying the role and interactions of transcription factors in gene regulation.**
+
+Tuomo Hartonen’s thesis stood out for its overall quality and its relevance in the field of gene regulation. The Thesis Committee believes that the work makes a significant contribution to the advancement of the field of gene regulation.
+
+In his thesis, Tuomo develops novel computational tools and methods for analysing and modelling DNA-transcription factor binding, as well as methods for interpreting deep learning models for sequence analysis.
+</div>
+:::
+:::
+
+
+<!-- <span class="badge">Best Bioinformatics Thesis 2022-2023</span> -->
