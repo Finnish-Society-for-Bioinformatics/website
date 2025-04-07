@@ -18,6 +18,18 @@ format:
   }
 </style>
 
+<style>
+  .webinar-description {
+    text-align: left;
+  }
+  .author {
+    font-size: 20px;
+  }
+  .webinar-text {
+    font-size: 16px;
+  }
+</style>
+
 
 <!-- Title -->
 <div class="centered-text title">
@@ -39,5 +51,51 @@ format:
 <p class="centered-text subtitle"><em>Topic will be announced soon!</em></p>
 
 <!-- Webinar button -->
-<center><a class="custom-black-btn" style="font-size: 20px;"href="https://utu.zoom.us/my/finnish.bioinformatics.society.webinar"><span>Join the Webinar</span></a></center>
+<center style="margin-bottom: 2rem;">
+    <a class="custom-black-btn" style="font-size: 20px;"href="https://utu.zoom.us/my/finnish.bioinformatics.society.webinar"><span>Join the Webinar</span></a>
+</center>
 
+
+## Past webinars
+
+::: {.grid style="padding-top: 3rem; padding-bottom: 3rem; padding-left: 3rem; padding-right: 3rem"}
+::: {.g-col-4 .d-flex .flex-column .justify-content-center .align-items-center}
+
+<!-- Video -->
+<iframe width="100%" width="150" height="200" src="https://youtu.be/J0n-Xwyr7RM"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+</iframe>
+
+<!-- Webinar description -->
+<p class="webinar-description author">
+    <p><b>Alexandru Tomescu from the University of Helsinki</b></p>
+    <p><em>Decomposing a weighted graph into few paths for solving multi-assembly
+    problems</em></p>
+</p>
+<p>Abstract: A multi-assembly problem usually asks to decompose a weighted
+graph into a small number of weighted paths. For example, in the RNA transcript
+assembly problem, the graph nodes are gene exons, the weights are read
+coverages, and the edges indicate connections between exons observed in the
+RNA-seq reads. The weighted paths are then the RNA transcripts (together with
+their expression levels), that need to be identified from the RNA-seq reads.
+Such problems easily become NP-hard, and thus many RNA assembly tools solve
+them heuristically. In this talk I will give an overview of our recent results
+on extremely fast and exact solvers for a range of such decomposition problems.
+These are based on Mixed Integer Linear Programming, and benefit from additional
+“safety optimizations” based on insight into the “simple” parts of the graph
+structure. These results are currently being incorporated into a Python
+package, so that developers of future multi-assembly tools can easily use
+exact and accurate decomposition methods.</p>
+:::
+
+::: {.g-col-4 .d-flex .flex-column}
+<iframe width="100%" width="150" height="200" src="https://youtu.be/J0n-Xwyr7RM"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+</iframe>
+:::
+
+::: {.g-col-4 .d-flex .flex-column .justify-content-center .align-items-center}
+:::
+:::
