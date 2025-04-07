@@ -17,6 +17,8 @@ website:
         text: Collaborators
       - href: pages/research-highlights.qmd
         text: Research Highlights
+      - href: pages/bioinformatics-webinars.qmd
+        text: Bionformatics Webinars
       - href: pages/join-the-society.qmd
         text: Join the Society
 

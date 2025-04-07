@@ -1,0 +1,43 @@
+---
+toc: false
+format:
+  html:
+    page-layout: full
+---
+
+<!-- Style fot title and subtitle -->
+<style>
+  .centered-text {
+    text-align: center;
+  }
+   .title {
+    font-size: 32px;
+  }
+  .subtitle {
+    font-size: 24px;
+  }
+</style>
+
+
+<!-- Title -->
+<div class="centered-text title">
+  <p>Bioinformatics Webinars</p>
+</div>
+
+<!-- Subtitle -->
+<div class="centered-text title">
+  <p>The Next Webinar on the 8th of May at 2 pm</p>
+</div>
+
+
+<!-- Next webinar -->
+<div class="centered-text subtitle">
+  <p>Speakers:</p>
+  <p>Dr. Jing Tang from the University of Helsinki</p>
+</div>
+
+<p class="centered-text subtitle"><em>Topic will be announced soon!</em></p>
+
+<!-- Webinar button -->
+<center><a class="custom-black-btn" style="font-size: 20px;"href="https://utu.zoom.us/my/finnish.bioinformatics.society.webinar"><span>Join the Webinar</span></a></center>
+
