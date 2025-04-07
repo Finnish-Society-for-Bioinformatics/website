@@ -16,7 +16,7 @@ Suggest an outstanding research to be highlighted here by sending us an email: <
 <br>
 
 ::: {.grid style="background-color: #f8f6ef;"}
-::: {.g-col-6 .d-flex .flex-column}
+::: {.g-col-6 .d-flex .flex-column .justify-content-center .align-items-center}
 ![](../images/the-best-thesis.jpg){style="height:100%; margin:0; object-fit:cover;"}
 :::
 
@@ -30,6 +30,8 @@ Tuomo Hartonen’s thesis stood out for its overall quality and its relevance in
 
 In his thesis, Tuomo develops novel computational tools and methods for analysing and modelling DNA-transcription factor binding, as well as methods for interpreting deep learning models for sequence analysis.
 </div>
+
+<a class="custom-black-btn" style="font-size: 20px;"href="https://helda.helsinki.fi/items/44958408-2b9e-4984-aa07-b244975bbd71"><span>Read the thesis</span></a>
 :::
 :::
 
