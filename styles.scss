@@ -85,6 +85,17 @@ $navbar-hover-color: #1141f3;
     @include text-size(48px);
 }
 
+.faq-item {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.faq-item:last-child {
+    border-bottom: none;
+    /* Remove bottom border on the last item */
+    /* https://developer.mozilla.org/en-US/docs/Web/CSS/:last-child */
+}
+
 // Remove underscore from the link
 a {
     text-decoration: none;
