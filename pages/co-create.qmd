@@ -1,0 +1,31 @@
+---
+toc: false
+format:
+  html:
+    page-layout: full
+---
+
+# Find a team for your projects
+
+In this page we post projects that need talents through collaboration.
+The aim of this page is to increase collaboration between people from different
+research groups, institutions, universities and countries.
+
+If you have a project, an idea or an inspiration and you need a team to
+co-create your wonders into reality, contact us by email and we will post
+your project here.
+
+<br>
+<center><a class="custom-black-btn" style="font-size: 20px;"href="mailto:fsfbioinf@gmail.com"><span>Contact us to post your project here</span></a></center>
+
+<br>
+If you are looking for a job, a PhD position or an internship, please check out
+our [Jobs page](jobs.qmd) instead.
+
+<br>
+<center><a class="custom-black-btn" style="font-size: 20px;"href="jobs.html"><span>Search for jobs</span></a></center>
+
+<br>
+<br>
+
+## Current projects looking for the collaboration to bring them alive
