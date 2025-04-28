@@ -143,73 +143,124 @@ format:
 
 <!-- FAQ section -->
 <div class="container">
-<h2>FAQ</h2>
+<h2>Frequently Asked Questions</h2>
 <div class="grid" style="--bs-gap: .25rem 1rem;">
 
 <!-- First question -->
-<div class="g-col-6">
-  <h3>What is The BioBeer about?</h3>
-  <p>We organize BioBeers to offer Bioinformaticians and everyone interested in Bioinformatics a possibility to network with like-minded people. Its a great opportunity to talk about bioinformatics or just come an meet new people and old friends. BioBeer events are organized every first Friday of the month.</p>
+<div class="faq-item g-col-6">
+  <h3>
+    What is The BioBeer about?
+  </h3>
+  <p>
+    We organize BioBeers to offer Bioinformaticians and everyone interested in Bioinformatics a possibility to network with like-minded people. Its a
+    great opportunity to talk about bioinformatics or just come an meet new
+    people and old friends. BioBeer events are organized every first Friday of
+    the month.
+  </p>
 </div>
+
 
 <!-- Second question -->
-<div class="g-col-6">
-  <h3>What is the Bioinformatics Webinar about?</h3>
-  <p>We organize Bioinformatics Webinars for our members and for everyone interested in Bioinformatics as part of our goal to support bioinformatics research, share the latest scientific discoveries, and provide opportunities for exchanging ideas and knowledge, thus spread open knowledge in bioinformatics.</p>
+<div class="faq-item g-col-6">
+  <h3>
+    What is the Bioinformatics Webinar about?
+  </h3>
+  <p>
+    We organize Bioinformatics Webinars for our members and for everyone
+    interested in Bioinformatics as part of our goal to support bioinformatics
+    research, share the latest scientific discoveries, and provide
+    opportunities for exchanging ideas and knowledge, thus spread open
+    knowledge in bioinformatics.
+  </p>
 </div>
-
-<!-- Horizontal line below first question -->
-<div class="g-col-6"><hr></div>
-
-<!-- Horizontal line below second question-->
-<div class="g-col-6"><hr></div>
 
 <!-- Third question -->
-<div class="g-col-6">
-  <h3>Do I get free beer at the BioBeer events?</h3>
-  <p>Unfortunately, the society cannot (afford to) offer free drinks at the BioBeers. However, in Turku BioBeers Bioinformaticans get a nice discount for the foods and drinks at Saaristobaari. Also, it is not required to buy anything at the BioBeer events and there is always free water available at the restaurants and bars.</p>
+<div class="faq-item g-col-6">
+  <h3>
+    Do I get free beer at the BioBeer events?
+  </h3>
+  <p>
+    Unfortunately, the society cannot (afford to) offer free drinks at the
+    BioBeers. However, in Turku BioBeers Bioinformaticans get a nice discount
+    for the foods and drinks at Saaristobaari. Also, it is not required to buy
+    anything at the BioBeer events, and there is always free water available at
+    the restaurants and bars.
+  </p>
 </div>
 
-<!-- Forth question -->
-<div class="g-col-6">
-  <h3>Who are can participate the webinar?</h3>
-  <p>The webinar is aimed for all bioinformaticians and everyone interested in bioinformatics. If you know someone interested in bioinformatics or in the topic of a specific webinar, you can share the webinar link with them. Our webinar link is always the same: https://utu.zoom.us/my/finnish.bioinformatics.society.webinar</p>
+<!-- Fourth question -->
+<div class="faq-item g-col-6">
+  <h3>
+    Who are can participate the webinar?
+  </h3>
+  <p>
+    The webinar is aimed for all bioinformaticians and everyone interested in
+    bioinformatics. If you know someone interested in bioinformatics or in the
+    topic of a specific webinar, you can share the webinar link with them. Our
+    webinar link is always the same:
+    <a href="https://utu.zoom.us/my/finnish.bioinformatics.society.webinar">https://utu.zoom.us/my/finnish.bioinformatics.society.webinar</a>
+  </p>
 </div>
-
-<!-- Horizontal line below third question -->
-<div class="g-col-6"><hr></div>
-
-<!-- Horizontal line below forth question-->
-<div class="g-col-6"><hr></div>
 
 <!-- Fifth question -->
-<div class="g-col-6">
-  <h3>Why there is no BioBeer event in my town?</h3>
-  <p>Currently we organize BioBeer events only in Turku and Helsinki because of more active Bioinformatics community in these cities. If you would like to start organize BioBeer events in your town, please contact us by email: fsfbioinf@gmail.com and we will help you with everything to set up the events!</p>
+<div class="faq-item g-col-6">
+  <h3>
+    Why there is no BioBeer event in my town?
+  </h3>
+  <p>
+    Currently we organize BioBeer events only in Turku and Helsinki because of
+    more active Bioinformatics community in these cities. If you would like
+    to start organize BioBeer events in your town, please contact us by email:
+    <a href="mailto:fsfbioinf@gmail.com">fsfbioinf@gmail.com</a> and we will
+    help you with everything to set up the events!
+  </p>
 </div>
 
 <!-- Sixth question -->
-<div class="g-col-6">
-  <h3>How do you select your speakers?</h3>
-  <p>We aim to have variety in our speakers so they from all career stages, different fields of bioinformatics and from all corners of the world. For late-career stage researcher we have reserved a full hour of presentation and questions (usually 45+15 minutes), while two younger researchers often share one webinar (25+5 minutes each).</p>
+<div class="faq-item g-col-6">
+  <h3>
+    How do you select your speakers?
+  </h3>
+  <p>
+    We aim to have variety in our speakers so they from all career stages,
+    different fields of bioinformatics and from all corners of the world. For
+    late-career stage researcher we have reserved a full hour of presentation
+    and questions (usually 45+15 minutes), while two younger researchers often
+    share one webinar (25+5 minutes each).
+  </p>
 </div>
 
-<!-- Horizontal line below  fifth question -->
-<div class="g-col-6"><hr></div>
-
-<!-- Horizontal line below sixth question-->
-<div class="g-col-6"><hr></div>
-
 <!-- Seventh question -->
-<div class="g-col-6">
-  <h3>Why the Turku BioBeer is always in the same pub while in Helsinki the place is always different?</h3>
-  <p>The Bioinformaticians in Turku prefer Saaristobaari, due to its size, games and even a karaoke booth. Due to the fact that we love Saaristobaari so much (and they love us) we get a nice discount for food and drinks during the BioBeer events. The Bioinformaticians in Helsinki on the other hand are more adventurous and they prefer to test new restaurants every time to keep things exciting. If you know a restaurant or a bar in Helsinki that we should definitely try out at our BioBeer events, you can suggest it here: https://link.webropolsurveys.com/S/54EAE005F8199416</p>
+<div class="faq-item g-col-6">
+  <h3>
+    Why the Turku BioBeer is always in the same pub while in Helsinki the place
+    is always different?
+  </h3>
+  <p>
+    The Bioinformaticians in Turku prefer Saaristobaari, due to its size, games
+    and even a karaoke booth. Due to the fact that we love Saaristobaari so
+    much (and they love us) we get a nice discount for food and drinks during
+    the BioBeer events. The Bioinformaticians in Helsinki on the other hand
+    are more adventurous and they prefer to test new restaurants every time to
+    keep things exciting. If you know a restaurant or a bar in Helsinki that we
+    should definitely try out at our BioBeer events, you can suggest it here:
+    <a href="https://link.webropolsurveys.com/S/54EAE005F8199416">
+    https://link.webropolsurveys.com/S/54EAE005F8199416</a>
+  </p>
 </div>
 
 <!-- Eighth question -->
-<div class="g-col-6">
-  <h3>How can I present my work at the Bioinformatics webinar?</h3>
-  <p>We would be thrilled to hear about your work in our Bioinformatics webinars! If you would like to present your work at the Bioinformatics webinar, please contact us by email fsfbioinf@gmail.com and we will try to get your talk lined up for the next available slot.</p>
+<div class="faq-item g-col-6">
+  <h3>
+   How can I present my work at the Bioinformatics webinar?
+  </h3>
+  <p>
+    We would be thrilled to hear about your work in our Bioinformatics webinars!
+    If you would like to present your work at the Bioinformatics webinar,
+    please contact us by email
+    <a href="mailto:fsfbioinf@gmail.com">fsfbioinf@gmail.com</a>
+    and we will try to get your talk lined up for the next available slot.
+  </p>
 </div>
 
 <!-- Do not remove the tags below -->
