@@ -24,6 +24,7 @@ format:
   }
   .author {
     font-size: 20px;
+    height: 3em;
   }
   .webinar-text {
     font-size: 16px;
@@ -63,9 +64,8 @@ format:
 ::: {.g-col-4 .d-flex .flex-column}
 
 <!-- Video -->
-<iframe width="100%" width="150" height="200" src="https://youtu.be/J0n-Xwyr7RM"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen>
+<iframe
+  width="320" height="200" src="https://www.youtube.com/embed/J0n-Xwyr7RM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
 </iframe>
 
 <!-- Webinar description -->
@@ -97,9 +97,9 @@ exact and accurate decomposition methods.</p></details></div>
 ::: {.g-col-4 .d-flex .flex-column}
 
 <!-- Video -->
-<iframe width="100%" width="150" height="200" src="https://youtu.be/gRVHLu7MoI0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen>
+
+<iframe
+  width="320" height="200" src="https://www.youtube.com/embed/gRVHLu7MoI0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
 </iframe>
 
 <!-- Webinar description -->
@@ -137,9 +137,8 @@ could  be a valuable tool across various biological contexts.</p></details>
 ::: {.g-col-4 .d-flex .flex-column}
 
 <!-- Video -->
-<iframe width="100%" width="150" height="200" src="https://youtu.be/E8UcBvdncJ8"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen>
+<iframe
+  width="320" height="200" src="https://www.youtube.com/embed/E8UcBvdncJ8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
 </iframe>
 
 <!-- Webinar description -->
