@@ -3,13 +3,12 @@ project:
 
 website:
   title: "The Finnish Society for Bioinformatics"
+  # TODO: Add favicon
   navbar:
     toggle-position: right
     logo: images/logo.png
     title: false
     right:
-      # - href: index.qmd
-      #   text: Home
       - href: pages/about.qmd
       - href: pages/events.qmd
       - href: pages/jobs.qmd
@@ -27,7 +26,10 @@ website:
         text: Bioinformatics Day 2025
 
   page-footer:
-    left: "We would love to hear from you! Send us an email: fsfbioinf@gmail.com"
+    left: |
+      ![](../images/logo.png){width=30%}
+
+      We would love to hear from you! Send us an email: fsfbioinf@gmail.com
     center: Copyright &copy; 2025 The Finnish Society for Bioinformatics
     right: "Follow us on [Linkedin](https://www.linkedin.com/company/finnish-society-for-bioinformatics)"
 
