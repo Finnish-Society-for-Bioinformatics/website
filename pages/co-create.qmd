@@ -29,3 +29,21 @@ our [Jobs page](jobs.qmd) instead.
 <br>
 
 ## Current projects looking for the collaboration to bring them alive
+
+::: {.grid}
+
+::: {.g-col-6 .d-flex .flex-column}
+![](../images/inflames.jpg){style="height:300px; object-fit:cover;"}
+
+## **Project in Nextflow**
+
+Contact: _bishwa.ghimire@utu.fi_
+
+Late stage PhD researcher Bishwa Ghimire is looking for someone interested in Nextflow, conda, docker, singularity, Git, CI/DC, unit testing to create a computational pipeline. The project will be a learning process and the co-creator does not need to be an expert in bioinformatics. There is a possibility for shared first authorship or second authorship depending on the contribution to the project. This is a perfect opportunity for a PhD student or an early-career researcher to get co-authorship in a high impact journal!
+:::
+
+::: {.g-col-6 .d-flex .flex-column}
+![](../images/round_logo.jpg){style="height:300px; object-fit:cover;"}
+:::
+
+:::
