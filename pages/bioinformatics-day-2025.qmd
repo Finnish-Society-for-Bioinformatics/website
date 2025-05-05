@@ -1,0 +1,33 @@
+---
+toc: false
+format:
+  html:
+    page-layout: full
+---
+
+<div class="text-large" style="font-size:53px;">
+  <center><p>Bioinformatics Day 2025</p></center>
+</div>
+
+<div class="text-large" style="font-size:53px;">
+  <center><p>6th of June 2025 in Turku</p></center>
+</div>
+
+<!-- Announcement -->
+
+<div class="text-medium" style="font-size:25px">
+  <center><p>
+    The Finnish Society for Bioinformatics and CompLifeSci proudly join forces
+    to organize the Bioinformatics day 2025 with 2 Keynote speakers, 9 talks
+    selected from abstract, 3 poster session, countless networking
+    opportunities and much more!
+
+    Register today to secure your spot on this most spectacular bioinformatics
+    events of the year!
+  </p></center>
+</div>
+
+<!-- Registration button -->
+<center>
+    <a class="custom-black-btn" style="font-size: 25px;"href="https://link.webropolsurveys.com/S/10093FBB0C4C97C7"><span>Click here to register to the Bioinformatics Day</span></a>
+</center>

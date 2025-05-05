@@ -23,6 +23,8 @@ website:
         text: Join the Society
       - href: pages/co-create.qmd
         text: Co-Create
+      - href: pages/bioinformatics-day-2025.qmd
+        text: Bioinformatics Day 2025
 
   page-footer:
     left: "We would love to hear from you! Send us an email: fsfbioinf@gmail.com"
