@@ -5,7 +5,7 @@ website:
   title: "The Finnish Society for Bioinformatics"
   navbar:
     toggle-position: right
-    logo: images/logo.jpg
+    logo: images/logo.png
     title: false
     right:
       # - href: index.qmd
