@@ -22,10 +22,18 @@
     {
       devShells = forEachSupportedSystem (
         { pkgs }:
+        let
+          rpkgs = pkgs.rWrapper.override {
+            packages = with pkgs.rPackages; [
+              languageserver
+            ];
+          };
+        in
         {
           default = pkgs.mkShell {
             packages = with pkgs; [
               quarto
+              rpkgs
             ];
           };
         }
