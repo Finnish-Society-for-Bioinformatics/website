@@ -53,10 +53,14 @@ format:
 <p class="centered-text subtitle"><em>Topic will be announced soon!</em></p>
 
 <!-- Webinar button -->
-<center style="margin-bottom: 2rem;">
-    <a class="custom-black-btn" style="font-size: 20px;"href="https://utu.zoom.us/my/finnish.bioinformatics.society.webinar"><span>Join the Webinar</span></a>
+<center style="margin-bottom: 2rem">
+  <a
+    class="custom-black-btn"
+    style="font-size: 20px"
+    href="https://utu.zoom.us/my/finnish.bioinformatics.society.webinar"
+    ><span>Join the Webinar</span></a
+  >
 </center>
-
 
 ## Past webinars
 

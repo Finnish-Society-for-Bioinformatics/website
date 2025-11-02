@@ -19,7 +19,6 @@ format:
 <!-- <div class="text-large" style="font-size=10px;"><p</p></div> -->
 
 <div class="grid" style="--bs-gap: .25rem 1rem;">
-
   <!-- First Event - Modify only the text!-->
   <div class="g-col-6"><img src="../images/biobeer.jpg" class="image" width="528" height="297" alt="BioBeer event"></img></div>
   <div class="g-col-6">
