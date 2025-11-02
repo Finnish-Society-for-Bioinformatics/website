@@ -4,6 +4,12 @@ $navbar-color: #1141f3;
 $navbar-hover-color: #1141f3;
 
 /*-- scss:rules --*/
+// Size of the larges h1
+
+h1.large {
+  font-size: 3em;
+  line-height: 1.4;
+}
 
 .highlight {
     background-color: #ff1e0008;
