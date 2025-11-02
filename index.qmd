@@ -32,9 +32,11 @@ about:
 
 # Hi there! Welcome to the <br> Finnish Society for Bioinformatics {.large}
 
-The Finnish Society for Bioinformatics is for everyone interested in bioinformatics. Whether you're an experienced
-researcher, an early-career student, a research group, or a company, we warmly welcome you to join our community. And
-you don't have to be a bioinformatician as long as you think bioinformatics is as cool as we think it is!
+The Finnish Society for Bioinformatics is for everyone interested in
+bioinformatics. Whether you're an experienced researcher, an
+early-career student, a research group, or a company, we warmly welcome
+you to join our community. And you don't have to be a bioinformatician
+as long as you think bioinformatics is as cool as we think it is!
 
 <br>
 
