@@ -12,97 +12,98 @@ h1.large {
 }
 
 .highlight {
-    background-color: #ff1e0008;
-    margin-bottom: 40px;
+  background-color: #ff1e0008;
+  margin-bottom: 40px;
 }
 
 .image-container {
-    display: flex;
-    gap: 15px;
-    margin-top: 40px;
-    align-items: flex-start;
+  display: flex;
+  gap: 15px;
+  margin-top: 40px;
+  align-items: flex-start;
 }
 
 .image-container figure {
-    margin: 0;
-    display: flex;
-    flex-direction: column;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .paragraph1 {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 .follow-button {
-    background-color: #000000;
-    color: #ffffff;
-    border: none;
-    border-radius: 10px;
-    font-size: 25px;
-    margin: 4px 2px;
-    padding: 15px;
-    text-align: center;
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  font-size: 25px;
+  margin: 4px 2px;
+  padding: 15px;
+  text-align: center;
 }
 
 .follow-button:hover {
-    color: hsl(0, 0%, 0%);
-    background-color: #16161626;
+  color: hsl(0, 0%, 0%);
+  background-color: #16161626;
 }
 
 .custom-black-btn {
-    background-color: black;
-    color: white;
-    border: none;
-    border-radius: 25px;
-    box-sizing: border-box;
-    font-size: 25px;
-    margin: 4px 2px;
-    padding: 15px;
-    text-align: center;
-    padding: 12px 24px;
-    width: 250px;
-    // padding: 10px 20px;
-    // border-radius: 5px;
-    // text-align: center;
-    // cursor: pointer;
-    // transition: all 0.3s ease-in-out;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  box-sizing: border-box;
+  font-size: 25px;
+  margin: 4px 2px;
+  padding: 15px;
+  text-align: center;
+  padding: 12px 24px;
+  width: 250px;
+  // padding: 10px 20px;
+  // border-radius: 5px;
+  // text-align: center;
+  // cursor: pointer;
+  // transition: all 0.3s ease-in-out;
 }
 
 .city-label {
-    font-size: 18px;
+  font-size: 18px;
 }
 
 .full-width-paragraph {
-    width: 100%;
-    box-sizing: border-box;
-    margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 auto;
 }
 
 @mixin text-size($size: 18px) {
-    font-size: $size;
-    line-height: 1.5;
+  font-size: $size;
+  line-height: 1.5;
 }
 
 .text-medium {
-    @include text-size;
+  @include text-size;
 }
 
 .text-large {
-    @include text-size(48px);
+  @include text-size(48px);
 }
 
 .faq-item {
-    padding-bottom: 1rem;
-    border-bottom: 1px solid #ddd;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #ddd;
 }
 
 .faq-item:last-child {
-    border-bottom: none;
-    /* Remove bottom border on the last item */
-    /* https://developer.mozilla.org/en-US/docs/Web/CSS/:last-child */
+  border-bottom: none;
+  /* Remove bottom border on the last item */
+  /* https://developer.mozilla.org/en-US/docs/Web/CSS/:last-child */
 }
 
 // Remove underscore from the link
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
+
