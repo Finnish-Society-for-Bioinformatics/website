@@ -3,7 +3,7 @@ project:
 
 website:
   title: "The Finnish Society for Bioinformatics"
-  # TODO: Add favicon
+  favicon: images/round_logo.jpg
   navbar:
     toggle-position: right
     logo: images/logo.png
