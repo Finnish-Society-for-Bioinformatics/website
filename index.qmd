@@ -45,7 +45,7 @@ as long as you think bioinformatics is as cool as we think it is!
 
 <br>
 
-<center><a class="follow-button" href="https://www.linkedin.com/company/finnish-society-for-bioinformatics"><span>Follow
+<center><a class="custom-black-btn" href="https://www.linkedin.com/company/finnish-society-for-bioinformatics"><span>Follow
       us on LinkedIn!</span></a>
 
 <br>
