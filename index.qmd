@@ -21,7 +21,7 @@ about:
       target: _blank
     - text: GitHub
       icon: github
-      href: blank
+      href: https://github.com/Finnish-Society-for-Bioinformatics
       target: _blank
     - text: Email
       icon: mailbox
