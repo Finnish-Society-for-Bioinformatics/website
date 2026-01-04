@@ -50,17 +50,23 @@ h1.large {
 }
 
 .custom-black-btn {
+  display: inline-block;
+  transition: background-color 0.3s;
   background-color: black;
   color: white;
   border: none;
   border-radius: 25px;
   box-sizing: border-box;
-  font-size: 25px;
+  font-size: 20px;
   margin: 4px 2px;
   padding: 15px;
   text-align: center;
   padding: 12px 24px;
-  width: 250px;
+
+  &:hover {
+    background-color: #010101cc;
+  }
+  // width: 250px;
   // padding: 10px 20px;
   // border-radius: 5px;
   // text-align: center;
@@ -106,4 +112,3 @@ h1.large {
 a {
   text-decoration: none;
 }
-

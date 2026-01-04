@@ -7,7 +7,9 @@ toc: false
 editor: source
 format:
   html:
-    page-layout: full
+    page-layout: article
+    grid:
+      body-width: 1500px
 about:
   template: jolla
   image-shape: round
@@ -33,7 +35,6 @@ about:
   }
 </style>
 
-
 # Hi there! Welcome to the <br> Finnish Society for Bioinformatics {.large}
 
 The Finnish Society for Bioinformatics is for everyone interested in
@@ -49,38 +50,47 @@ as long as you think bioinformatics is as cool as we think it is!
 
 <br>
 
-<div class="image-container">
-  <figure>
-    <img src="images/biobeer.jpg" class="image" width=480 height=270>
-    <figcaption>
-      TURKU: Fri, March 7, 2025 @ 18
-      <br>
-      HELSINKI: Thu, March 6, 2025 @ 18
-      <br>
-      <strong class="text-medium">Turku:</strong><span class="text-medium"> Saaristobaari, Aurakatu 14</span>
-      <br>
-      <strong class="text-medium">Helsinki:</strong><span class="text-medium"> To be announced</span>
-    </figcaption>
-  </figure>
-  <figure>
-    <img src="images/webinar.jpg" class="image" width=480 height=270>
-    <figcaption>
-      Thu, March 6, 2025 @ 14
-      <br>
-      <span class="text-medium">Speaker: Chengbo Fu from Aalto University</span>
-      <br>
-      <i><span class="text-medium">KMAP: Kmer Manifold Approximation and Projection for<br> visualizing DNA sequence</span>s</i>
-    </figcaption>
-  </figure>
-  <figure>
-    <img src="images/logo.png" class="image" width=472 height=167>
-    <figcaption>
-      Join the Society!
-      <br>
-      We cannot wait for you to become one of us!
-      <br>
-      <br>
-      <a class="follow-button" href="pages/join-the-society.html"><span>Join the Society!</span></a>
-    </figcaption>
-  </figure>
-</div>
+
+::: {.grid}
+
+::: {.g-col-4 .text-start}
+![](images/biobeer.jpg)
+
+**Helsinki**: Thu, Dec. 4, 2025 @ 18 at TBA
+
+**Turku**: Fri, Dec. 5, 2025 @ 18 at Saaaristobaari, Aurakatu 14
+
+**Tampere**: Fri, Dec 4, 2025 @ 18 at NOOB Ratapihankatu 39
+
+<a href="pages/events.html" class="custom-black-btn">More Info</a>
+
+:::
+
+::: {.g-col-4 .text-start}
+![](images/webinar.jpg)
+
+**Thu, Jan 8, 2026 @ 14**
+
+**Speaker**: Dennis Voelkl from the University of Bergen
+
+*Topic: HIDE: hierarchical cell-type deconvolution*
+
+<a href="pages/bioinformatics-webinars.html" class="custom-black-btn">Abstract</a>
+<a href="https://utu.zoom.us/my/finnish.bioinformatics.society.webinar" class="custom-black-btn">Join Webinar</a>
+
+:::
+
+::: {.g-col-4 .text-start}
+![](images/logo.png)
+
+
+#### Join the Society!
+
+We cannot wait for you to become one of us!
+
+<a href="pages/join-the-society.html" class="custom-black-btn">Join the Society</a>
+
+:::
+
+:::
+
