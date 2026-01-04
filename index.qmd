@@ -3,7 +3,11 @@ title: ""
 css: styles.scss
 engine: knitr
 section-divs: true
+toc: false
 editor: source
+format:
+  html:
+    page-layout: full
 about:
   template: jolla
   image-shape: round
