@@ -93,8 +93,8 @@ format:
     >
   </p>
   <!-- Webinar abstract -->
-  <details>
-    <summary><strong>Abstract</strong></summary>
+
+<center>**Abstract**</center>
 <p>
   A multi-assembly problem usually asks to decompose a weighted graph into a
   small number of weighted paths. For example, in the RNA transcript
@@ -112,7 +112,7 @@ format:
   developers of future multi-assembly tools can easily use exact and
   accurate decomposition methods.
 </p>
-</details>
+
 </div>
 :::
 
@@ -143,32 +143,34 @@ format:
     >
   </p>
   <!-- Webinar abstract -->
-  <details>
-    <summary><strong>Abstract</strong></summary>
-    <p>
-      Identifying and illustrating patterns in DNA sequences is a crucial task
-      in various biological data analyses. In this task, patterns are often
-      represented by sets of kmers, the fundamental building blocks of DNA
-      sequences. To visually unveil these patterns, we could project each kmer
-      onto a point in two-dimensional (2D) space. However, this projection poses
-      challenges due to the high-dimensional nature of kmers and their unique
-      mathematical properties. Here, we established a mathematical system to
-      address the peculiarities of the kmer manifold. Leveraging this kmer
-      manifold theory, we developed a statistical method named KMAP for
-      detecting kmer patterns and visualizing them in 2D space. We applied KMAP
-      to three distinct datasets to showcase its utility. KMAP achieved a
-      comparable performance to the classical method MEME, with approximately
-      90% similarity in motif discovery from HT-SELEX data. In the analysis of
-      H3K27ac ChIP-seq data from Ewing Sarcoma (EWS), we found that BACH1, OTX2
-      and ERG1 might affect EWS prognosis by binding to promoter and enhancer
-      regions across the genome. We also found that FLI1 bound to the enhancer
-      regions after ETV6 degradation, which showed the competitive binding
-      between ETV6 and FLI1. Moreover, KMAP identified four prevalent patterns
-      in gene editing data of the AAVS1 locus, aligning with findings reported
-      in the literature. These applications underscore that KMAP could be a
-      valuable tool across various biological contexts.
-    </p>
-  </details>
+
+
+<center>**Abstract**</center>
+
+<p>
+  Identifying and illustrating patterns in DNA sequences is a crucial task
+  in various biological data analyses. In this task, patterns are often
+  represented by sets of kmers, the fundamental building blocks of DNA
+  sequences. To visually unveil these patterns, we could project each kmer
+  onto a point in two-dimensional (2D) space. However, this projection poses
+  challenges due to the high-dimensional nature of kmers and their unique
+  mathematical properties. Here, we established a mathematical system to
+  address the peculiarities of the kmer manifold. Leveraging this kmer
+  manifold theory, we developed a statistical method named KMAP for
+  detecting kmer patterns and visualizing them in 2D space. We applied KMAP
+  to three distinct datasets to showcase its utility. KMAP achieved a
+  comparable performance to the classical method MEME, with approximately
+  90% similarity in motif discovery from HT-SELEX data. In the analysis of
+  H3K27ac ChIP-seq data from Ewing Sarcoma (EWS), we found that BACH1, OTX2
+  and ERG1 might affect EWS prognosis by binding to promoter and enhancer
+  regions across the genome. We also found that FLI1 bound to the enhancer
+  regions after ETV6 degradation, which showed the competitive binding
+  between ETV6 and FLI1. Moreover, KMAP identified four prevalent patterns
+  in gene editing data of the AAVS1 locus, aligning with findings reported
+  in the literature. These applications underscore that KMAP could be a
+  valuable tool across various biological contexts.
+</p>
+
 </div>
 :::
 
@@ -195,19 +197,17 @@ format:
   <!-- Webinar name -->
   <p class="webinar-text"><em>Behind the Transcriptomic Complexity</em></p>
   <!-- Webinar abstract -->
-  <details>
-    <summary><strong>Abstract</strong></summary>
-    <p>
-      Recent advances in single-cell long-read sequencing have revolutionised
-      our understanding of transcriptomic complexity. However, traditional
-      analysis pipelines, designed for short-read sequencing, fail to capture
-      the full complexity of isoform-level information. In this talk, I will
-      introduce our ongoing project – a novel computational framework – that
-      addresses these challenges. Using early blood development as a model
-      system, we demonstrate the interesting findings and insights to understand
-      the transcriptomic complexity.
-    </p>
-  </details>
+
+<center>**Abstract**</center>
+  Recent advances in single-cell long-read sequencing have revolutionised
+  our understanding of transcriptomic complexity. However, traditional
+  analysis pipelines, designed for short-read sequencing, fail to capture
+  the full complexity of isoform-level information. In this talk, I will
+  introduce our ongoing project – a novel computational framework – that
+  addresses these challenges. Using early blood development as a model
+  system, we demonstrate the interesting findings and insights to understand
+  the transcriptomic complexity.
+
 </div>
 :::
 :::
@@ -235,30 +235,29 @@ padding-bottom: 1rem"}
     >
   </p>
   <!-- Webinar abstract -->
-  <details>
-    <summary><strong>Abstract</strong></summary>
-    <p class="webinar-text">
-      The accelerating growth of scientific literature overwhelms our capacity
-      to manually distill complex phenomena like molecular networks linked to
-      diseases. Moreover, biases in biomedical research and database annotation
-      limit our interpretation of facts and generation of hypotheses. ENQUIRE
-      (Expanding Networks by Querying Unexpectedly Inter-Related Entities)
-      offers a time- and resource-efficient alternative to manual literature
-      curation and database mining. ENQUIRE reconstructs and expands
-      co-occurrence networks of genes and biomedical ontologies from
-      user-selected input corpora and network-inferred PubMed queries. The
-      integration of text mining, automatic querying, and network-based
-      statistics mitigating literature biases makes ENQUIRE unique in its
-      broad-scope applications. For example, ENQUIRE can generate co-occurrence
-      gene networks that reflect high-confidence, functional networks. When
-      tested on case studies spanning cancer, cell differentiation, and
-      immunity, ENQUIRE identified interlinked genes and enriched pathways
-      unique to each topic, thereby preserving their underlying diversity.
-      ENQUIRE supports biomedical researchers by easing literature annotation,
-      boosting hypothesis formulation, and facilitating the identification of
-      molecular targets for subsequent experimentation.
-    </p>
-  </details>
+
+<center><strong>Abstract</strong></center>
+  The accelerating growth of scientific literature overwhelms our capacity
+  to manually distill complex phenomena like molecular networks linked to
+  diseases. Moreover, biases in biomedical research and database annotation
+  limit our interpretation of facts and generation of hypotheses. ENQUIRE
+  (Expanding Networks by Querying Unexpectedly Inter-Related Entities)
+  offers a time- and resource-efficient alternative to manual literature
+  curation and database mining. ENQUIRE reconstructs and expands
+  co-occurrence networks of genes and biomedical ontologies from
+  user-selected input corpora and network-inferred PubMed queries. The
+  integration of text mining, automatic querying, and network-based
+  statistics mitigating literature biases makes ENQUIRE unique in its
+  broad-scope applications. For example, ENQUIRE can generate co-occurrence
+  gene networks that reflect high-confidence, functional networks. When
+  tested on case studies spanning cancer, cell differentiation, and
+  immunity, ENQUIRE identified interlinked genes and enriched pathways
+  unique to each topic, thereby preserving their underlying diversity.
+  ENQUIRE supports biomedical researchers by easing literature annotation,
+  boosting hypothesis formulation, and facilitating the identification of
+  molecular targets for subsequent experimentation.
+<!-- </p> -->
+
 </div>
 :::
 
@@ -272,4 +271,3 @@ padding-bottom: 1rem"}
 <!-- Add your new webinar here -->
 :::
 
-:::
