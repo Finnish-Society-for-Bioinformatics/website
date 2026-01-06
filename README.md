@@ -30,3 +30,21 @@ them:
     1. Enter R console with `R` command.
     2. Run `install.packages(c("knitr", "rmarkdown"))`.
     3. Exit the R console and run `quarto preview`.
+# How to Add New Events?
+
+Adding/modifying events on the Events pages is a straightforward but a bit
+delicate process.
+
+If you need to **modify** an event, just modify the _text_, not the code.
+
+If you need to **add** an event, scroll down until
+`<!-- Use the second event from here as template to keep the structure -->`.
+If you insert this event, it's going it be the Hackathon even.
+
+Next, scroll until `<!-- Use the first  event from here as template to keep the
+structure -->`. If you insert the event under this comment, it's going to be
+BioBeer.
+
+Just keep on inserting the "first" event after the "second" event to keep the
+structure. The "first" event refers to the event with the image to the left,
+and the "second" even refers to the event with the image to the right.
