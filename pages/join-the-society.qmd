@@ -17,10 +17,14 @@ After the email, please pay the membership fee to our bank account:
 * BIC: DABAFIHH
 * Viite/Reference: 2000105
 
+Or directly by mobile Pay #25732
+
+![](../images/mobilepay.png){width=20%}
+
 **Membership fees**:
 
-* Regular membership: 29€
-* Bachelor/Master’s student membership: 5€
+* Regular membership: 30€
+* Bachelor/Master’s student membership: 6€
 
 Remember to renew your membership each year by paying the fee again to our
 bank account.
