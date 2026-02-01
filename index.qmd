@@ -1,4 +1,5 @@
 ---
+pagetitle: "Finnish Society for Bioinformatics"
 title: ""
 css: styles.scss
 engine: knitr
