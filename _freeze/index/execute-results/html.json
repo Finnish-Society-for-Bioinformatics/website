@@ -1,0 +1,17 @@
+{
+  "hash": "775d4c32ba575b728a80ce3edff12d1d",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"\"\ncss: styles.scss\nengine: knitr\nsection-divs: true\ntoc: false\neditor: source\nformat:\n  html:\n    page-layout: article\n    grid:\n      body-width: 1500px\nabout:\n  template: jolla\n  image-shape: round\n  image-width: 17em\n  links:\n    - text: LinkedIn\n      icon: linkedin\n      href: https://www.linkedin.com/company/finnish-society-for-bioinformatics\n      target: _blank\n    - text: GitHub\n      icon: github\n      href: https://github.com/Finnish-Society-for-Bioinformatics\n      target: _blank\n    - text: Email\n      icon: mailbox\n      href: mailto:fsfbioinf@gmail.com\n---\n\n<style>\n  figcaption {\n    font-size: 16px;\n    text-align: left;\n  }\n</style>\n\n# Hi there! Welcome to the <br> Finnish Society for Bioinformatics {.large}\n\nThe Finnish Society for Bioinformatics is for everyone interested in\nbioinformatics. Whether you're an experienced researcher, an\nearly-career student, a research group, or a company, we warmly welcome\nyou to join our community. And you don't have to be a bioinformatician\nas long as you think bioinformatics is as cool as we think it is!\n\n<br>\n\n<center>\n  <a\n    class=\"custom-black-btn\"\n    href=\"https://www.linkedin.com/company/finnish-society-for-bioinformatics\"\n    ><span>Follow us on LinkedIn!</span></a\n  >\n\n  <center>\n    <a class=\"custom-black-btn\" href=\"http://bioinffi.slack.com/\">\n      <span>Join our Slack channel</span></a\n    >\n  </center>\n</center>\n\n<br>\n\n\n::: {.grid}\n\n::: {.g-col-4 .text-start}\n![](images/biobeer.jpg)\n\n**Helsinki**: Thu, Dec. 4, 2025 @ 18 at TBA\n\n**Turku**: Fri, Dec. 5, 2025 @ 18 at Saaaristobaari, Aurakatu 14\n\n**Tampere**: Fri, Dec 4, 2025 @ 18 at NOOB Ratapihankatu 39\n\n<a href=\"pages/events.html\" class=\"custom-black-btn\">More Info</a>\n\n:::\n\n::: {.g-col-4 .text-start}\n![](images/webinar.jpg)\n\n**Thu, Jan 8, 2026 @ 14**\n\n**Speaker**: Dennis Voelkl from the University of Bergen\n\n*Topic: HIDE: hierarchical cell-type deconvolution*\n\n<a href=\"pages/bioinformatics-webinars.html\" class=\"custom-black-btn\">Abstract</a>\n<a href=\"https://utu.zoom.us/my/finnish.bioinformatics.society.webinar\" class=\"custom-black-btn\">Join Webinar</a>\n\n:::\n\n::: {.g-col-4 .text-start}\n![](images/logo.png)\n\n\n#### Join the Society!\n\nWe cannot wait for you to become one of us!\n\n<a href=\"pages/join-the-society.html\" class=\"custom-black-btn\">Join the Society</a>\n\n:::\n\n:::\n\n",
+    "supporting": [
+      "index_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
