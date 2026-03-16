@@ -1,43 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://Finnish-Society-for-Bioinformatics.github.io/website/index.html</loc>
-    <lastmod>2026-03-16T07:20:30.296Z</lastmod>
-  </url>
-  <url>
-    <loc>https://Finnish-Society-for-Bioinformatics.github.io/website/pages/events.html</loc>
-    <lastmod>2026-03-16T07:20:30.296Z</lastmod>
-  </url>
-  <url>
-    <loc>https://Finnish-Society-for-Bioinformatics.github.io/website/pages/research-highlights.html</loc>
-    <lastmod>2026-03-16T07:08:25.358Z</lastmod>
-  </url>
-  <url>
-    <loc>https://Finnish-Society-for-Bioinformatics.github.io/website/pages/collaborators.html</loc>
-    <lastmod>2026-03-16T07:08:25.358Z</lastmod>
-  </url>
-  <url>
-    <loc>https://Finnish-Society-for-Bioinformatics.github.io/website/pages/bioinformatics-day-2025.html</loc>
-    <lastmod>2026-03-16T07:08:25.358Z</lastmod>
+    <loc>https://Finnish-Society-for-Bioinformatics.github.io/website/pages/co-create.html</loc>
+    <lastmod>2026-03-16T07:31:53.752Z</lastmod>
   </url>
   <url>
     <loc>https://Finnish-Society-for-Bioinformatics.github.io/website/pages/about.html</loc>
-    <lastmod>2026-03-16T07:08:25.356Z</lastmod>
-  </url>
-  <url>
-    <loc>https://Finnish-Society-for-Bioinformatics.github.io/website/pages/co-create.html</loc>
-    <lastmod>2026-03-16T07:08:25.358Z</lastmod>
-  </url>
-  <url>
-    <loc>https://Finnish-Society-for-Bioinformatics.github.io/website/pages/jobs.html</loc>
-    <lastmod>2026-03-16T07:08:25.358Z</lastmod>
+    <lastmod>2026-03-16T07:31:53.751Z</lastmod>
   </url>
   <url>
     <loc>https://Finnish-Society-for-Bioinformatics.github.io/website/pages/bioinformatics-webinars.html</loc>
-    <lastmod>2026-03-16T07:20:30.296Z</lastmod>
+    <lastmod>2026-03-16T07:31:53.752Z</lastmod>
+  </url>
+  <url>
+    <loc>https://Finnish-Society-for-Bioinformatics.github.io/website/pages/jobs.html</loc>
+    <lastmod>2026-03-16T07:31:53.752Z</lastmod>
+  </url>
+  <url>
+    <loc>https://Finnish-Society-for-Bioinformatics.github.io/website/pages/collaborators.html</loc>
+    <lastmod>2026-03-16T07:31:53.752Z</lastmod>
+  </url>
+  <url>
+    <loc>https://Finnish-Society-for-Bioinformatics.github.io/website/index.html</loc>
+    <lastmod>2026-03-16T07:31:53.751Z</lastmod>
   </url>
   <url>
     <loc>https://Finnish-Society-for-Bioinformatics.github.io/website/pages/join-the-society.html</loc>
-    <lastmod>2026-03-16T07:20:30.296Z</lastmod>
+    <lastmod>2026-03-16T07:31:53.752Z</lastmod>
+  </url>
+  <url>
+    <loc>https://Finnish-Society-for-Bioinformatics.github.io/website/pages/events.html</loc>
+    <lastmod>2026-03-16T07:31:53.752Z</lastmod>
+  </url>
+  <url>
+    <loc>https://Finnish-Society-for-Bioinformatics.github.io/website/pages/bioinformatics-day-2025.html</loc>
+    <lastmod>2026-03-16T07:31:53.752Z</lastmod>
+  </url>
+  <url>
+    <loc>https://Finnish-Society-for-Bioinformatics.github.io/website/pages/research-highlights.html</loc>
+    <lastmod>2026-03-16T07:31:53.752Z</lastmod>
   </url>
 </urlset>
