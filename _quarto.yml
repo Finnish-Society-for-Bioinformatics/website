@@ -1,6 +1,9 @@
 project:
   type: website
 
+execute:
+  freeze: auto
+
 website:
   title: "The Finnish Society for Bioinformatics"
   favicon: images/round_logo.jpg
