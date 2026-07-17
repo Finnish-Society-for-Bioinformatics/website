@@ -55,11 +55,11 @@ as cool as we do!
 
 ### Bioinformatics Webinar
 
-**Thu, Jan 8, 2026 at 14:00**
+**On a summer break: Next in autumn 2026**
 
-**Speaker:** Dennis Voelkl, University of Bergen
+**Speaker:** To be announced
 
-*HIDE: Hierarchical cell-type deconvolution*
+**Topic:** To be announced
 
 ::: {.d-flex .flex-wrap .gap-2 .justify-content-center}
 [Read the abstract](pages/bioinformatics-webinars.qmd){.btn .btn-dark .rounded-pill}
@@ -95,11 +95,11 @@ We cannot wait for you to become one of us!
 
 ### BioBeer
 
-**Helsinki:** Thu, Dec 4, 2025 at 18:00 — venue TBA
+**Helsinki:** On a summer break: Next in Autumn 2026
 
-**Turku:** Fri, Dec 5, 2025 at 18:00 — Saaristobaari, Aurakatu 14
+**Turku:** On a summer break: Next in Autumn 2026
 
-**Tampere:** Fri, Dec 4, 2025 at 18:00 — NOOB, Ratapihankatu 39
+**Tampere:* *On a summer break: Next in Autumn 2026
 
 [More information](pages/events.qmd){.btn .btn-dark .rounded-pill}
 
