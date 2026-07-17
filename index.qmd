@@ -2,12 +2,8 @@
 pagetitle: "Finnish Society for Bioinformatics"
 title: ""
 css: styles.scss
+search: false
 toc: false
-format:
-  html:
-    page-layout: article
-    grid:
-      body-width: 1500px
 about:
   template: jolla
   image-shape: round
@@ -36,22 +32,28 @@ community.
 You don't have to be a bioinformatician—as long as you think bioinformatics is
 as cool as we do!
 
+<!-- Note to myself and anyone else: -->
 
-::: {.d-flex .flex-wrap .gap-2 .justify-content-center .mb-2}
+<!--
+Quarto grid system using bootstrap CSS works fine, but the columns are
+stacked on top of each other independently of the device
+(https://quarto.org/docs/output-formats/page-layout.html)
 
-<!-- docs for buttons https://getbootstrap.com/docs/5.3/utilities/spacing/#margin-and-padding -->
-[Follow us on LinkedIn](https://www.linkedin.com/company/finnish-society-for-bioinformatics){.btn .btn-dark .rounded-pill target="_blank"}
+I've also tried to use .container-fluid from Boostrap CSS
+https://getbootstrap.com/docs/5.3/layout/grid
+But something in Quarto overwrite it
+If we use layout: custom for Quarto, it occupies the whole page, and
+the columns are still stack on top of each other
 
-[Join our Slack channel](https://bioinffi.slack.com/){.btn .btn-dark .rounded-pill target="_blank"}
-:::
+The custom implementation seems to be the only option
+Use the grid (https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Grid_layout/Basic_concepts)
+docs if you need to adjust anything
+-->
+:::: {.index-grid}
 
-:::: {.columns}
+::: {.index-column}
 
-::: {.column width="28%"}
-
-![](images/webinar.jpg)
-
-
+![](images/webinar.jpg){.img-fluid .w-100}
 
 ### Bioinformatics Webinar
 
@@ -61,21 +63,13 @@ as cool as we do!
 
 **Topic:** To be announced
 
-::: {.d-flex .flex-wrap .gap-2 .justify-content-center}
 [Read the abstract](pages/bioinformatics-webinars.qmd){.btn .btn-dark .rounded-pill}
 
-[Join the webinar](https://utu.zoom.us/my/finnish.bioinformatics.society.webinar){.btn .btn-dark .rounded-pill target="_blank"}
 :::
 
-:::
+::: {.index-column}
 
-::: {.column width="6%"}
-<!-- empty column to create gap -->
-:::
-
-::: {.column width="28%"}
-
-![](images/logo.png)
+![](images/logo.png){.img-fluid .w-100}
 
 ### Join the Society
 
@@ -85,21 +79,17 @@ We cannot wait for you to become one of us!
 
 :::
 
-::: {.column width="6%"}
-<!-- empty column to create gap -->
-:::
+::: {.index-column}
 
-::: {.column width="28%"}
-
-![](images/biobeer.jpg)
+![](images/biobeer.jpg){.img-fluid .w-100}
 
 ### BioBeer
 
-**Helsinki:** On a summer break: Next in Autumn 2026
+**Helsinki:** On a summer break: Next in autumn 2026
 
-**Turku:** On a summer break: Next in Autumn 2026
+**Turku:** On a summer break: Next in autumn 2026
 
-**Tampere:** *On a summer break: Next in Autumn 2026
+**Tampere:** On a summer break: Next in autumn 2026
 
 [More information](pages/events.qmd){.btn .btn-dark .rounded-pill}
 
