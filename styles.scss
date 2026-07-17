@@ -4,11 +4,37 @@ $navbar-color: #1141f3;
 $navbar-hover-color: #1141f3;
 
 /*-- scss:rules --*/
-// Size of the larges h1
-
+/*-- Size of the larges h1 --*/
 h1.large {
   font-size: 3em;
   line-height: 1.4;
+}
+
+/*-- Size of the larges h1
+Custom grid for the index page
+By default uses one column, and sets it to three if the screen width is at
+least  992px
+992px is the Boostrap CSS lg breakpoint
+https://getbootstrap.com/docs/5.3/layout/breakpoints/
+ --*/
+.index-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  width: 100%;
+}
+
+/* Wrap text */
+.index-column {
+  min-width: 0;
+}
+
+/* Three columns on big screens */
+/* On mobile devices it's just one column */
+@media (min-width: 992px) {
+  .index-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
 }
 
 .navbar-logo {
