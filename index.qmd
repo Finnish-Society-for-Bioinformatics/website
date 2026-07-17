@@ -2,7 +2,6 @@
 pagetitle: "Finnish Society for Bioinformatics"
 title: ""
 css: styles.scss
-engine: knitr
 section-divs: true
 toc: false
 editor: source
