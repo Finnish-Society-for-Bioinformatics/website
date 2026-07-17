@@ -47,9 +47,9 @@ as cool as we do!
 
 :::: {.columns}
 
-::: {.column width="30%"}
+::: {.column width="28%"}
 
-![](images/webinar.jpg){style="width: 100%; float: left; margin: 5px;"}
+![](images/webinar.jpg)
 
 
 
@@ -69,7 +69,7 @@ as cool as we do!
 
 :::
 
-::: {.column width="1%"}
+::: {.column width="6%"}
 <!-- empty column to create gap -->
 :::
 
@@ -85,7 +85,7 @@ We cannot wait for you to become one of us!
 
 :::
 
-::: {.column width="1%"}
+::: {.column width="6%"}
 <!-- empty column to create gap -->
 :::
 
@@ -99,7 +99,7 @@ We cannot wait for you to become one of us!
 
 **Turku:** On a summer break: Next in Autumn 2026
 
-**Tampere:* *On a summer break: Next in Autumn 2026
+**Tampere:** *On a summer break: Next in Autumn 2026
 
 [More information](pages/events.qmd){.btn .btn-dark .rounded-pill}
 
