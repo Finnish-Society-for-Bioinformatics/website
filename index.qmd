@@ -2,9 +2,7 @@
 pagetitle: "Finnish Society for Bioinformatics"
 title: ""
 css: styles.scss
-section-divs: true
 toc: false
-editor: source
 format:
   html:
     page-layout: article
@@ -27,81 +25,84 @@ about:
       icon: mailbox
       href: mailto:fsfbioinf@gmail.com
 ---
-
-<style>
-  figcaption {
-    font-size: 16px;
-    text-align: left;
-  }
-</style>
-
-# Hi there! Welcome to the <br> Finnish Society for Bioinformatics {.large}
+<!-- The standard markdown heading size is too small -->
+[Welcome to the Finnish Society for Bioinformatics!]{style="font-size: 3em"}
 
 The Finnish Society for Bioinformatics is for everyone interested in
-bioinformatics. Whether you're an experienced researcher, an
-early-career student, a research group, or a company, we warmly welcome
-you to join our community. And you don't have to be a bioinformatician
-as long as you think bioinformatics is as cool as we think it is!
+bioinformatics. Whether you're an experienced researcher, an early-career
+student, a research group, or a company, we warmly welcome you to join our
+community.
 
-<br>
-
-<center>
-  <a
-    class="custom-black-btn"
-    href="https://www.linkedin.com/company/finnish-society-for-bioinformatics"
-    ><span>Follow us on LinkedIn!</span></a
-  >
-
-  <center>
-    <a class="custom-black-btn" href="http://bioinffi.slack.com/">
-      <span>Join our Slack channel</span></a
-    >
-  </center>
-</center>
-
-<br>
+You don't have to be a bioinformatician—as long as you think bioinformatics is
+as cool as we do!
 
 
-::: {.grid}
+::: {.d-flex .flex-wrap .gap-2 .justify-content-center .mb-2}
 
-::: {.g-col-4 .text-start}
-![](images/biobeer.jpg)
+<!-- docs for buttons https://getbootstrap.com/docs/5.3/utilities/spacing/#margin-and-padding -->
+[Follow us on LinkedIn](https://www.linkedin.com/company/finnish-society-for-bioinformatics){.btn .btn-dark .rounded-pill target="_blank"}
 
-**Helsinki**: Thu, Dec. 4, 2025 @ 18 at TBA
+[Join our Slack channel](https://bioinffi.slack.com/){.btn .btn-dark .rounded-pill target="_blank"}
+:::
 
-**Turku**: Fri, Dec. 5, 2025 @ 18 at Saaaristobaari, Aurakatu 14
+:::: {.columns}
 
-**Tampere**: Fri, Dec 4, 2025 @ 18 at NOOB Ratapihankatu 39
+::: {.column width="30%"}
 
-<a href="pages/events.html" class="custom-black-btn">More Info</a>
+![](images/webinar.jpg){style="width: 100%; float: left; margin: 5px;"}
+
+
+
+### Bioinformatics Webinar
+
+**Thu, Jan 8, 2026 at 14:00**
+
+**Speaker:** Dennis Voelkl, University of Bergen
+
+*HIDE: Hierarchical cell-type deconvolution*
+
+::: {.d-flex .flex-wrap .gap-2 .justify-content-center}
+[Read the abstract](pages/bioinformatics-webinars.qmd){.btn .btn-dark .rounded-pill}
+
+[Join the webinar](https://utu.zoom.us/my/finnish.bioinformatics.society.webinar){.btn .btn-dark .rounded-pill target="_blank"}
+:::
 
 :::
 
-::: {.g-col-4 .text-start}
-![](images/webinar.jpg)
-
-**Thu, Jan 8, 2026 @ 14**
-
-**Speaker**: Dennis Voelkl from the University of Bergen
-
-*Topic: HIDE: hierarchical cell-type deconvolution*
-
-<a href="pages/bioinformatics-webinars.html" class="custom-black-btn">Abstract</a>
-<a href="https://utu.zoom.us/my/finnish.bioinformatics.society.webinar" class="custom-black-btn">Join Webinar</a>
-
+::: {.column width="1%"}
+<!-- empty column to create gap -->
 :::
 
-::: {.g-col-4 .text-start}
+::: {.column width="28%"}
+
 ![](images/logo.png)
 
-
-#### Join the Society!
+### Join the Society
 
 We cannot wait for you to become one of us!
 
-<a href="pages/join-the-society.html" class="custom-black-btn">Join the Society</a>
+[Join the Society](pages/join-the-society.qmd){.btn .btn-dark .rounded-pill}
 
 :::
 
+::: {.column width="1%"}
+<!-- empty column to create gap -->
 :::
 
+::: {.column width="28%"}
+
+![](images/biobeer.jpg)
+
+### BioBeer
+
+**Helsinki:** Thu, Dec 4, 2025 at 18:00 — venue TBA
+
+**Turku:** Fri, Dec 5, 2025 at 18:00 — Saaristobaari, Aurakatu 14
+
+**Tampere:** Fri, Dec 4, 2025 at 18:00 — NOOB, Ratapihankatu 39
+
+[More information](pages/events.qmd){.btn .btn-dark .rounded-pill}
+
+:::
+
+::::
