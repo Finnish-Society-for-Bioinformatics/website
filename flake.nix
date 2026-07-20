@@ -30,6 +30,7 @@
           packages = with final.rPackages; [
             knitr
             languageserver
+            yaml
           ];
         };
       };
