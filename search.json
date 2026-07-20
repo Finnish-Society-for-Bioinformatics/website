@@ -1,24 +1,10 @@
 [
   {
-    "objectID": "pages/collaborators.html",
-    "href": "pages/collaborators.html",
-    "title": "Our Collaborators and Sponsors",
-    "section": "",
-    "text": "Read more about CompLifeSci\n\n\n\n\n\nRead more about CSC\n\n\n\n\n\nRead more about HIIT\n\n\n\n\n\nRead more about InFLAMES\n\n\n\n\n\nRead more about BioCity\n\n\n\n\n\nRead more about HiLiFe\n\n\n\n\n\nRead more about Switch Point Bio\n\n\n\n\n\nRead more about Modulight\n\n\n\n\n\nRead more about Blueprint Genetics"
-  },
-  {
-    "objectID": "pages/collaborators.html#want-to-collaborate",
-    "href": "pages/collaborators.html#want-to-collaborate",
-    "title": "Our Collaborators and Sponsors",
-    "section": "Want to collaborate?",
-    "text": "Want to collaborate?\nWe are looking for a sponsor for Bioinformatics Day in Tampere in June 2027. Contact us for more information:\nfsfbioinf@gmail.com"
-  },
-  {
     "objectID": "pages/events.html",
     "href": "pages/events.html",
     "title": "Events",
     "section": "",
-    "text": "BioEvenings are local and casual Bioinformaticians get-togethers. Helsinki BioEvenings are usually on the first Thursday of the month, Turku BioEvenings are on the first Friday of the month.\nBioEvenings start at 18.\nTurku – On a summer break: Next in autumn 2026\nHelsinki – On a summer break: Next in autumn 2026\nTampere – On a summer break: Next in autumn 2026\nHelsinki BioEvening aims to try different restaurants and bars at each BioEvening. Suggest a place for the next Helsinki BioEvening here.\n\n\n\n\n\nOn a summer break: Next in autumn 2026\nSpeaker: To be announced\nTopic: To be announced\nAbstract: To be announced\nJoin the webinar\n\n\n\n\n\n\n\n\n\n\nNEXT:AUTUMN\nThe Finnish Society for Bioinformatics is excited to host beginners Bioinformatics chat and code event to learn the basics of coding in collaboration with InFlames Research Flagship and CompLifeSci in Turku.\nThe beginners Bioinformatics hackathon is aimed for everyone interested in Bioinformatics – no prior coding experience is needed. The chat and code events are low threshold, fun events to get everyone as excited of bioinformatics as we are. We will cover topics like command line, Git, workflows, and even containers.\nNo registration needed, just appear in BioCity 4th floor seminar room and bring your laptop, you might end up writing your first line of code!"
+    "text": "BioEvenings are local and casual Bioinformaticians get-togethers. Helsinki BioEvenings are usually on the first Thursday of the month, Turku BioEvenings are on the first Friday of the month.\nBioEvenings start at 18.\nTurku – On a summer break: Next in autumn 2026\nHelsinki – On a summer break: Next in autumn 2026\nTampere – On a summer break: Next in autumn 2026\nHelsinki BioEvening aims to try different restaurants and bars at each BioEvening. Suggest a place for the next Helsinki BioEvening here.\n\n\n\n\n\n\n\n\nOn a summer break: Next in autumn 2026\nSpeaker: To be announced\nTopic: To be announced\nAbstract: To be announced\nJoin the webinar\n\n\n\n\n\n\n\nNEXT:AUTUMN\nThe Finnish Society for Bioinformatics is excited to host beginners Bioinformatics chat and code event to learn the basics of coding in collaboration with InFlames Research Flagship and CompLifeSci in Turku.\nThe beginners Bioinformatics hackathon is aimed for everyone interested in Bioinformatics – no prior coding experience is needed. The chat and code events are low threshold, fun events to get everyone as excited of bioinformatics as we are. We will cover topics like command line, Git, workflows, and even containers.\nNo registration needed, just appear in BioCity 4th floor seminar room and bring your laptop, you might end up writing your first line of code!"
   },
   {
     "objectID": "pages/events.html#the-bioevening",
@@ -46,7 +32,21 @@
     "href": "pages/events.html#frequently-asked-questions",
     "title": "Events",
     "section": "Frequently Asked Questions",
-    "text": "Frequently Asked Questions\n\n\nWhat is The BioEvening about?\nWe organize BioEvening to offer Bioinformaticians and everyone interested in Bioinformatics a possibility to network with like-minded people. Its a great opportunity to talk about bioinformatics or just come an meet new people and old friends. BioEvening events are organized every first Friday of the month in Turku and every first Thursday of the month in Helsinki.\n\n\nWhat are the BioWebinars about?\nWe organize BioWebinars for our members and for everyone interested in Bioinformatics as part of our goal to support bioinformatics research, share the latest scientific discoveries, and provide opportunities for exchanging ideas and knowledge, thus spread open knowledge in bioinformatics.\n\n\nDo I get free food and drinks at the BioEvening events?\nUnfortunately the society cannot (afford to) offer free food and drinks at the BioEvenings. However, in Turku BioEvenings Bioinformaticans get a nice discount for the foods and drinks at Saaristobaari. Also, it is not required to buy anything at the BioEvening events, just come along to meet like minded people! And there is always free water available at the restaurants and bars.\n\n\nWho are can participate the webinar?\nThe webinar is aimed for all bioinformaticians and everyone interested in bioinformatics. If you know someone interested in bioinformatics or in the topic of a specific webinar, you can share the webinar link with them. Our webinar link is always the same.\nJoin the webinar\n\n\nWhy there is no BioEvening event in my town?\nCurrently we organize BioEvening events only in Turku, Helsinki, and Tampere because of more active Bioinformatics community in these cities. If you would like to start organize BioEvening events in your town, please contact us by email: fsfbioinf@gmail.com and we will help you with everything to set up the events!\n\n\nHow do you select your speakers?\nWe aim to have variety in our speakers so they from all career stages, different fields of bioinformatics and from all corners of the world. For late-career stage researcher we have reserved a full hour of presentation and questions (usually 45+15 minutes), while two younger researchers often share one webinar (25+5 minutes each).\n\n\nWhy the Turku BioEvening is always in the same restaurant while in Helsinki the place is always different?\nBioinformaticians in Turku prefer Saaristobaari because of its size, games, and karaoke booth.\nBecause we enjoy Saaristobaari so much—and they enjoy hosting us—we receive a dThe Bioinformaticians in Turku prefer Saaristobaari, due to its size, games and even a karaoke booth. Due to the fact that we love Saaristobaari so much (and they love us) we get a nice discount for food and drinks during the BioEvening events. The Bioinformaticians in Helsinki on the other hand are more adventurous and they prefer to test new restaurants every time to keep things exciting. If you know a restaurant or a bar in Helsinki that we should definitely try out at our BioEvening events, you can suggest it here.\n\n\nHow can I present my work at the BioWebinar?\nWe would be thrilled to hear about your work in our Bioinformatics webinars! If you would like to present your work at the Bioinformatics webinar, please contact us by email fsfbioinf@gmail.com and we will try to get your talk lined up for the next available slot."
+    "text": "Frequently Asked Questions"
+  },
+  {
+    "objectID": "pages/jobs.html",
+    "href": "pages/jobs.html",
+    "title": "Jobs",
+    "section": "",
+    "text": "SciLifeLab\n\n\n\n\nThe call opens on 7 January 2025.\nCandidates are eligible to apply if they:\n\nHave not been in Sweden for more than 12 months during the past three years\nReceived their PhD less than three years ago\n\nSciLifeLab provides a matchmaking portfolio to help candidates find a suitable research group for their project.\nRead more and apply\n\n\n\n\n\n\nUniversity of Skövde\n\n\n\n\nThe application deadline is 6 January 2025.\nThe lecturer position primarily involves teaching bioinformatics and handling the administration associated with these duties.\nThe position may also include additional responsibilities.\n\n\n\n\n\n\nFinnish Society for Bioinformatics\n\n\n\n\nReach bioinformaticians where they are and find the best candidates in the field.\nSend us information about your open position, and we will add it to this page.\nContact us"
+  },
+  {
+    "objectID": "pages/jobs.html#open-bioinformatics-positions",
+    "href": "pages/jobs.html#open-bioinformatics-positions",
+    "title": "Jobs",
+    "section": "",
+    "text": "SciLifeLab\n\n\n\n\nThe call opens on 7 January 2025.\nCandidates are eligible to apply if they:\n\nHave not been in Sweden for more than 12 months during the past three years\nReceived their PhD less than three years ago\n\nSciLifeLab provides a matchmaking portfolio to help candidates find a suitable research group for their project.\nRead more and apply\n\n\n\n\n\n\nUniversity of Skövde\n\n\n\n\nThe application deadline is 6 January 2025.\nThe lecturer position primarily involves teaching bioinformatics and handling the administration associated with these duties.\nThe position may also include additional responsibilities.\n\n\n\n\n\n\nFinnish Society for Bioinformatics\n\n\n\n\nReach bioinformaticians where they are and find the best candidates in the field.\nSend us information about your open position, and we will add it to this page.\nContact us"
   },
   {
     "objectID": "pages/bioinformatics-webinars.html",
@@ -112,18 +112,18 @@
     "text": "Join the Finnish Society for Bioinformatics\nTo become a member, please send as an email to fsfbioinf@gmail.com. The email should include your name, email address and the city you live in Finland.\nAfter the email, please pay the membership fee to our bank account:\n\nBioinformatiikan seura ry\nIBAN: FI9780001871150455\nBIC: DABAFIHH\nViite/Reference: 2000105\n\nOr directly by mobile Pay #25732\n\nMembership fees:\n\nRegular membership: 30€\nBachelor/Master’s student membership: 6€\n\nRemember to renew your membership each year by paying the fee again to our bank account.\nJoin also our slack channel: bioinffi.slack.com\nWe are also looking for collaborators and company sponsors! Contact us by email to discuss more!\n\n\nFrequently Asked Questions\n\n\n\n\n\nDo I have to be a Bioinformatician to join?\n\n\nThe Finnish Society for Bioinformatics is aimed for anyone interested in bioinformatics. We welcome people from all career stages, and all fields as long as you share our passion for bioinformatics.\n\n\n\n\n\nWhy do I have to send you an email to register?\n\n\nAfter the payment, you should send us an email so we can link you to your payment. Once we know you have paid, we can add you to the mailing list to receive the newsletter. You need to send the email only during your first registration. The following years when you continue your membership you can just pay the fee. We will then connect the payment to you by the details you have provided during your initial registration.\n\n\n\n\n\nWhy do you collect membership fees?\n\n\nWe collect membership fees to cover the running costs of the society, such as the website, bank account and so on. The membership fees are also used for Bioinformatics day which is a yearly event full of science, networking and fun. Our membership fees also allow us to award the best Bioinformatics PhD thesis with 500 euro stipend every second year. The membership fees are not used for salary – our board members are volunteering and the passion to create a community for bioinformatics is what inspires us the most.\n\n\n\n\n\nWhy do you need to know my email address and the city?\n\n\nThe Finnish Society for Bioinformatics is an officially registered society. By the law, all registered societies in Finland need to keep a record of their members, including member names and the cities they live in. We need your email to be able to send you our monthly newsletter that includes our news and fabulous events. You can cancel the newsletter anytime by sending us an email."
   },
   {
-    "objectID": "pages/jobs.html",
-    "href": "pages/jobs.html",
-    "title": "Jobs",
+    "objectID": "pages/collaborators.html",
+    "href": "pages/collaborators.html",
+    "title": "Our Collaborators and Sponsors",
     "section": "",
-    "text": "SciLifeLab\n\n\n\n\nThe call opens on 7 January 2025.\nCandidates are eligible to apply if they:\n\nHave not been in Sweden for more than 12 months during the past three years\nReceived their PhD less than three years ago\n\nSciLifeLab provides a matchmaking portfolio to help candidates find a suitable research group for their project.\nRead more and apply\n\n\n\n\n\n\nUniversity of Skövde\n\n\n\n\nThe application deadline is 6 January 2025.\nThe lecturer position primarily involves teaching bioinformatics and handling the administration associated with these duties.\nThe position may also include additional responsibilities.\n\n\n\n\n\n\nFinnish Society for Bioinformatics\n\n\n\n\nReach bioinformaticians where they are and find the best candidates in the field.\nSend us information about your open position, and we will add it to this page.\nContact us"
+    "text": "Read more about CompLifeSci\n\n\n\n\n\nRead more about CSC\n\n\n\n\n\nRead more about HIIT\n\n\n\n\n\nRead more about InFLAMES\n\n\n\n\n\nRead more about BioCity\n\n\n\n\n\nRead more about HiLiFe\n\n\n\n\n\nRead more about Switch Point Bio\n\n\n\n\n\nRead more about Modulight\n\n\n\n\n\nRead more about Blueprint Genetics"
   },
   {
-    "objectID": "pages/jobs.html#open-bioinformatics-positions",
-    "href": "pages/jobs.html#open-bioinformatics-positions",
-    "title": "Jobs",
-    "section": "",
-    "text": "SciLifeLab\n\n\n\n\nThe call opens on 7 January 2025.\nCandidates are eligible to apply if they:\n\nHave not been in Sweden for more than 12 months during the past three years\nReceived their PhD less than three years ago\n\nSciLifeLab provides a matchmaking portfolio to help candidates find a suitable research group for their project.\nRead more and apply\n\n\n\n\n\n\nUniversity of Skövde\n\n\n\n\nThe application deadline is 6 January 2025.\nThe lecturer position primarily involves teaching bioinformatics and handling the administration associated with these duties.\nThe position may also include additional responsibilities.\n\n\n\n\n\n\nFinnish Society for Bioinformatics\n\n\n\n\nReach bioinformaticians where they are and find the best candidates in the field.\nSend us information about your open position, and we will add it to this page.\nContact us"
+    "objectID": "pages/collaborators.html#want-to-collaborate",
+    "href": "pages/collaborators.html#want-to-collaborate",
+    "title": "Our Collaborators and Sponsors",
+    "section": "Want to collaborate?",
+    "text": "Want to collaborate?\nWe are looking for a sponsor for Bioinformatics Day in Tampere in June 2027. Contact us for more information:\nfsfbioinf@gmail.com"
   },
   {
     "objectID": "old-index.html",
