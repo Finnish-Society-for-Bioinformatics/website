@@ -122,10 +122,6 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Join the Society</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="../pages/co-create.html" aria-current="page"> 
-<span class="menu-text">Co-Create</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link" href="../pages/bioinformatics-day-2026.html"> 
 <span class="menu-text">Bioinformatics Day 2026</span></a>
   </li>  
@@ -255,7 +251,7 @@ ul.task-list li input[type="checkbox"] {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/Finnish-Society-for-Bioinformatics\.github\.io\/website\/");
+        var filterRegex = new RegExp('/' + window.location.host + '/');
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
