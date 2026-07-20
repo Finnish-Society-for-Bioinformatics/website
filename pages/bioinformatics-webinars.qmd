@@ -1,273 +1,43 @@
 ---
+title: "BioWebinars"
 toc: false
 format:
   html:
     page-layout: full
 ---
 
-<!-- Style fot title and subtitle -->
-<style>
-  .centered-text {
-    text-align: center;
-  }
-   .title {
-    font-size: 32px;
-  }
-  .subtitle {
-    font-size: 24px;
-  }
-</style>
+::: {.text-center .mb-5}
 
-<style>
-  .webinar-description {
-    text-align: left;
-  }
-  .author {
-    font-size: 20px;
-    height: 3em;
-  }
-  .webinar-text {
-    font-size: 16px;
-    height: 4em;
-  }
-</style>
+# The BioWebinars are on a summer break. {.mt-0}
 
+We will be back in autumn 2026
 
-<!-- Title -->
-<div class="centered-text title">
-  <p>Bioinformatics Webinars</p>
-</div>
+**Speaker**: To be announced
 
-<!-- Subtitle -->
-<div class="centered-text title">
-  <p>The Next Webinar on the 8th of May at 2 pm</p>
-</div>
+**Topic**: To be announced
 
+[Join the
+webinar](https://utu.zoom.us/my/finnish.bioinformatics.society.webinar){.btn .btn-dark .rounded-pill target="_blank"}
+:::
 
-<!-- Next webinar -->
-<div class="centered-text subtitle">
-  <p>Speakers:</p>
-  <p>Dr. Jing Tang from the University of Helsinki</p>
-</div>
+::: {.bg-light .pb-1 .pt-2 .px-3}
+## Upcoming Webinars {.mt-0}
 
-<p class="centered-text subtitle"><em>Topic will be announced soon!</em></p>
+In autumn 2026: Speakers will be announced soon.
 
-<!-- Webinar button -->
-<center style="margin-bottom: 2rem">
-  <a
-    class="custom-black-btn"
-    style="font-size: 20px"
-    href="https://utu.zoom.us/my/finnish.bioinformatics.society.webinar"
-    ><span>Join the Webinar</span></a
-  >
-</center>
+**Topic**: To be announced
+:::
 
 ## Past webinars
 
-<!-- First webinar -->
-::: {.grid style="padding-top: 3rem; padding-bottom: 3rem; padding-left: 3rem; padding-right: 3rem"}
-::: {.g-col-4 .d-flex .flex-column}
+```{r}
+#| echo: false
+#| output: asis
 
-<!-- Video -->
-<iframe
-  width="320"
-  height="200"
-  src="https://www.youtube.com/embed/J0n-Xwyr7RM"
-  frameborder="0"
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-  allowfullscreen
->
-</iframe>
+source("../R/render-past-webinars.R")
 
-<!-- Webinar description -->
-<div class="webinar-description">
-  <!-- Author -->
-  <p class="author">
-    <strong>Alexandru Tomescu from the University of Helsinki</strong>
-  </p>
-  <!-- Webinar name -->
-  <p class="webinar-text">
-    <em
-      >Decomposing a weighted graph into few paths for solving multi-assembly
-      problems</em
-    >
-  </p>
-  <!-- Webinar abstract -->
+webinar_data <- yaml::read_yaml("../data/past_webinars.yaml")
 
-<center>**Abstract**</center>
-<p>
-  A multi-assembly problem usually asks to decompose a weighted graph into a
-  small number of weighted paths. For example, in the RNA transcript
-  assembly problem, the graph nodes are gene exons, the weights are read
-  coverages, and the edges indicate connections between exons observed in
-  the RNA-seq reads. The weighted paths are then the RNA transcripts
-  (together with their expression levels), that need to be identified from
-  the RNA-seq reads. Such problems easily become NP-hard, and thus many RNA
-  assembly tools solve them heuristically. In this talk I will give an
-  overview of our recent results on extremely fast and exact solvers for a
-  range of such decomposition problems. These are based on Mixed Integer
-  Linear Programming, and benefit from additional “safety optimizations”
-  based on insight into the “simple” parts of the graph structure. These
-  results are currently being incorporated into a Python package, so that
-  developers of future multi-assembly tools can easily use exact and
-  accurate decomposition methods.
-</p>
-
-</div>
-:::
-
-<!-- Second webinar -->
-::: {.g-col-4 .d-flex .flex-column}
-
-<!-- Video -->
-
-<iframe
-  width="320"
-  height="200"
-  src="https://www.youtube.com/embed/gRVHLu7MoI0"
-  frameborder="0"
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-  allowfullscreen
->
-</iframe>
-
-<!-- Webinar description -->
-<div class="webinar-description">
-  <!-- Author -->
-  <p class="author"><strong>Chengbo Fu from Aalto University</strong></p>
-  <!-- Webinar name -->
-  <p class="webinar-text">
-    <em
-      >KMAP: Kmer Manifold Approximation and Projection for visualizing DNA
-      sequences</em
-    >
-  </p>
-  <!-- Webinar abstract -->
-
-
-<center>**Abstract**</center>
-
-<p>
-  Identifying and illustrating patterns in DNA sequences is a crucial task
-  in various biological data analyses. In this task, patterns are often
-  represented by sets of kmers, the fundamental building blocks of DNA
-  sequences. To visually unveil these patterns, we could project each kmer
-  onto a point in two-dimensional (2D) space. However, this projection poses
-  challenges due to the high-dimensional nature of kmers and their unique
-  mathematical properties. Here, we established a mathematical system to
-  address the peculiarities of the kmer manifold. Leveraging this kmer
-  manifold theory, we developed a statistical method named KMAP for
-  detecting kmer patterns and visualizing them in 2D space. We applied KMAP
-  to three distinct datasets to showcase its utility. KMAP achieved a
-  comparable performance to the classical method MEME, with approximately
-  90% similarity in motif discovery from HT-SELEX data. In the analysis of
-  H3K27ac ChIP-seq data from Ewing Sarcoma (EWS), we found that BACH1, OTX2
-  and ERG1 might affect EWS prognosis by binding to promoter and enhancer
-  regions across the genome. We also found that FLI1 bound to the enhancer
-  regions after ETV6 degradation, which showed the competitive binding
-  between ETV6 and FLI1. Moreover, KMAP identified four prevalent patterns
-  in gene editing data of the AAVS1 locus, aligning with findings reported
-  in the literature. These applications underscore that KMAP could be a
-  valuable tool across various biological contexts.
-</p>
-
-</div>
-:::
-
-<!-- Third webinar -->
-::: {.g-col-4 .d-flex .flex-column}
-
-<!-- Video -->
-<iframe
-  width="320"
-  height="200"
-  src="https://www.youtube.com/embed/E8UcBvdncJ8"
-  frameborder="0"
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-  allowfullscreen
->
-</iframe>
-
-<!-- Webinar description -->
-<div class="webinar-description">
-  <!-- Author -->
-  <p class="author">
-    <strong>Thaddeus Wu: James Cook University, Australia</strong>
-  </p>
-  <!-- Webinar name -->
-  <p class="webinar-text"><em>Behind the Transcriptomic Complexity</em></p>
-  <!-- Webinar abstract -->
-
-<center>**Abstract**</center>
-  Recent advances in single-cell long-read sequencing have revolutionised
-  our understanding of transcriptomic complexity. However, traditional
-  analysis pipelines, designed for short-read sequencing, fail to capture
-  the full complexity of isoform-level information. In this talk, I will
-  introduce our ongoing project – a novel computational framework – that
-  addresses these challenges. Using early blood development as a model
-  system, we demonstrate the interesting findings and insights to understand
-  the transcriptomic complexity.
-
-</div>
-:::
-:::
-
-<!-- Fourth webinar -->
-::: {.grid style="padding-top: 3rem; padding-bottom: 3rem; padding-left: 3rem; padding-right: 3rem"}
-::: {.g-col-4 .d-flex .flex-column}
-![](../images/webinar.jpg){style="height:200px; object-fit:cover;
-padding-bottom: 1rem"}
-
-<!-- Webinar description -->
-<div class="webinar-description">
-  <!-- Author -->
-  <p class="author">
-    <strong
-      >Luca Musella: University Hospital of Erlangen at Julio Vera’s lab,
-      Germany</strong
-    >
-  </p>
-  <!-- Webinar name -->
-  <p class="webinar-text">
-    <em
-      >ENQUIRE reconstructs and expands context-specific co-occurrence networks
-      from biomedical literature</em
-    >
-  </p>
-  <!-- Webinar abstract -->
-
-<center><strong>Abstract</strong></center>
-  The accelerating growth of scientific literature overwhelms our capacity
-  to manually distill complex phenomena like molecular networks linked to
-  diseases. Moreover, biases in biomedical research and database annotation
-  limit our interpretation of facts and generation of hypotheses. ENQUIRE
-  (Expanding Networks by Querying Unexpectedly Inter-Related Entities)
-  offers a time- and resource-efficient alternative to manual literature
-  curation and database mining. ENQUIRE reconstructs and expands
-  co-occurrence networks of genes and biomedical ontologies from
-  user-selected input corpora and network-inferred PubMed queries. The
-  integration of text mining, automatic querying, and network-based
-  statistics mitigating literature biases makes ENQUIRE unique in its
-  broad-scope applications. For example, ENQUIRE can generate co-occurrence
-  gene networks that reflect high-confidence, functional networks. When
-  tested on case studies spanning cancer, cell differentiation, and
-  immunity, ENQUIRE identified interlinked genes and enriched pathways
-  unique to each topic, thereby preserving their underlying diversity.
-  ENQUIRE supports biomedical researchers by easing literature annotation,
-  boosting hypothesis formulation, and facilitating the identification of
-  molecular targets for subsequent experimentation.
-<!-- </p> -->
-
-</div>
-:::
-
-::: {.g-col-4 .d-flex .flex-column}
-<!-- Add your new webinar here -->
-:::
-
-:::
-
-::: {.g-col-4 .d-flex .flex-column}
-<!-- Add your new webinar here -->
-:::
+render_webinars(webinar_data$webinars)
+```
 

@@ -1,57 +1,116 @@
 ---
+title: "Our Collaborators and Sponsors"
 toc: false
 format:
   html:
     page-layout: full
 ---
 
-# Collaborators
+::::: {.grid}
 
-<div class="text-large" style="font-size:32px;">
-  <left><p>Our collaborators and sponsors</p></left>
-</div>
+<!-- Small screens: one listing -->
+<!-- Medium screens: two listings -->
+<!-- Large screens: three listings -->
 
-<!-- First row -->
-::: {.grid}
+:::: {.g-col-12 .g-col-md-6 .g-col-lg-4 .d-flex .flex-column .text-center}
 
-::: {.g-col-4 .d-flex .flex-column .text-center}
-![](../images/ComplifeSci.jpg){style="height:300px; object-fit:cover;"}
-<a class="custom-black-btn" style="font-size: 20px;"href="https://biocityturku.fi/research-programs/complifesci/"><span>Read more about CompLifeSci</span></a>
+![](../images/ComplifeSci.jpg){.img-fluid}
+
+::: {.mt-auto}
+[Read more about CompLifeSci](https://biocityturku.fi/research-programs/complifesci/){.btn .btn-dark .rounded-pill target="_blank"}
 :::
 
-::: {.g-col-4 .d-flex .flex-column .text-center}
-![](../images/modulight.jpg){style="height:300px; object-fit:cover;"}
-<a class="custom-black-btn" style="font-size: 20px;"href="https://modulight.com/"><span>Read more about Modulight</span></a>
+::::
+
+:::: {.g-col-12 .g-col-md-6 .g-col-lg-4 .d-flex .flex-column .text-center}
+
+![](../images/csc.jpg){.img-fluid}
+
+::: {.mt-auto}
+[Read more about CSC](https://csc.fi/en/){.btn .btn-dark .rounded-pill target="_blank"}
 :::
 
-::: {.g-col-4 .d-flex .flex-column .text-center}
-![](../images/Blueprint.jpg){style="height:300px; object-fit:cover;"}
-<a class="custom-black-btn" style="font-size: 20px;"href="https://blueprintgenetics.com/"><span>Read more about Blueprint Genetics</span></a>
+::::
+
+:::: {.g-col-12 .g-col-md-6 .g-col-lg-4 .d-flex .flex-column .text-center}
+
+![](../images/HIIT.png){.img-fluid}
+
+::: {.mt-auto}
+[Read more about HIIT](https://www.hiit.fi/){.btn .btn-dark .rounded-pill target="_blank"}
 :::
 
+::::
+
+:::: {.g-col-12 .g-col-md-6 .g-col-lg-4 .d-flex .flex-column .text-center}
+
+![](../images/inflames.jpg){.img-fluid}
+
+::: {.mt-auto}
+[Read more about InFLAMES](https://inflames.utu.fi/){.btn .btn-dark .rounded-pill target="_blank"}
 :::
 
-<!-- Second row -->
-::: {.grid}
+::::
 
-::: {.g-col-4 .d-flex .flex-column .text-center}
-![](../images/inflames.jpg ){style="height:300px; object-fit:cover;"}
-<a class="custom-black-btn" style="font-size: 20px;"href="https://inflames.utu.fi/"><span>Read more about InFlames</span></a>
+:::: {.g-col-12 .g-col-md-6 .g-col-lg-4 .d-flex .flex-column .text-center}
+
+![](../images/biocity.jpg){.img-fluid}
+
+::: {.mt-auto .pt-3}
+[Read more about BioCity](https://biocityturku.fi/){.btn .btn-dark .rounded-pill target="_blank"}
 :::
 
+::::
+
+:::: {.g-col-12 .g-col-md-6 .g-col-lg-4 .d-flex .flex-column .text-center}
+
+![](../images/HiLiFe2.png){.img-fluid}
+
+::: {.mt-auto}
+[Read more about HiLiFe](https://www.helsinki.fi/en/hilife-helsinki-institute-life-science){.btn .btn-dark .rounded-pill target="_blank"}
 :::
 
-<br>
+::::
 
-<!-- Collaboration section -->
-::: {.text-center}
-<div class="text-large" style="font-weight: bold;">
-  Want to collaborate?
-</div>
+:::: {.g-col-12 .g-col-md-6 .g-col-lg-4 .d-flex .flex-column .text-center}
 
-<p style="font-size: 20px;">
-  We are looking for a sponsor to our Bioinformatics Day in Turku in June 2025. Contact us for more information:
-</p>
+![](../images/sp_logo.png){.img-fluid}
 
-<a href="mailto:fsfbioinf@gmail.com">fsfbioinf@gmail.com</a>
+::: {.mt-auto}
+[Read more about Switch Point Bio](https://www.switchpointbio.com/){.btn .btn-dark .rounded-pill target="_blank"}
 :::
+
+::::
+:::: {.g-col-12 .g-col-md-6 .g-col-lg-4 .d-flex .flex-column .text-center}
+
+![](../images/modulight.jpg){.img-fluid}
+
+::: {.mt-0}
+[Read more about Modulight](https://modulight.com/){.btn .btn-dark .rounded-pill target="_blank"}
+:::
+
+::::
+
+
+
+:::: {.g-col-12 .g-col-md-6 .g-col-lg-4 .d-flex .flex-column .text-center}
+
+![](../images/Blueprint.jpg){.img-fluid}
+
+::: {.mt-auto}
+[Read more about Blueprint Genetics](https://blueprintgenetics.com/){.btn .btn-dark .rounded-pill target="_blank"}
+:::
+
+::::
+
+:::::
+
+::: {.text-center .my-5}
+## Want to collaborate?
+
+We are looking for a sponsor for Bioinformatics Day in Tampere in June 2027.
+Contact us for more information:
+
+[fsfbioinf@gmail.com](mailto:fsfbioinf@gmail.com)
+:::
+

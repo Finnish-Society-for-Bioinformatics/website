@@ -1,15 +1,9 @@
 ---
+pagetitle: "Finnish Society for Bioinformatics"
 title: ""
 css: styles.scss
-engine: knitr
-section-divs: true
+search: false
 toc: false
-editor: source
-format:
-  html:
-    page-layout: article
-    grid:
-      body-width: 1500px
 about:
   template: jolla
   image-shape: round
@@ -27,81 +21,82 @@ about:
       icon: mailbox
       href: mailto:fsfbioinf@gmail.com
 ---
-
-<style>
-  figcaption {
-    font-size: 16px;
-    text-align: left;
-  }
-</style>
-
-# Hi there! Welcome to the <br> Finnish Society for Bioinformatics {.large}
+<!-- The standard markdown heading size is too small -->
+[Welcome to the Finnish Society for Bioinformatics!]{style="font-size: 3em"}
 
 The Finnish Society for Bioinformatics is for everyone interested in
-bioinformatics. Whether you're an experienced researcher, an
-early-career student, a research group, or a company, we warmly welcome
-you to join our community. And you don't have to be a bioinformatician
-as long as you think bioinformatics is as cool as we think it is!
+bioinformatics. Whether you're an experienced researcher, an early-career
+student, a research group, or a company, we warmly welcome you to join our
+community.
 
-<br>
+You don't have to be a bioinformatician—as long as you think bioinformatics is
+as cool as we do!
 
-<center>
-  <a
-    class="custom-black-btn"
-    href="https://www.linkedin.com/company/finnish-society-for-bioinformatics"
-    ><span>Follow us on LinkedIn!</span></a
-  >
+<!-- Note to myself and anyone else: -->
 
-  <center>
-    <a class="custom-black-btn" href="http://bioinffi.slack.com/">
-      <span>Join our Slack channel</span></a
-    >
-  </center>
-</center>
+<!--
+Quarto grid system using bootstrap CSS works fine, but the columns are
+stacked on top of each other independently of the device
+(https://quarto.org/docs/output-formats/page-layout.html)
 
-<br>
+I've also tried to use .container-fluid from Boostrap CSS
+https://getbootstrap.com/docs/5.3/layout/grid
+But something in Quarto overwrite it
+If we use layout: custom for Quarto, it occupies the whole page, and
+the columns are still stack on top of each other
 
+The custom implementation seems to be the only option
+Use the grid (https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Grid_layout/Basic_concepts)
+docs if you need to adjust anything
 
-::: {.grid}
+Also @media is useful to target small devices
+-->
+:::: {.index-grid}
 
-::: {.g-col-4 .text-start}
-![](images/biobeer.jpg)
+::: {.index-column}
 
-**Helsinki**: Thu, Dec. 4, 2025 @ 18 at TBA
+![](images/webinar.jpg){.img-fluid .w-100}
 
-**Turku**: Fri, Dec. 5, 2025 @ 18 at Saaaristobaari, Aurakatu 14
+### Bioinformatics Webinar
 
-**Tampere**: Fri, Dec 4, 2025 @ 18 at NOOB Ratapihankatu 39
+**On a summer break: Next in autumn 2026**
 
-<a href="pages/events.html" class="custom-black-btn">More Info</a>
+**Speaker:** To be announced
 
-:::
+**Topic:** To be announced
 
-::: {.g-col-4 .text-start}
-![](images/webinar.jpg)
+[Read the abstract](pages/bioinformatics-webinars.qmd){.btn .btn-dark .rounded-pill}
 
-**Thu, Jan 8, 2026 @ 14**
-
-**Speaker**: Dennis Voelkl from the University of Bergen
-
-*Topic: HIDE: hierarchical cell-type deconvolution*
-
-<a href="pages/bioinformatics-webinars.html" class="custom-black-btn">Abstract</a>
-<a href="https://utu.zoom.us/my/finnish.bioinformatics.society.webinar" class="custom-black-btn">Join Webinar</a>
+[Join the webinar](https://utu.zoom.us/my/finnish.bioinformatics.society.webinar){.btn .btn-dark .rounded-pill target="_blank"}
 
 :::
 
-::: {.g-col-4 .text-start}
-![](images/logo.png)
+::: {.index-column}
 
+![](images/logo.png){.img-fluid .w-100}
 
-#### Join the Society!
+### Join the Society
 
 We cannot wait for you to become one of us!
 
-<a href="pages/join-the-society.html" class="custom-black-btn">Join the Society</a>
+[Join the Society](pages/join-the-society.qmd){.btn .btn-dark .rounded-pill}
 
 :::
 
+::: {.index-column}
+
+![](images/biobeer.jpg){.img-fluid .w-100}
+
+### BioBeer
+
+**Helsinki:** On a summer break: Next in autumn 2026
+
+**Turku:** On a summer break: Next in autumn 2026
+
+**Tampere:** On a summer break: Next in autumn 2026
+
+[More information](pages/events.qmd){.btn .btn-dark .rounded-pill}
+
 :::
 
+::::

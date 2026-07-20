@@ -1,13 +1,14 @@
 {
-  inputs.nixpkgs.url = "github:NixOS/nixpkgs";
+  description = "A Nix-flake-based R development environment";
+
+  inputs.nixpkgs.url = "https://flakehub.com/f/NixOS/nixpkgs/0.1"; # unstable Nixpkgs
 
   outputs =
-    inputs:
+    { self, ... }@inputs:
     let
       supportedSystems = [
         "x86_64-linux"
         "aarch64-linux"
-        "x86_64-darwin"
         "aarch64-darwin"
       ];
       forEachSupportedSystem =
@@ -15,28 +16,47 @@
         inputs.nixpkgs.lib.genAttrs supportedSystems (
           system:
           f {
-            pkgs = import inputs.nixpkgs { inherit system; };
+            inherit system;
+            pkgs = import inputs.nixpkgs {
+              inherit system;
+              overlays = [ inputs.self.overlays.default ];
+            };
           }
         );
     in
     {
+      overlays.default = final: prev: rec {
+        rEnv = final.rWrapper.override {
+          packages = with final.rPackages; [
+            knitr
+            languageserver
+            yaml
+          ];
+        };
+      };
+
       devShells = forEachSupportedSystem (
-        { pkgs }:
+
+        { pkgs, system }:
         let
-          rpkgs = pkgs.rWrapper.override {
-            packages = with pkgs.rPackages; [
-              languageserver
-            ];
-          };
+          patchedQuarto = pkgs.quarto.overrideAttrs (oldAttrs: {
+            postPatch = (oldAttrs.postPatch or "") + ''
+              substituteInPlace bin/quarto.js \
+                --replace-fail "syntax-highlighting" "highlight-style"
+            '';
+          });
         in
         {
-          default = pkgs.mkShell {
+          default = pkgs.mkShellNoCC {
             packages = with pkgs; [
-              quarto
-              rpkgs
+              rEnv
+              patchedQuarto
+              self.formatter.${system}
             ];
           };
         }
       );
+
+      formatter = forEachSupportedSystem ({ pkgs, ... }: pkgs.nixfmt);
     };
 }

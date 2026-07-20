@@ -19,7 +19,7 @@ After the email, please pay the membership fee to our bank account:
 
 Or directly by mobile Pay #25732
 
-![](../images/mobilepay.png){width=20%}
+![](../images/mobilepay.png){.img-fluid width="70%" fig-align="center"}
 
 **Membership fees**:
 
@@ -29,73 +29,66 @@ Or directly by mobile Pay #25732
 Remember to renew your membership each year by paying the fee again to our
 bank account.
 
-Join also our slack channel:
-<a href="https://bioinffi.slack.com">bioinffi.slack.com</a>
+Join also our [Slack channel](https://bioinffi.slack.com/):
 
-We are also looking for collaborators and company sponsors! Contact us by
-<a href="mailto:fsfbioinf@gmail.com">email</a> to discuss more!
+We are also looking for collaborators and company sponsors! Contact us at
+[fsfbioinf@gmail.com](mailto:fsfbioinf@gmail.com)
+ to discuss more!
 
-<div class="container">
-<h2>Frequently Asked Questions</h2>
-<div class="grid" style="--bs-gap: .25rem 1rem;">
+::: {.text-center .mt-5}
+## Frequently Asked Questions
+:::
 
-<!-- First question -->
-<div class="faq-item g-col-6">
-  <h3>
-    Do I have to be a Bioinformatician to join?
-  </h3>
-  <p>
-    The Finnish Society for Bioinformatics is aimed for anyone interested in bioinformatics. We welcome people from all career stages, and all fields
-    as long as you share our passion for bioinformatics.
-  </p>
-</div>
+::::: {.grid}
 
-<!-- Second question -->
-<div class="faq-item g-col-6">
-  <h3>
-    Why do I have to send you an email to register?
-  </h3>
-  <p>
-    After the payment, you should send us an email so we can link you to your
-    payment. Once we know you have paid, we can add you to the mailing list to
-    receive the newsletter. You need to send the email only during your first
-    registration. The following years when you continue your membership you can
-    just pay the fee. We will then connect the payment to you by the details
-    you have provided during your initial registration.
-  </p>
-</div>
+:::: {.g-col-12 .g-col-md-6}
 
-<!-- Third question -->
-<div class="faq-item g-col-6">
-  <h3>
-    Why do you collect membership fees?
-  </h3>
-  <p>
-    We collect membership fees to cover the running costs of the society,
-    such as the website, bank account and so on. The membership fees are also
-    used for Bioinformatics day which is a yearly event full of science,
-    networking and fun. Our membership fees also allow us to award the best Bioinformatics PhD thesis with 500 euro stipend every second year. The
-    membership fees are not used for salary – our board members are
-    volunteering and the passion to create a community for bioinformatics
-    is what inspires us the most.
-  </p>
-</div>
+### Do I have to be a Bioinformatician to join?
 
-<!-- Four question -->
-<div class="faq-item g-col-6">
-  <h3>
-    Why do you need to know my email address and the city?
-  </h3>
-  <p>
-    The Finnish Society for Bioinformatics is an officially registered society.
-    By the law, all registered societies in Finland need to keep a record of
-    their members, including member names and the cities they live in. We need
-    your email to be able to send you our monthly newsletter that includes our
-    news and fabulous events. You can cancel the newsletter anytime by sending
-    us an email.
-  </p>
-</div>
+The Finnish Society for Bioinformatics is aimed for anyone interested in
+bioinformatics. We welcome people from all career stages, and all fields as
+long as you share our passion for bioinformatics.
+::::
 
-</div>
-</div>
+
+:::: {.g-col-12 .g-col-md-6}
+
+### Why do I have to send you an email to register?
+
+After the payment, you should send us an email so we can link you to your
+payment. Once we know you have paid, we can add you to the mailing list to
+receive the newsletter. You need to send the email only during your first
+registration. The following years when you continue your membership you can
+just pay the fee. We will then connect the payment to you by the details you
+have provided during your initial registration.
+::::
+
+
+:::: {.g-col-12 .g-col-md-6}
+
+### Why do you collect membership fees?
+
+We collect membership fees to cover the running costs of the society, such as
+the website, bank account and so on. The membership fees are also used for
+Bioinformatics day which is a yearly event full of science, networking and fun.
+Our membership fees also allow us to award the best Bioinformatics PhD thesis
+with 500 euro stipend every second year. The membership fees are not used for
+salary – our board members are volunteering and the passion to create a
+community for bioinformatics is what inspires us the most.
+
+::::
+
+
+:::: {.g-col-12 .g-col-md-6}
+
+### Why do you need to know my email address and the City where I live in Finland?
+
+The Finnish Society for Bioinformatics is an officially registered society. By
+the law, all registered societies in Finland need to keep a record of their
+members, including member names and the cities they live in. We need your email
+to be able to send you our monthly newsletter that includes our news and
+fabulous events. You can cancel the newsletter anytime by sending us an email.
+::::
+
+:::::
 

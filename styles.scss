@@ -3,93 +3,37 @@ $h1-font-size: 1.8rem !default;
 $navbar-color: #1141f3;
 $navbar-hover-color: #1141f3;
 
-/*-- scss:rules --*/
-// Size of the larges h1
-
-h1.large {
-  font-size: 3em;
-  line-height: 1.4;
-}
-
-.highlight {
-  background-color: #ff1e0008;
-  margin-bottom: 40px;
-}
-
-.image-container {
-  display: flex;
-  gap: 15px;
-  margin-top: 40px;
-  align-items: flex-start;
-}
-
-.image-container figure {
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-}
-
-.paragraph1 {
-  font-size: 20px;
-}
-
-.custom-black-btn {
-  display: inline-block;
-  transition: background-color 0.3s;
-  background-color: black;
-  color: white;
-  border: none;
-  border-radius: 25px;
-  box-sizing: border-box;
-  font-size: 20px;
-  margin: 4px 2px;
-  padding: 15px;
-  text-align: center;
-  padding: 12px 24px;
-
-  &:hover {
-    background-color: #010101cc;
-  }
-  // width: 250px;
-  // padding: 10px 20px;
-  // border-radius: 5px;
-  // text-align: center;
-  // cursor: pointer;
-  // transition: all 0.3s ease-in-out;
-}
-
-.city-label {
-  font-size: 18px;
-}
-
-.full-width-paragraph {
+/*-- Size of the larges h1
+Custom grid for the index page
+By default uses one column, and sets it to three if the screen width is at
+least  992px
+992px is the Boostrap CSS lg breakpoint
+https://getbootstrap.com/docs/5.3/layout/breakpoints/
+ --*/
+.index-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
   width: 100%;
-  box-sizing: border-box;
-  margin: 0 auto;
 }
 
-@mixin text-size($size: 18px) {
-  font-size: $size;
-  line-height: 1.5;
+/* Wrap text */
+.index-column {
+  min-width: 0;
 }
 
-.text-medium {
-  @include text-size;
+/* Three columns on big screens */
+/* On mobile devices it's just one column */
+@media (min-width: 992px) {
+  .index-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
 }
 
-.text-large {
-  @include text-size(48px);
-}
-
-.faq-item {
-  padding-bottom: 1rem;
-  border-bottom: 1px solid #ddd;
-}
-
-.faq-item:last-child {
-  border-bottom: none;
-  /* Remove bottom border on the last item */
-  /* https://developer.mozilla.org/en-US/docs/Web/CSS/:last-child */
+.navbar-logo {
+  width: 30%;
+  max-height: 30%;
+  align-items: baseline;
 }
 
 // Remove underscore from the link
