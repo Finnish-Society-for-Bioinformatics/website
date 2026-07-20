@@ -39,7 +39,12 @@ BioEvening. Suggest a place for the next Helsinki BioEvening
 
 <!-- Second event -->
 
+:::: {.g-col-12 .g-col-md-6 .text-center}
+![](../images/webinar.jpg){.img-fluid}
+::::
+
 :::: {.g-col-12 .g-col-md-6}
+
 
 ## The BioWebinar {.mt-0}
 
@@ -55,9 +60,6 @@ On a summer break: Next in autumn 2026
 
 ::::
 
-:::: {.g-col-12 .g-col-md-6 .text-center}
-![](../images/webinar.jpg){.img-fluid}
-::::
 
 <!-- Third event -->
 
@@ -134,8 +136,9 @@ your laptop, you might end up writing your first line of code!
 
 :::::
 
-
+::: {.text-center .mt-5}
 ## Frequently Asked Questions
+:::
 
 ::::: {.grid}
 
@@ -241,6 +244,4 @@ will try to get your talk lined up for the next available slot.
 ::::
 
 :::::
-
-
 
