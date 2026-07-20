@@ -1,267 +1,246 @@
 ---
+title: "Events"
 toc: false
 format:
   html:
     page-layout: full
 ---
 
-# Events
+::::: {.grid}
 
-<div class="text-large" style="font-size:53px;">
-  <p>Bioinformatics Day on the 6.6.2025 in BioCity Turku</p>
-</div>
+<!-- First event -->
 
-<div class="text-large" style="font-size:53px;">
-  <center><p>Stay tuned for more information!</p></center>
-</div>
+:::: {.g-col-12 .g-col-md-6}
+![](../images/biobeer.jpg){.img-fluid}
+::::
 
+:::: {.g-col-12 .g-col-md-6}
 
-<!-- <div class="text-large" style="font-size=10px;"><p</p></div> -->
+<!-- {.mt-0} is needed to align the image with the title-->
+## The BioEvening {.mt-0}
 
-<div class="grid" style="--bs-gap: .25rem 1rem;">
-  <!-- First Event - Modify only the text!-->
-  <div class="g-col-6"><img src="../images/biobeer.jpg" class="image" width="528" height="297" alt="BioBeer event"></img></div>
-  <div class="g-col-6">
-  <div class="text-large" style="font-size:33px;">
-  <p>The Next BioBeer is happening in March 2025!</p>
-  <div class="text-medium">
-  <p>Join us for an amazing event with special talks, networking opportunities, and, of course, beer!</p>
-  <p>Turku – Fri 7th of March at 18: Saaristobaari, Aurakatu 14, Turku. Discounts for foods and drinks at BioBeer events.</p>
-  <p>Helsinki – Thu 6th of March at 18: To be announced later<p>
-  <p>Helsinki BioBeer aims to try different restaurants and bars at each BioBeer. Suggest a place for the next Helsinki BioBeer here: https://link.webropolsurveys.com/S/54EAE005F8199416</p>
-  </div>
-  </div>
-  </div>
+BioEvenings are local and casual Bioinformaticians get-togethers. Helsinki
+BioEvenings are usually on the first Thursday of the month, Turku BioEvenings
+are on the first Friday of the month.
 
-  <!-- Second event - Modify only the text!-->
-  <div class="g-col-6">
-  <div class="text-large" style="font-size:33px;">
-  <p>The Bioinformatics Hackathon in TURKU 11th of MARCH @ 15</p>
-  </div>
-  <div class="text-large" style="font-size:22px;">
-  <p>NEXT: 8th of APRIL , 15th of MAY, 3rd of JUNE</p>
-  </div>
-  <p>The Finnish Society for Bioinformatics is excited to host beginners
-  Bioinformatics hackathon in collaboration with InFlames Research Flagship
-  and CompLifeSci in Turku during spring 2025.</p>
+BioEvenings start at 18.
 
-  <p>The beginners Bioinformatics hackathon is aimed for everyone interested
-  in Bioinformatics – no prior coding experience is needed. The hackatons are
-  low threshold, fun events to get everyone as excited of bioinformatics as we
-  are. We will cover topics like Linux command line, Git, workflows, and containers.</p>
+**Turku** – On a summer break: Next in autumn 2026
 
-  <p>No registration needed, just appear in BioCity 4th floor seminar room and bring
-  your laptop, you might end up writing your first line of code!</p>
-  </div>
-  <div class="g-col-6">
-  <img src="../images/hackaton.jpg" class="image" width="528" height="297" alt="BioBeer event"></img>
-  <br><br>
-  <center><a class="custom-black-btn" href="https://inflameshackathon.slack.com/"><span>Join the Hackathon Slack channel!</span></a>
-  </div>
+**Helsinki** – On a summer break: Next in autumn 2026
 
-  <!-- Third event -Modify only the text-->
-  <div class="g-col-6"><img src="../images/webinar.jpg" class="image" width="528" height="297" alt="Webinar"></img></div>
-  <div class="g-col-6">
-  <div class="text-large" style="font-size:33px;">
-  <p>The Bioinformatics Webinar 6th of March 2025 @ 14</p>
-  </div>
-  <div class="text-medium" style="font-size:22px;">
-  <p><strong>NEXT</strong>: 8th of APRIL , 15th of MAY, 3rd of JUNE</p>
-  </div>
-  <div class="text-medium" style="font-size:22px;">
-  <p><strong>Topic</strong>: KMAP: Kmer Manifold Approximation and Projection for visualizing DNA sequences</p>
+**Tampere** – On a summer break: Next in autumn 2026
 
-<!-- Collapbisble abstract -->
-<details>
-  <summary><strong>Abstract</strong></summary>
-  <p>Identifying and illustrating patterns in DNA sequences is a crucial task in various biological data analyses.
-  In this task, patterns are often represented by sets of kmers, the fundamental building blocks of DNA sequences.
-  To visually unveil these patterns, we could project each kmer onto a point in two-dimensional (2D) space.
-  However, this projection poses challenges due to the high-dimensional nature of kmers and their unique
-  mathematical properties. Here, we established a mathematical system to address the peculiarities of the kmer
-  manifold. Leveraging this kmer manifold theory, we developed a statistical method named KMAP for detecting
-  kmer patterns and visualizing them in 2D space.</p>
+Helsinki BioEvening aims to try different restaurants and bars at each
+BioEvening. Suggest a place for the next Helsinki BioEvening
+[**here**](https://link.webropolsurveys.com/S/54EAE005F8199416).
 
-  <p>We applied KMAP to three distinct datasets to showcase its utility. KMAP achieved a comparable
-  performance to the classical method MEME, with approximately 90% similarity in motif discovery from HT-SELEX
-  data. In the analysis of H3K27ac ChIP-seq data from Ewing Sarcoma (EWS), we found that BACH1, OTX2, and ERG1
-  might affect EWS prognosis by binding to promoter and enhancer regions across the genome. We also found that
-  FLI1 bound to the enhancer regions after ETV6 degradation, which showed the competitive binding between
-  ETV6 and FLI1. Moreover, KMAP identified four prevalent patterns in gene editing data of the AAVS1 locus,
-  aligning with findings reported in the literature.</p>
+::::
 
-  <p>These applications underscore that KMAP could be a valuable tool across various biological contexts.</p>
-</details>
-  </div>
-  </div>
+<!-- Second event -->
 
-<!-- Use the second event from here as template to keep the structure -->
-  <!-- <div class="g-col-6">
-  <div class="text-large" style="font-size:33px;">
-  <p>The Bioinformatics Hackathon in TURKU 11th of MARCH @ 15</p>
-  </div>
-  <div class="text-large" style="font-size:22px;">
-  <p>NEXT: 8th of APRIL , 15th of MAY, 3rd of JUNE</p>
-  </div>
-  <p>The Finnish Society for Bioinformatics is excited to host beginners
-  Bioinformatics hackathon in collaboration with InFlames Research Flagship
-  and CompLifeSci in Turku during spring 2025.</p>
+:::: {.g-col-12 .g-col-md-6}
 
-  <p>The beginners Bioinformatics hackathon is aimed for everyone interested
-  in Bioinformatics – no prior coding experience is needed. The hackatons are
-  low threshold, fun events to get everyone as excited of bioinformatics as we
-  are. We will cover topics like Linux command line, Git, workflows, and containers.</p>
+## The BioWebinar {.mt-0}
 
-  <p>No registration needed, just appear in BioCity 4th floor seminar room and bring
-  your laptop, you might end up writing your first line of code!</p>
-  </div>
-  <div class="g-col-6">
-  <img src="../images/hackaton.jpg" class="image" width="528" height="297" alt="BioBeer event"></img>
-  <br><br>
-  <center><a class="custom-black-btn" href="https://inflameshackathon.slack.com/"><span>Join the Hackathon Slack channel!</span></a>
-  </div> -->
+On a summer break: Next in autumn 2026
 
-<!-- Use the first  event from here as template to keep the structure -->
-  <!-- <div class="g-col-6"><img src="../images/biobeer.jpg" class="image" width="528" height="297" alt="BioBeer event"></img></div>
-  <div class="g-col-6">
-  <div class="text-large" style="font-size:33px;">
-  <p>The Next BioBeer is happening in March 2025!</p>
-  <div class="text-medium">
-  <p>Join us for an amazing event with special talks, networking opportunities, and, of course, beer!</p>
-  <p>Turku – Fri 7th of March at 18: Saaristobaari, Aurakatu 14, Turku. Discounts for foods and drinks at BioBeer events.</p>
-  <p>Helsinki – Thu 6th of March at 18: To be announced later<p>
-  <p>Helsinki BioBeer aims to try different restaurants and bars at each BioBeer. Suggest a place for the next Helsinki BioBeer here: https://link.webropolsurveys.com/S/54EAE005F8199416</p>
-  </div>
-  </div>
-  </div> -->
+**Speaker**: To be announced
 
-  <!-- Do not remove the <div> tags below -->
-  </div>
-</div>
+**Topic**: To be announced
+
+**Abstract**: To be announced
+
+[Join the webinar](https://utu.zoom.us/my/finnish.bioinformatics.society.webinar){.btn .btn-dark .rounded-pill target="_blank"}
+
+::::
+
+:::: {.g-col-12 .g-col-md-6 .text-center}
+![](../images/webinar.jpg){.img-fluid}
+::::
+
+<!-- Third event -->
+
+:::: {.g-col-12 .g-col-md-6}
+![](../images/hackaton.jpg){.img-fluid}
+::::
+
+:::: {.g-col-12 .g-col-md-6}
+
+## The Beginners Bioinformatics “Chat and Code” in Turku {.mt-0}
+
+**NEXT:AUTUMN**
+
+The Finnish Society for Bioinformatics is excited to host beginners
+Bioinformatics chat and code event to learn the basics of coding in
+collaboration with InFlames Research Flagship and CompLifeSci in Turku.
+
+The beginners Bioinformatics hackathon is aimed for everyone interested in
+Bioinformatics – no prior coding experience is needed. The chat and code events
+are low threshold, fun events to get everyone as excited of bioinformatics as
+we are. We will cover topics like command line, Git, workflows, and even
+containers.
+
+No registration needed, just appear in BioCity 4th floor seminar room and bring
+your laptop, you might end up writing your first line of code!
+
+::::
+
+<!-- Use the template below to add the webinar with the collapsible abstract -->
+
+<!-- :::: {.g-col-12 .g-col-md-6} -->
+
+<!-- ## Bioinformatics Webinar
+
+<!-- **Thursday, 6 March 2025 at 14:00**
+
+<!-- **Next events:** 8 April, 15 May, and 3 June
+
+<!-- **Topic:** KMAP: Kmer Manifold Approximation and Projection for visualizing DNA sequences
+
+<!-- ::: {.callout-note collapse="true"}
+<!-- ## Abstract
+
+<!-- Identifying and illustrating patterns in DNA sequences is a crucial task in -->
+<!-- various biological data analyses. In this task, patterns are often represented -->
+<!-- by sets of kmers, the fundamental building blocks of DNA sequences. -->
+
+<!-- To visually unveil these patterns, we could project each kmer onto a point in -->
+<!-- two-dimensional space. However, this projection poses challenges due to the -->
+<!-- high-dimensional nature of kmers and their unique mathematical properties. -->
+<!---->
+<!-- Here, we established a mathematical system to address the peculiarities of the -->
+<!-- kmer manifold. Leveraging this kmer manifold theory, we developed a statistical -->
+<!-- method named KMAP for detecting kmer patterns and visualizing them in -->
+<!-- two-dimensional space. -->
+<!---->
+<!-- We applied KMAP to three distinct datasets to showcase its utility. KMAP -->
+<!-- achieved performance comparable to the classical method MEME, with -->
+<!-- approximately 90% similarity in motif discovery from HT-SELEX data. -->
+<!---->
+<!-- In the analysis of H3K27ac ChIP-seq data from Ewing Sarcoma, we found that -->
+<!-- BACH1, OTX2, and ERG1 might affect prognosis by binding to promoter and -->
+<!-- enhancer regions across the genome. We also found that FLI1 bound to enhancer -->
+<!-- regions after ETV6 degradation, showing competitive binding between ETV6 and -->
+<!-- FLI1. -->
+<!---->
+<!-- Moreover, KMAP identified four prevalent patterns in gene-editing data from the -->
+<!-- AAVS1 locus, aligning with findings reported in the literature. -->
+<!---->
+<!-- These applications underscore that KMAP could be a valuable tool across various -->
+<!-- biological contexts. -->
+<!-- ::: -->
+<!-- :::: -->
+
+:::::
 
 
-<!-- FAQ section -->
-<div class="container">
-<h2>Frequently Asked Questions</h2>
-<div class="grid" style="--bs-gap: .25rem 1rem;">
+## Frequently Asked Questions
 
-<!-- First question -->
-<div class="faq-item g-col-6">
-  <h3>
-    What is The BioBeer about?
-  </h3>
-  <p>
-    We organize BioBeers to offer Bioinformaticians and everyone interested in Bioinformatics a possibility to network with like-minded people. Its a
-    great opportunity to talk about bioinformatics or just come an meet new
-    people and old friends. BioBeer events are organized every first Friday of
-    the month.
-  </p>
-</div>
+::::: {.grid}
+
+:::: {.g-col-12 .g-col-md-6}
+
+### What is The BioEvening about?
+
+We organize BioEvening to offer Bioinformaticians and everyone interested in
+Bioinformatics a possibility to network with like-minded people. Its a great
+opportunity to talk about bioinformatics or just come an meet new people and
+old friends. BioEvening events are organized every first Friday of the month in
+Turku and every first Thursday of the month in Helsinki.
+::::
 
 
-<!-- Second question -->
-<div class="faq-item g-col-6">
-  <h3>
-    What is the Bioinformatics Webinar about?
-  </h3>
-  <p>
-    We organize Bioinformatics Webinars for our members and for everyone
-    interested in Bioinformatics as part of our goal to support bioinformatics
-    research, share the latest scientific discoveries, and provide
-    opportunities for exchanging ideas and knowledge, thus spread open
-    knowledge in bioinformatics.
-  </p>
-</div>
+:::: {.g-col-12 .g-col-md-6}
 
-<!-- Third question -->
-<div class="faq-item g-col-6">
-  <h3>
-    Do I get free beer at the BioBeer events?
-  </h3>
-  <p>
-    Unfortunately, the society cannot (afford to) offer free drinks at the
-    BioBeers. However, in Turku BioBeers Bioinformaticans get a nice discount
-    for the foods and drinks at Saaristobaari. Also, it is not required to buy
-    anything at the BioBeer events, and there is always free water available at
-    the restaurants and bars.
-  </p>
-</div>
+### What are the BioWebinars about?
 
-<!-- Fourth question -->
-<div class="faq-item g-col-6">
-  <h3>
-    Who are can participate the webinar?
-  </h3>
-  <p>
-    The webinar is aimed for all bioinformaticians and everyone interested in
-    bioinformatics. If you know someone interested in bioinformatics or in the
-    topic of a specific webinar, you can share the webinar link with them. Our
-    webinar link is always the same:
-    <a href="https://utu.zoom.us/my/finnish.bioinformatics.society.webinar">https://utu.zoom.us/my/finnish.bioinformatics.society.webinar</a>
-  </p>
-</div>
+We organize BioWebinars for our members and for everyone interested
+in Bioinformatics as part of our goal to support bioinformatics research, share
+the latest scientific discoveries, and provide opportunities for exchanging
+ideas and knowledge, thus spread open knowledge in bioinformatics.
+::::
 
-<!-- Fifth question -->
-<div class="faq-item g-col-6">
-  <h3>
-    Why there is no BioBeer event in my town?
-  </h3>
-  <p>
-    Currently we organize BioBeer events only in Turku and Helsinki because of
-    more active Bioinformatics community in these cities. If you would like
-    to start organize BioBeer events in your town, please contact us by email:
-    <a href="mailto:fsfbioinf@gmail.com">fsfbioinf@gmail.com</a> and we will
-    help you with everything to set up the events!
-  </p>
-</div>
 
-<!-- Sixth question -->
-<div class="faq-item g-col-6">
-  <h3>
-    How do you select your speakers?
-  </h3>
-  <p>
-    We aim to have variety in our speakers so they from all career stages,
-    different fields of bioinformatics and from all corners of the world. For
-    late-career stage researcher we have reserved a full hour of presentation
-    and questions (usually 45+15 minutes), while two younger researchers often
-    share one webinar (25+5 minutes each).
-  </p>
-</div>
+:::: {.g-col-12 .g-col-md-6}
 
-<!-- Seventh question -->
-<div class="faq-item g-col-6">
-  <h3>
-    Why the Turku BioBeer is always in the same pub while in Helsinki the place
-    is always different?
-  </h3>
-  <p>
-    The Bioinformaticians in Turku prefer Saaristobaari, due to its size, games
-    and even a karaoke booth. Due to the fact that we love Saaristobaari so
-    much (and they love us) we get a nice discount for food and drinks during
-    the BioBeer events. The Bioinformaticians in Helsinki on the other hand
-    are more adventurous and they prefer to test new restaurants every time to
-    keep things exciting. If you know a restaurant or a bar in Helsinki that we
-    should definitely try out at our BioBeer events, you can suggest it here:
-    <a href="https://link.webropolsurveys.com/S/54EAE005F8199416">
-    https://link.webropolsurveys.com/S/54EAE005F8199416</a>
-  </p>
-</div>
+### Do I get free food and drinks at the BioEvening events?
 
-<!-- Eighth question -->
-<div class="faq-item g-col-6">
-  <h3>
-   How can I present my work at the Bioinformatics webinar?
-  </h3>
-  <p>
-    We would be thrilled to hear about your work in our Bioinformatics webinars!
-    If you would like to present your work at the Bioinformatics webinar,
-    please contact us by email
-    <a href="mailto:fsfbioinf@gmail.com">fsfbioinf@gmail.com</a>
-    and we will try to get your talk lined up for the next available slot.
-  </p>
-</div>
+Unfortunately the society cannot (afford to) offer free food and drinks at the
+BioEvenings. However, in Turku BioEvenings Bioinformaticans get a nice discount
+for the foods and drinks at Saaristobaari. Also, it is not required to buy
+anything at the BioEvening events, just come along to meet like minded people!
+And there is always free water available at the restaurants and bars.
+::::
 
-<!-- Do not remove the tags below -->
-</div>
-</div>
+
+:::: {.g-col-12 .g-col-md-6}
+
+### Who are can participate the webinar?
+
+The webinar is aimed for all bioinformaticians and everyone interested in
+bioinformatics. If you know someone interested in bioinformatics or in the
+topic of a specific webinar, you can share the webinar link with them. Our
+webinar link is always the same.
+
+[Join the webinar](https://utu.zoom.us/my/finnish.bioinformatics.society.webinar){.btn .btn-dark .rounded-pill target="_blank"}
+::::
+
+
+:::: {.g-col-12 .g-col-md-6}
+
+### Why there is no BioEvening event in my town?
+
+Currently we organize BioEvening events only in Turku, Helsinki, and Tampere
+because of more active Bioinformatics community in these cities. If you would
+like to start organize BioEvening events in your town, please contact us by
+email: [fsfbioinf@gmail.com](mailto:fsfbioinf@gmail.com) and we will help you
+with everything to set up the events!
+::::
+
+
+:::: {.g-col-12 .g-col-md-6}
+
+### How do you select your speakers?
+
+We aim to have variety in our speakers so they from all career stages,
+different fields of bioinformatics and from all corners of the world. For
+late-career stage researcher we have reserved a full hour of presentation and
+questions (usually 45+15 minutes), while two younger researchers often share
+one webinar (25+5 minutes each).
+::::
+
+
+:::: {.g-col-12 .g-col-md-6}
+
+### Why the Turku BioEvening is always in the same restaurant while in Helsinki the place is always different?
+
+Bioinformaticians in Turku prefer Saaristobaari because of its size, games, and
+karaoke booth.
+
+Because we enjoy Saaristobaari so much—and they enjoy hosting us—we receive a
+dThe Bioinformaticians in Turku prefer Saaristobaari, due to its size, games
+and even a karaoke booth. Due to the fact that we love Saaristobaari so much
+(and they love us) we get a nice discount for food and drinks during the
+BioEvening events. The Bioinformaticians in Helsinki on the other hand are more
+adventurous and they prefer to test new restaurants every time to keep things
+exciting. If you know a restaurant or a bar in Helsinki that we should
+definitely try out at our BioEvening events, you can suggest it
+[here](https://link.webropolsurveys.com/S/54EAE005F8199416iscount).
+::::
+
+
+:::: {.g-col-12 .g-col-md-6}
+
+### How can I present my work at the BioWebinar?
+
+We would be thrilled to hear about your work in our Bioinformatics webinars! If
+you would like to present your work at the Bioinformatics webinar, please
+contact us by email [fsfbioinf@gmail.com](mailto:fsfbioinf@gmail.com) and we
+will try to get your talk lined up for the next available slot.
+::::
+
+:::::
+
+
+
