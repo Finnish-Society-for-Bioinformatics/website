@@ -20,8 +20,6 @@ website:
         text: Bionformatics Webinars
       - href: pages/join-the-society.qmd
         text: Join the Society
-      - href: pages/co-create.qmd
-        text: Co-Create
       - href: pages/bioinformatics-day-2026.qmd
         text: Bioinformatics Day 2026
 
