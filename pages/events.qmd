@@ -71,7 +71,7 @@ On a summer break: Next in autumn 2026
 
 ## The Beginners Bioinformatics “Chat and Code” in Turku {.mt-0}
 
-**NEXT:AUTUMN**
+**NEXT: AUTUMN**
 
 The Finnish Society for Bioinformatics is excited to host beginners
 Bioinformatics chat and code event to learn the basics of coding in
