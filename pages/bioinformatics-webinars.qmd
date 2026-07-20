@@ -67,22 +67,88 @@ therapies across complex diseases.
 
 **University of Bergen**
 
-*A systems pharmacology approach for combinatorial therapy*
+*HIDE: Hierarchical Cell Type Deconvolution*
 
 ::: {.callout-note collapse="true" icon="false"}
 
 ## Abstract
 
-Drug combinations hold promise but are often selected empirically, with limited
-mechanistic understanding. We developed Combinatorial Proteome Integral
-Solubility/Stability Alteration analysis (CoPISA), a high-throughput proteomics
-platform that captures protein-level effects uniquely induced by drug
-combinations. Applying CoPISA to rationally designed drug pairs, we uncovered
-an emergent mechanism we term “conjunctional targeting,” in which combinations
-engage exclusive protein targets consistent with an AND-gate logic. By
-revealing a mechanistic layer beyond classical synergy, CoPISA provides a
-systems pharmacology framework for the rational design of combinatorial
-therapies across complex diseases.
+The video presents HIDE, a method to estimate cell-type proportions from bulk
+transcriptomics while explicitly using a cell-type hierarchy. Instead of
+deconvolving all cell types at once (which can be unstable when references are
+highly correlated), HIDE proceeds top-down: it first estimates broad
+populations, then iteratively refines into subtypes within each parent, using
+“residual” bulks so child proportions remain consistent with the parent total.
+The method also learns gene weights (trained using pseudo-bulks from
+single-cell data) to improve deconvolution accuracy at each hierarchy level.
+The key benefit is more robust and interpretable estimates—upper-level
+proportions stay reliable even if fine-grained subtypes are hard to
+resolve—while still enabling subtype resolution when the signal supports it.
+:::
+
+::::
+
+:::: {.g-col-12 .g-col-md-6 .g-col-lg-4 .d-flex .flex-column}
+
+{{< video https://www.youtube.com/watch?v=8gX7q18jC90 >}}
+
+### Dewei Hu {.mt-3}
+
+**University of Copenhagen**
+
+*SPACE: STRING proteins as complementary embeddings*
+
+::: {.callout-note collapse="true" icon="false"}
+
+## Abstract
+
+The video presents HIDE, a method to estimate cell-type proportions from bulk
+transcriptomics while explicitly using a cell-type hierarchy. Instead of
+deconvolving all cell types at once (which can be unstable when references are
+highly correlated), HIDE proceeds top-down: it first estimates broad
+populations, then iteratively refines into subtypes within each parent, using
+“residual” bulks so child proportions remain consistent with the parent total.
+The method also learns gene weights (trained using pseudo-bulks from
+single-cell data) to improve deconvolution accuracy at each hierarchy level.
+The key benefit is more robust and interpretable estimates—upper-level
+proportions stay reliable even if fine-grained subtypes are hard to
+resolve—while still enabling subtype resolution when the signal supports it.
+:::
+
+::::
+
+:::: {.g-col-12 .g-col-md-6 .g-col-lg-4 .d-flex .flex-column}
+
+{{< video https://www.youtube.com/watch?v=8gX7q18jC90 >}}
+
+### Arber Qoku {.mt-3}
+
+**German Cancer Research Center (DKFZ)**
+
+*MOFA-FLEX: A Factor Model Language for Integrating Omics Data with Prior Knowledge*
+
+::: {.callout-note collapse="true" icon="false"}
+
+## Abstract
+
+Latent factor models are essential tools for analyzing omics data and are often
+the starting point for single- and multi-omics studies. However, adapting these
+models to complex experimental designs involving spatial, temporal, or
+multimodal data typically requires significant statistical expertise and
+development effort. We introduce MOFA-FLEX, a modular and extensible Bayesian
+factor analysis framework built on probabilistic programming. MOFA-FLEX
+integrates and generalizes components from various matrix factorization
+methods, allowing users to combine flexible priors (e.g., structured sparsity,
+covariate-informed), non-negativity constraints, supervision signals, and
+diverse data likelihoods. It also introduces a novel sparsity prior for
+incorporating biological knowledge, such as gene sets or pathway signatures,
+enabling interpretable latent factors linked to biological processes. We
+demonstrate MOFA-FLEX across multiple use cases, including (i) robust recovery
+of gene sets (gene programs) in noisy scRNA-seq data using imperfect priors,
+(ii) disentangling technical and biological variation in multi-omics studies,
+and (iii) modeling spatial omics data to map disease-associated gene activity
+in breast cancer. Ultimately, MOFA-FLEX streamlines the creation of tailored
+and interpretable models for diverse omics applications.
 :::
 
 ::::
@@ -97,7 +163,7 @@ therapies across complex diseases.
 
 *Decomposing a weighted graph into few paths for solving multi-assembly problems*
 
-::: {.callout-note collapse="true" appearance="simple" icon="false"}
+::: {.callout-note collapse="true" icon="false"}
 ## Abstract
 
 A multi-assembly problem usually asks us to decompose a weighted graph into a
@@ -124,8 +190,37 @@ decomposition methods.
 
 ::::
 
+:::: {.g-col-12 .g-col-md-6 .g-col-lg-4 .d-flex .flex-column}
 
-<!-- Chengbo Fu -->
+{{< video https://www.youtube.com/watch?v=J0n-Xwyr7RM >}}
+
+### Dr. Jing Tang {.mt-3}
+
+**University of Helsinki**
+
+*Advanced computational and experimental methods to tackle drug resistance in cancer*
+
+::: {.callout-note collapse="true" icon="false"}
+## Abstract
+
+Despite scientific advances, options for treating cancer patients are still
+limited, especially after relapse. To achieve more sustainable treatment
+efficacy, patients will need novel drug targets and combination therapies.
+However, the lack of understanding on cancer-drug interactions prevents
+biomarker discovery and ultimately leads to high attrition in clinical trials.
+In this talk, I will introduce multiple systems medicine approaches for the
+prediction of drug targets, the prediction of drug sensitivity, and the
+prediction of drug combinations. I will explore: 1) whether the
+loss-of-function genetic screen technologies such as CRISPR or RNAi can help
+identify cancer dependency map; 2) whether the integration of loss-of-function
+genetic and drug sensitivity screening data could help identify the mechanisms
+of action of drugs; and 3) whether the drug target interaction and drug
+sensitivity data can help predict synergistic drug combinations. Finally, I
+will show the potential of lineage tracing data to inform an evidence-based
+treatment decision.
+:::
+
+::::
 
 :::: {.g-col-12 .g-col-md-6 .g-col-lg-4 .d-flex .flex-column}
 
