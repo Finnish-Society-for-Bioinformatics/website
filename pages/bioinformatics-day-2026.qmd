@@ -1,0 +1,55 @@
+---
+toc: false
+format:
+  html:
+    page-layout: full
+---
+
+::: {.text-center}
+# Bioinformatics Day 2026
+
+## Finland’s largest free Bioinformatics Conference
+
+::: {.fs-2}
+In collaboration with:
+:::
+
+:::
+
+:::: {.grid .align-items-center .mt-3}
+
+::: {.g-col-6 .g-col-md-4 .g-col-lg-2 .text-center}
+![](../images/sp_logo.png){.img-fluid}
+:::
+
+::: {.g-col-6 .g-col-md-4 .g-col-lg-2 .text-center}
+![](../images/HIIT.png){.img-fluid}
+:::
+
+::: {.g-col-6 .g-col-md-4 .g-col-lg-2 .text-center}
+![](../images/HiLiFe2.png){.img-fluid}
+:::
+
+::: {.g-col-6 .g-col-md-4 .g-col-lg-2 .text-center}
+![](../images/csc.jpg){.img-fluid}
+:::
+
+::: {.g-col-6 .g-col-md-4 .g-col-lg-2 .text-center}
+![](../images/elixir.png)
+:::
+
+::::
+
+## 29th of May 2026 in Espoo. {.text-center}
+
+::: {.fs-3}
+The 20th Anniversary of the Bioinformatics days
+
+Just as exactly 20 years ago, The Finnish Society for Bioinformatics and CSC –
+IT Center for Science, Elixir, HIIT, HiLIFE and Switch Point Bio proudly joined
+forces to organize the Bioinformatics day 2026. We had 3 Keynote speakers, 7
+talks selected from abstract, 3 poster session, countless networking
+opportunities and so much fun! See the highlights below:
+
+{{< video ../videos/Bioinformatics-Day-2026.mp4 >}}
+:::

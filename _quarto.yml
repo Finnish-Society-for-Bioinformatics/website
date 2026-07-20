@@ -22,15 +22,14 @@ website:
         text: Join the Society
       - href: pages/co-create.qmd
         text: Co-Create
-      - href: pages/bioinformatics-day-2025.qmd
-        text: Bioinformatics Day 2025
+      - href: pages/bioinformatics-day-2026.qmd
+        text: Bioinformatics Day 2026
 
   page-footer:
     left: |
       ![](../images/logo.png){width=30%}
-
       We would love to hear from you! Send us an email: fsfbioinf@gmail.com
-    center: Copyright &copy; 2025 The Finnish Society for Bioinformatics
+    center: Copyright &copy; 2026 The Finnish Society for Bioinformatics
     right: "Follow us on [Linkedin](https://www.linkedin.com/company/finnish-society-for-bioinformatics)"
 
 format:
