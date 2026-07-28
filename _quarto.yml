@@ -8,9 +8,12 @@ website:
   title: "The Finnish Society for Bioinformatics"
   open-graph: true
   favicon: images/round_logo.jpg
+  image: images/logo.pong
+  description: "Finnish Society for Bioinformatics website"
   navbar:
     toggle-position: right
     logo: images/logo.png
+    logo-alt: "Finnsh Society for Bionformatics"
     title: false
     right:
       - href: pages/about.qmd
@@ -31,7 +34,19 @@ website:
     left: |
       We would love to hear from you! Send us an email: fsfbioinf@gmail.com
     center: Copyright &copy; 2026 The Finnish Society for Bioinformatics
-    right: "Follow us on [Linkedin](https://www.linkedin.com/company/finnish-society-for-bioinformatics)"
+    right:
+      - href: https://github.com/Finnish-Society-for-Bioinformatics
+        icon: github
+        aria-label: GitHub
+      - href: https://www.linkedin.com/company/finnish-society-for-bioinformatics
+        icon: linkedin
+        aria-label: LinkedIn
+      - href: https://bioinffi.slack.com/
+        icon: slack
+        aria-label: Slack
+
+page-navigation: true
+back-to-top-navigation: false
 
 format:
   html:
