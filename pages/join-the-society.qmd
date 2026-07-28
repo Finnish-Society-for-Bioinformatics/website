@@ -29,7 +29,7 @@ Or directly by mobile Pay #25732
 Remember to renew your membership each year by paying the fee again to our
 bank account.
 
-Join also our [Slack channel](https://bioinffi.slack.com/):
+Join also our [Slack channel](https://bioinffi.slack.com/).
 
 We are also looking for collaborators and company sponsors! Contact us at
 [fsfbioinf@gmail.com](mailto:fsfbioinf@gmail.com)
