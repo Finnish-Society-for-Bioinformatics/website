@@ -14,11 +14,8 @@ format:
 
 ::: {.grid}
 
-::: {.g-col-6}
-![](../images/about_picture.jpeg)
-:::
 
-::: {.g-col-6 style="font-size: 1.2rem;"}
+::: {.g-col-12 style="font-size: 1.2rem;"}
 The Finnish Society for Bioinformatics was founded in 2006 with the aim
 of bringing together everyone interested in bioinformatics. For almost
 two decades, our mission has remained the same: We aim to support research,
