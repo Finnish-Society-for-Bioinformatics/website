@@ -6,6 +6,7 @@ execute:
 
 website:
   title: "The Finnish Society for Bioinformatics"
+  open-graph: true
   favicon: images/round_logo.jpg
   navbar:
     toggle-position: right
