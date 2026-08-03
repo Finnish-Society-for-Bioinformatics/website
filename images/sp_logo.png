@@ -1,3 +1,11 @@
 version https://git-lfs.github.com/spec/v1
-oid sha256:5b26ec7e5a57400b376650b84ef2db900af08720061b3efd0cd475dcfd23d7c8
-size 408
+<<<<<<< HEAD
+oid sha256:c36a0fd8b5d91038bca63aad2cec2ca8ce573efc10556f7b7ad2149af21b64bf
+size 289
+||||||| parent of 80eee79 (fix(image): sp_logo)
+oid sha256:c754746cd7464994dcd707dc5648204b7588aea0bb73b2ac2e82c2ee53a27c6e
+size 20670
+=======
+oid sha256:2c5c204b02d0d9112c4865012ba418cca52993c2ec33cc016e572e02d507a893
+size 9987
+>>>>>>> 80eee79 (fix(image): sp_logo)
