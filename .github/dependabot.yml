@@ -1,0 +1,14 @@
+version: 2
+updates:
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    assignees:
+      - "artur-sannikov"
+    schedule:
+      interval: "weekly"
+  - package-ecosystem: "nix"
+    directory: "/"
+    assignees:
+      - "artur-sannikov"
+    schedule:
+      interval: "weekly"
