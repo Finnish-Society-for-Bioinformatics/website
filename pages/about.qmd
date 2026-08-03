@@ -106,7 +106,7 @@ Board Members
 :::
 
 ::: {.g-col-4}
-<!-- ![](../images/board/){.img-fluid} -->
+![](../images/board/anna-kaisanlahti.jpg){.img-fluid}
  Anna Kaisanlahti
 :::
 
