@@ -45,12 +45,16 @@ and be part of this exciting network of bioinformaticians.
 Board Members
 :::
 
-::: {.g-col-4}
-Picture 1
+::: {.g-col-4 .text-center}
+
+![](../images/board/tuomas-borman.jpeg){.img-fluid}
+ [Tuomas Borman](https://www.linkedin.com/in/tuomasborman/)
+
 :::
 
-::: {.g-col-4}
-Picture 2
+::: {.g-col-4 .text-center}
+![](../images/board/iivari-kleino.jpg){.img-fluid}
+ [Iivari Kleino](https://www.linkedin.com/in/iivarikleino/)
 :::
 
 :::
@@ -62,12 +66,63 @@ Picture 2
 ::: {.g-col-4}
 :::
 
+::: {.g-col-4 .text-center}
+![](../images/board/xin-lai.jpg){.img-fluid}
+ [Xin Lai](https://www.linkedin.com/in/xin-lai-312b0827/)
+:::
+
+::: {.g-col-4 .text-center}
+![](../images/board/artur-sannikov.jpg){.img-fluid}
+ [Artur Sannikov](https://www.linkedin.com/in/artur-sannikov-1b245a111/)
+:::
+
+:::
+
+::: {.grid}
+
 ::: {.g-col-4}
-Picture 3
+:::
+
+::: {.g-col-4 .text-center}
+![](../images/board/ehsan-zangene.jpg){.img-fluid}
+ [Ehsan Zangene](https://www.linkedin.com/in/ehsan-zangene-42003777/)
 :::
 
 ::: {.g-col-4}
-Picture 4
+![](../images/board/elisabeth-putri.jpeg){.img-fluid}
+ [Elisabeth Putri](https://www.linkedin.com/in/elisabethgrasia/)
+:::
+
+:::
+
+::: {.grid}
+
+::: {.g-col-4}
+:::
+
+::: {.g-col-4 .text-center}
+![](../images/board/Miina_Vulli2.jpg){.img-fluid}
+ [Miina Vulli](https://www.linkedin.com/in/miinavulli/)
+:::
+
+::: {.g-col-4}
+<!-- ![](../images/board/){.img-fluid} -->
+ Anna Kaisanlahti
+:::
+
+:::
+
+::: {.grid}
+
+::: {.g-col-4}
+:::
+
+::: {.g-col-4 .text-center}
+<!-- ![](){.img-fluid} -->
+ Daniel Laajala
+:::
+
+::: {.g-col-4}
 :::
 
 :::
