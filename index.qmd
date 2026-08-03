@@ -55,6 +55,22 @@ Also @media is useful to target small devices
 
 ::: {.index-column}
 
+![](images/biobeer.jpg){.img-fluid .w-100}
+
+### BioBeer
+
+**Helsinki:** On a summer break: Next in autumn 2026
+
+**Turku:** On a summer break: Next in autumn 2026
+
+**Tampere:** On a summer break: Next in autumn 2026
+
+[More information](pages/events.qmd){.btn .btn-dark .rounded-pill}
+
+:::
+
+::: {.index-column}
+
 ![](images/webinar.jpg){.img-fluid .w-100}
 
 ### Bioinformatics Webinar
@@ -73,7 +89,7 @@ Also @media is useful to target small devices
 
 ::: {.index-column}
 
-![](images/logo.png){.img-fluid .w-100}
+![](images/logo_white.jpg){.img-fluid .w-100}
 
 ### Join the Society
 
@@ -83,20 +99,5 @@ We cannot wait for you to become one of us!
 
 :::
 
-::: {.index-column}
-
-![](images/biobeer.jpg){.img-fluid .w-100}
-
-### BioBeer
-
-**Helsinki:** On a summer break: Next in autumn 2026
-
-**Turku:** On a summer break: Next in autumn 2026
-
-**Tampere:** On a summer break: Next in autumn 2026
-
-[More information](pages/events.qmd){.btn .btn-dark .rounded-pill}
-
-:::
 
 ::::
