@@ -12,7 +12,7 @@ website:
   description: "Finnish Society for Bioinformatics website"
   navbar:
     toggle-position: right
-    logo: images/logo.png
+    logo: images/logo_white.jpg
     logo-alt: "Finnsh Society for Bionformatics"
     title: false
     right:
