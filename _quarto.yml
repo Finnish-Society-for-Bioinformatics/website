@@ -8,7 +8,7 @@ website:
   title: "The Finnish Society for Bioinformatics"
   open-graph: true
   favicon: images/round_logo.jpg
-  image: images/logo.pong
+  image: images/logo_white.jpg
   description: "Finnish Society for Bioinformatics website"
   navbar:
     toggle-position: right
