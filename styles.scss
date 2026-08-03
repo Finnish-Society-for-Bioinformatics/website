@@ -40,3 +40,9 @@ https://getbootstrap.com/docs/5.3/layout/breakpoints/
 a {
   text-decoration: none;
 }
+
+// # .navbar-logo is in the source code: https://github.com/search?q=repo%3Aquarto-dev%2Fquarto-cli+navbar-logo&type=code
+#quarto-header .navbar-logo {
+  max-height: 50px;
+  width: auto;
+}
