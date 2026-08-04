@@ -119,8 +119,7 @@ Board Members
 
 ::: {.g-col-4 .text-center}
 ![](../images/Teemu-Daniel-Laajala.jpg){.img-fluid}
-
-[Teemu Daniel Laajala](https://orcid.org/0000-0002-7016-7354)
+ [Teemu Daniel Laajala](https://orcid.org/0000-0002-7016-7354)
 :::
 
 ::: {.g-col-4}
