@@ -17,13 +17,11 @@ format:
 :::: {.g-col-12 .g-col-md-6}
 
 <!-- {.mt-0} is needed to align the image with the title-->
-## The BioEvening {.mt-0}
+## The BioBeers {.mt-0}
 
-BioEvenings are local and casual Bioinformaticians get-togethers. Helsinki
-BioEvenings are usually on the first Thursday of the month, Turku BioEvenings
+BioBeers are local and casual Bioinformaticians get-togethers. Helsinki
+BioBeers are usually on the first Thursday of the month, Turku BioBeers
 are on the first Friday of the month.
-
-BioEvenings start at 18.
 
 **Turku** – On a summer break: Next in autumn 2026
 
@@ -31,8 +29,8 @@ BioEvenings start at 18.
 
 **Tampere** – On a summer break: Next in autumn 2026
 
-Helsinki BioEvening aims to try different restaurants and bars at each
-BioEvening. Suggest a place for the next Helsinki BioEvening
+Helsinki BioBeers aims to try different restaurants and bars at each
+BioBeer. Suggest a place for the next Helsinki BioBeer
 [**here**](https://link.webropolsurveys.com/S/54EAE005F8199416).
 
 ::::
