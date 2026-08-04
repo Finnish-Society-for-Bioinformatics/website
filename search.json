@@ -1,5 +1,12 @@
 [
   {
+    "objectID": "pages/about.html",
+    "href": "pages/about.html",
+    "title": "About us",
+    "section": "",
+    "text": "About us\n\n\n\nGet to know the Finnish Society for Bioinformatics and meet the board members.\n\n\n\n\n\nThe Finnish Society for Bioinformatics was founded in 2006 with the aim of bringing together everyone interested in bioinformatics. For almost two decades, our mission has remained the same: We aim to support research, share the latest scientific discoveries, and provide opportunities for exchanging ideas and knowledge.\nWe organize regular webinars, seminars, and training sessions. We share job opportunities for our society members and host networking and collaboration events. Every two years, we proudly recognize outstanding work by awarding the Best Bioinformatics Thesis Award. Our monthly BioBeers gatherings in Helsinki, Turku, Tampere, Oulu, and occasionally other locations offer a relaxed way to meet and connect with fellow bioinformaticians.\nWhether you’re an experienced researcher, an early-career student, a research group, or a company, we warmly welcome you to join our community and be part of this exciting network of bioinformaticians.\n\n\n\n\n\nBoard Members\n\n\n Tuomas Borman\n\n\n Iivari Kleino\n\n\n\n\n\n\n\n\n Xin Lai\n\n\n Artur Sannikov\n\n\n\n\n\n\n\n Ehsan Zangene\n\n\n Elisabeth Putri\n\n\n\n\n\n\n\n Miina Vulli\n\n\n Anna Kaisanlahti\n\n\n\n\n\n\n\n Teemu Daniel Laajala\n\n\n\n\n\n\nFormer members\n\n\n\n\nMielikäinen Taneli (2005)\nNiinimäki Pia (2005)\nPasanen Tomi (2005)\nTuimala Jarno (2005-2007)\nOnkamo Päivi (2005-2007)\nRavantti Janne (2005-2006)\nArvas Mikko (2006-2007)\nHaiminen Niina (2006)\nLaine Minna (2006)\nMattila Kimmo (2006)\nOja Merja (2006, 2013-2015, 2018-2023)\nSaarikko Ilana (2006-2007)\nTolvanen Martti (2006-2009, 2014-2015, 2018-2022)\nWong Garry (2006)\nKivioja Teemu (2007)\nLahti Leo (2007-2008)\nLaiho Asta (2008-2011, 2015-2017)\nMäkilä Kerttu (2008-2011)\nPaananen Jussi (2008)\nPitkänen Esa (2008, 2012-2014)\n\n\n\n\nRiikonen Pentti (2008-2010, 2014)\nSarén Ari-Matti (2008-2010)\nHammais Anna (2009-2010)\nHuopaniemi Ilkka (2009-2010)\nNevala Maija (2009)\nHeinonen Markus (2010-2012)\nOikkonen Jaana (2010-2011)\nAli Heidi (2011-2012)\nGillberg Jussi (2011-2013)\nKukkurainen Sampo (2011-2013)\nNg Kim (2011)\nBjörne Jari (2012, 2015-2017)\nHeininen-Brown Mari (2012-2013)\nAgrawal Nitin (2013)\nGhimire Bishwa (2013, 2016-2017)\nKhan Sofia (2013, 2015)\nNiissalo Aija (2013)\nMehmood Arfa (2014)\nOrtutay Csaba (2014-2015)\nPietilä Sami (2014-2015)\n\n\n\n\nTiwari Avlokita (2014)\nHagstöm Iitu (2015)\nLaaksonen Maria (2015-2023)\nEbrahim Afyounian (2016-2021)\nHeikkinen Sami (2016)\nLapinlampi Niina (2016-2017, 2019-2020)\nJambulingam Dhanaprakash (2017)\nLysenkov Vladislav (2017)\nQiao Xu (2017)\nVaparanta Katri (2017, 2020)\nMäklin Tommi (2018-2019)\nCazaux Bastien (2019)\nMettinen Nita (2019)\nNurmikolu Mika (2019)\nShadbahr Tolou (2019)\nKettunen Jalmari (2020-2022)\nMuleta Abdi (2021-2022)\nSipilä Lauri (2021-2022)\nBeresford Jack (2023)\nMikkola Lea (2023-2024)"
+  },
+  {
     "objectID": "pages/jobs.html",
     "href": "pages/jobs.html",
     "title": "Jobs",
@@ -12,27 +19,6 @@
     "title": "Jobs",
     "section": "",
     "text": "Finnish Society for Bioinformatics\n\n\n\n\nReach bioinformaticians where they are and find the best candidates in the field.\nSend us information about your open position, and we will add it to this page.\nContact us"
-  },
-  {
-    "objectID": "pages/bioinformatics-day-2026.html",
-    "href": "pages/bioinformatics-day-2026.html",
-    "title": "Bioinformatics Day 2026",
-    "section": "",
-    "text": "In collaboration with:"
-  },
-  {
-    "objectID": "pages/bioinformatics-day-2026.html#finlands-largest-free-bioinformatics-conference",
-    "href": "pages/bioinformatics-day-2026.html#finlands-largest-free-bioinformatics-conference",
-    "title": "Bioinformatics Day 2026",
-    "section": "",
-    "text": "In collaboration with:"
-  },
-  {
-    "objectID": "pages/bioinformatics-day-2026.html#th-of-may-2026-in-espoo.",
-    "href": "pages/bioinformatics-day-2026.html#th-of-may-2026-in-espoo.",
-    "title": "Bioinformatics Day 2026",
-    "section": "29th of May 2026 in Espoo.",
-    "text": "29th of May 2026 in Espoo.\n\nThe 20th Anniversary of the Bioinformatics days\nJust as exactly 20 years ago, The Finnish Society for Bioinformatics and CSC – IT Center for Science, Elixir, HIIT, HiLIFE and Switch Point Bio proudly joined forces to organize the Bioinformatics day 2026. We had 3 Keynote speakers, 7 talks selected from abstract, 3 poster session, countless networking opportunities and so much fun! See the highlights below:"
   },
   {
     "objectID": "pages/research-highlights.html",
@@ -91,18 +77,46 @@
     "text": "Want to collaborate?\nWe are looking for a sponsor for Bioinformatics Day in Tampere in June 2027. Contact us for more information:\nfsfbioinf@gmail.com"
   },
   {
+    "objectID": "pages/bioinformatics-day-2026.html",
+    "href": "pages/bioinformatics-day-2026.html",
+    "title": "Bioinformatics Day 2026",
+    "section": "",
+    "text": "In collaboration with:"
+  },
+  {
+    "objectID": "pages/bioinformatics-day-2026.html#finlands-largest-free-bioinformatics-conference",
+    "href": "pages/bioinformatics-day-2026.html#finlands-largest-free-bioinformatics-conference",
+    "title": "Bioinformatics Day 2026",
+    "section": "",
+    "text": "In collaboration with:"
+  },
+  {
+    "objectID": "pages/bioinformatics-day-2026.html#th-of-may-2026-in-espoo.",
+    "href": "pages/bioinformatics-day-2026.html#th-of-may-2026-in-espoo.",
+    "title": "Bioinformatics Day 2026",
+    "section": "29th of May 2026 in Espoo.",
+    "text": "29th of May 2026 in Espoo.\n\nThe 20th Anniversary of the Bioinformatics days\nJust as exactly 20 years ago, The Finnish Society for Bioinformatics and CSC – IT Center for Science, Elixir, HIIT, HiLIFE and Switch Point Bio proudly joined forces to organize the Bioinformatics day 2026. We had 3 Keynote speakers, 7 talks selected from abstract, 3 poster session, countless networking opportunities and so much fun! See the highlights below:"
+  },
+  {
+    "objectID": "pages/join-the-society.html",
+    "href": "pages/join-the-society.html",
+    "title": "Join the Finnish Society for Bioinformatics",
+    "section": "",
+    "text": "To become a member, please send as an email to fsfbioinf@gmail.com. The email should include your name, email address and the city you live in Finland.\nAfter the email, please pay the membership fee to our bank account:\n\nBioinformatiikan seura ry\nIBAN: FI9780001871150455\nBIC: DABAFIHH\nViite/Reference: 2000105\n\nOr directly by mobile Pay #25732\n\n\n\n\n\nMembership fees:\n\nRegular membership: 30€\nBachelor/Master’s student membership: 6€\n\nRemember to renew your membership each year by paying the fee again to our bank account.\nJoin also our Slack channel.\nWe are also looking for collaborators and company sponsors! Contact us at fsfbioinf@gmail.com to discuss more!\n\n\n\n\n\n\nThe Finnish Society for Bioinformatics is aimed for anyone interested in bioinformatics. We welcome people from all career stages, and all fields as long as you share our passion for bioinformatics.\n\n\n\nAfter the payment, you should send us an email so we can link you to your payment. Once we know you have paid, we can add you to the mailing list to receive the newsletter. You need to send the email only during your first registration. The following years when you continue your membership you can just pay the fee. We will then connect the payment to you by the details you have provided during your initial registration.\n\n\n\nWe collect membership fees to cover the running costs of the society, such as the website, bank account and so on. The membership fees are also used for Bioinformatics day which is a yearly event full of science, networking and fun. Our membership fees also allow us to award the best Bioinformatics PhD thesis with 500 euro stipend every second year. The membership fees are not used for salary – our board members are volunteering and the passion to create a community for bioinformatics is what inspires us the most.\n\n\n\nThe Finnish Society for Bioinformatics is an officially registered society. By the law, all registered societies in Finland need to keep a record of their members, including member names and the cities they live in. We need your email to be able to send you our monthly newsletter that includes our news and fabulous events. You can cancel the newsletter anytime by sending us an email."
+  },
+  {
     "objectID": "pages/events.html",
     "href": "pages/events.html",
     "title": "Events",
     "section": "",
-    "text": "BioEvenings are local and casual Bioinformaticians get-togethers. Helsinki BioEvenings are usually on the first Thursday of the month, Turku BioEvenings are on the first Friday of the month.\nBioEvenings start at 18.\nTurku – On a summer break: Next in autumn 2026\nHelsinki – On a summer break: Next in autumn 2026\nTampere – On a summer break: Next in autumn 2026\nHelsinki BioEvening aims to try different restaurants and bars at each BioEvening. Suggest a place for the next Helsinki BioEvening here.\n\n\n\n\n\n\n\n\nOn a summer break: Next in autumn 2026\nSpeaker: To be announced\nTopic: To be announced\nAbstract: To be announced\nJoin the webinar\n\n\n\n\n\n\n\nNEXT: AUTUMN\nThe Finnish Society for Bioinformatics is excited to host beginners Bioinformatics chat and code event to learn the basics of coding in collaboration with InFlames Research Flagship and CompLifeSci in Turku.\nThe beginners Bioinformatics hackathon is aimed for everyone interested in Bioinformatics – no prior coding experience is needed. The chat and code events are low threshold, fun events to get everyone as excited of bioinformatics as we are. We will cover topics like command line, Git, workflows, and even containers.\nNo registration needed, just appear in BioCity 4th floor seminar room and bring your laptop, you might end up writing your first line of code!"
+    "text": "BioBeers are local and casual Bioinformaticians get-togethers. Helsinki BioBeers are usually on the first Thursday of the month, Turku BioBeers are on the first Friday of the month.\nTurku – On a summer break: Next in autumn 2026\nHelsinki – On a summer break: Next in autumn 2026\nTampere – On a summer break: Next in autumn 2026\nHelsinki BioBeers aims to try different restaurants and bars at each BioBeer. Suggest a place for the next Helsinki BioBeer here.\n\n\n\n\n\n\n\n\nOn a summer break: Next in autumn 2026\nSpeaker: To be announced\nTopic: To be announced\nAbstract: To be announced\nJoin the webinar\n\n\n\n\n\n\n\nNEXT: AUTUMN\nThe Finnish Society for Bioinformatics is excited to host beginners Bioinformatics chat and code event to learn the basics of coding in collaboration with InFlames Research Flagship and CompLifeSci in Turku.\nThe beginners Bioinformatics hackathon is aimed for everyone interested in Bioinformatics – no prior coding experience is needed. The chat and code events are low threshold, fun events to get everyone as excited of bioinformatics as we are. We will cover topics like command line, Git, workflows, and even containers.\nNo registration needed, just appear in BioCity 4th floor seminar room and bring your laptop, you might end up writing your first line of code!"
   },
   {
-    "objectID": "pages/events.html#the-bioevening",
-    "href": "pages/events.html#the-bioevening",
+    "objectID": "pages/events.html#the-biobeers",
+    "href": "pages/events.html#the-biobeers",
     "title": "Events",
     "section": "",
-    "text": "BioEvenings are local and casual Bioinformaticians get-togethers. Helsinki BioEvenings are usually on the first Thursday of the month, Turku BioEvenings are on the first Friday of the month.\nBioEvenings start at 18.\nTurku – On a summer break: Next in autumn 2026\nHelsinki – On a summer break: Next in autumn 2026\nTampere – On a summer break: Next in autumn 2026\nHelsinki BioEvening aims to try different restaurants and bars at each BioEvening. Suggest a place for the next Helsinki BioEvening here."
+    "text": "BioBeers are local and casual Bioinformaticians get-togethers. Helsinki BioBeers are usually on the first Thursday of the month, Turku BioBeers are on the first Friday of the month.\nTurku – On a summer break: Next in autumn 2026\nHelsinki – On a summer break: Next in autumn 2026\nTampere – On a summer break: Next in autumn 2026\nHelsinki BioBeers aims to try different restaurants and bars at each BioBeer. Suggest a place for the next Helsinki BioBeer here."
   },
   {
     "objectID": "pages/events.html#the-biowebinar",
@@ -124,19 +138,5 @@
     "title": "Events",
     "section": "Frequently Asked Questions",
     "text": "Frequently Asked Questions"
-  },
-  {
-    "objectID": "pages/about.html",
-    "href": "pages/about.html",
-    "title": "About us",
-    "section": "",
-    "text": "About us\n\n\n\nGet to know the Finnish Society for Bioinformatics and meet the board members.\n\n\n\n\n\nThe Finnish Society for Bioinformatics was founded in 2006 with the aim of bringing together everyone interested in bioinformatics. For almost two decades, our mission has remained the same: We aim to support research, share the latest scientific discoveries, and provide opportunities for exchanging ideas and knowledge.\nWe organize regular webinars, seminars, and training sessions. We share job opportunities for our society members and host networking and collaboration events. Every two years, we proudly recognize outstanding work by awarding the Best Bioinformatics Thesis Award. Our monthly BioBeers gatherings in Helsinki, Turku, and occasionally other locations offer a relaxed way to meet and connect with fellow bioinformaticians.\nWhether you’re an experienced researcher, an early-career student, a research group, or a company, we warmly welcome you to join our community and be part of this exciting network of bioinformaticians.\n\n\n\n\n\nBoard Members\n\n\n Tuomas Borman\n\n\n Iivari Kleino\n\n\n\n\n\n\n\n\n Xin Lai\n\n\n Artur Sannikov\n\n\n\n\n\n\n\n Ehsan Zangene\n\n\n Elisabeth Putri\n\n\n\n\n\n\n\n Miina Vulli\n\n\n Anna Kaisanlahti\n\n\n\n\n\n\n\n\nDaniel Laajala\n\n\n\n\n\n\nFormer members\n\n\n\n\nMielikäinen Taneli (2005)\nNiinimäki Pia (2005)\nPasanen Tomi (2005)\nTuimala Jarno (2005-2007)\nOnkamo Päivi (2005-2007)\nRavantti Janne (2005-2006)\nArvas Mikko (2006-2007)\nHaiminen Niina (2006)\nLaine Minna (2006)\nMattila Kimmo (2006)\nOja Merja (2006, 2013-2015, 2018-2023)\nSaarikko Ilana (2006-2007)\nTolvanen Martti (2006-2009, 2014-2015, 2018-2022)\nWong Garry (2006)\nKivioja Teemu (2007)\nLahti Leo (2007-2008)\nLaiho Asta (2008-2011, 2015-2017)\nMäkilä Kerttu (2008-2011)\nPaananen Jussi (2008)\nPitkänen Esa (2008, 2012-2014)\n\n\n\n\nRiikonen Pentti (2008-2010, 2014)\nSarén Ari-Matti (2008-2010)\nHammais Anna (2009-2010)\nHuopaniemi Ilkka (2009-2010)\nNevala Maija (2009)\nHeinonen Markus (2010-2012)\nOikkonen Jaana (2010-2011)\nAli Heidi (2011-2012)\nGillberg Jussi (2011-2013)\nKukkurainen Sampo (2011-2013)\nNg Kim (2011)\nBjörne Jari (2012, 2015-2017)\nHeininen-Brown Mari (2012-2013)\nAgrawal Nitin (2013)\nGhimire Bishwa (2013, 2016-2017)\nKhan Sofia (2013, 2015)\nNiissalo Aija (2013)\nMehmood Arfa (2014)\nOrtutay Csaba (2014-2015)\nPietilä Sami (2014-2015)\n\n\n\n\nTiwari Avlokita (2014)\nHagstöm Iitu (2015)\nLaaksonen Maria (2015-2023)\nEbrahim Afyounian (2016-2021)\nHeikkinen Sami (2016)\nLapinlampi Niina (2016-2017, 2019-2020)\nJambulingam Dhanaprakash (2017)\nLysenkov Vladislav (2017)\nQiao Xu (2017)\nVaparanta Katri (2017, 2020)\nMäklin Tommi (2018-2019)\nCazaux Bastien (2019)\nMettinen Nita (2019)\nNurmikolu Mika (2019)\nShadbahr Tolou (2019)\nKettunen Jalmari (2020-2022)\nMuleta Abdi (2021-2022)\nSipilä Lauri (2021-2022)\nBeresford Jack (2023)\nMikkola Lea (2023-2024)"
-  },
-  {
-    "objectID": "pages/join-the-society.html",
-    "href": "pages/join-the-society.html",
-    "title": "Join the Finnish Society for Bioinformatics",
-    "section": "",
-    "text": "To become a member, please send as an email to fsfbioinf@gmail.com. The email should include your name, email address and the city you live in Finland.\nAfter the email, please pay the membership fee to our bank account:\n\nBioinformatiikan seura ry\nIBAN: FI9780001871150455\nBIC: DABAFIHH\nViite/Reference: 2000105\n\nOr directly by mobile Pay #25732\n\n\n\n\n\nMembership fees:\n\nRegular membership: 30€\nBachelor/Master’s student membership: 6€\n\nRemember to renew your membership each year by paying the fee again to our bank account.\nJoin also our Slack channel.\nWe are also looking for collaborators and company sponsors! Contact us at fsfbioinf@gmail.com to discuss more!\n\n\n\n\n\n\nThe Finnish Society for Bioinformatics is aimed for anyone interested in bioinformatics. We welcome people from all career stages, and all fields as long as you share our passion for bioinformatics.\n\n\n\nAfter the payment, you should send us an email so we can link you to your payment. Once we know you have paid, we can add you to the mailing list to receive the newsletter. You need to send the email only during your first registration. The following years when you continue your membership you can just pay the fee. We will then connect the payment to you by the details you have provided during your initial registration.\n\n\n\nWe collect membership fees to cover the running costs of the society, such as the website, bank account and so on. The membership fees are also used for Bioinformatics day which is a yearly event full of science, networking and fun. Our membership fees also allow us to award the best Bioinformatics PhD thesis with 500 euro stipend every second year. The membership fees are not used for salary – our board members are volunteering and the passion to create a community for bioinformatics is what inspires us the most.\n\n\n\nThe Finnish Society for Bioinformatics is an officially registered society. By the law, all registered societies in Finland need to keep a record of their members, including member names and the cities they live in. We need your email to be able to send you our monthly newsletter that includes our news and fabulous events. You can cancel the newsletter anytime by sending us an email."
   }
 ]
