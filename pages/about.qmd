@@ -67,7 +67,6 @@ Board Members
 :::
 
 ::: {.g-col-4 .text-center}
-<<<<<<< HEAD
 ![](../images/board/xin-lai.jpg){.img-fluid}
  [Xin Lai](https://www.linkedin.com/in/xin-lai-312b0827/)
 :::
