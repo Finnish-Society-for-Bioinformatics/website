@@ -67,6 +67,7 @@ Board Members
 :::
 
 ::: {.g-col-4 .text-center}
+<<<<<<< HEAD
 ![](../images/board/xin-lai.jpg){.img-fluid}
  [Xin Lai](https://www.linkedin.com/in/xin-lai-312b0827/)
 :::
@@ -118,8 +119,9 @@ Board Members
 :::
 
 ::: {.g-col-4 .text-center}
-<!-- ![](){.img-fluid} -->
- Daniel Laajala
+![](../images/Teemu-Daniel-Laajala.jpg){.img-fluid}
+
+[Teemu Daniel Laajala](https://orcid.org/0000-0002-7016-7354)
 :::
 
 ::: {.g-col-4}
