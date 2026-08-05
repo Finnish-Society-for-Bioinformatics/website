@@ -1,5 +1,6 @@
 Package: FSFB Bebsite
 Title: Finnish Society for Bioinformatics Website
+Version: 0.0.0.9000
 Description: Quarto site for the Finnish Society for Bioinformatics
 Depends: R (>= 4.3.0)
 Imports:
