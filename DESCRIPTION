@@ -1,0 +1,7 @@
+Package: FSFB Bebsite
+Title: Finnish Society for Bioinformatics Website
+Description: Quarto site for the Finnish Society for Bioinformatics
+Depends: R (>= 4.3.0)
+Imports:
+    knitr,
+    yaml
