@@ -1,39 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://bioinf.fi/index.html</loc>
-    <lastmod>2026-08-04T06:32:51.906Z</lastmod>
-  </url>
-  <url>
-    <loc>https://bioinf.fi/pages/about.html</loc>
-    <lastmod>2026-08-04T13:36:47.056Z</lastmod>
-  </url>
-  <url>
-    <loc>https://bioinf.fi/pages/jobs.html</loc>
-    <lastmod>2026-08-04T06:32:51.906Z</lastmod>
-  </url>
-  <url>
-    <loc>https://bioinf.fi/pages/research-highlights.html</loc>
-    <lastmod>2026-07-20T16:22:43.625Z</lastmod>
-  </url>
-  <url>
-    <loc>https://bioinf.fi/pages/bioinformatics-webinars.html</loc>
-    <lastmod>2026-07-20T16:22:43.625Z</lastmod>
-  </url>
-  <url>
-    <loc>https://bioinf.fi/pages/collaborators.html</loc>
-    <lastmod>2026-07-20T16:22:43.625Z</lastmod>
-  </url>
-  <url>
-    <loc>https://bioinf.fi/pages/bioinformatics-day-2026.html</loc>
-    <lastmod>2026-08-03T15:40:00.843Z</lastmod>
-  </url>
-  <url>
     <loc>https://bioinf.fi/pages/join-the-society.html</loc>
-    <lastmod>2026-08-04T06:32:51.907Z</lastmod>
+    <lastmod>2026-08-05T10:20:00.895Z</lastmod>
   </url>
   <url>
     <loc>https://bioinf.fi/pages/events.html</loc>
-    <lastmod>2026-08-04T13:36:47.056Z</lastmod>
+    <lastmod>2026-08-05T10:20:00.895Z</lastmod>
+  </url>
+  <url>
+    <loc>https://bioinf.fi/pages/bioinformatics-webinars.html</loc>
+    <lastmod>2026-08-05T10:20:00.895Z</lastmod>
+  </url>
+  <url>
+    <loc>https://bioinf.fi/pages/research-highlights.html</loc>
+    <lastmod>2026-08-05T10:20:00.895Z</lastmod>
+  </url>
+  <url>
+    <loc>https://bioinf.fi/index.html</loc>
+    <lastmod>2026-08-05T10:20:00.895Z</lastmod>
+  </url>
+  <url>
+    <loc>https://bioinf.fi/pages/jobs.html</loc>
+    <lastmod>2026-08-05T10:20:00.895Z</lastmod>
+  </url>
+  <url>
+    <loc>https://bioinf.fi/pages/about.html</loc>
+    <lastmod>2026-08-05T10:20:00.895Z</lastmod>
+  </url>
+  <url>
+    <loc>https://bioinf.fi/pages/collaborators.html</loc>
+    <lastmod>2026-08-05T10:20:00.895Z</lastmod>
+  </url>
+  <url>
+    <loc>https://bioinf.fi/pages/bioinformatics-day-2026.html</loc>
+    <lastmod>2026-08-05T10:20:00.895Z</lastmod>
   </url>
 </urlset>
