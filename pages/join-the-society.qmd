@@ -19,7 +19,7 @@ After the email, please pay the membership fee to our bank account:
 
 Or directly by mobile Pay #25732
 
-![](../images/mobilepay.png){.img-fluid width="70%" fig-align="center"}
+![](../images/mobilepay.png){.img-fluid width="30%" fig-align="center"}
 
 **Membership fees**:
 
