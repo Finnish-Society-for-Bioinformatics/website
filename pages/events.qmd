@@ -46,15 +46,24 @@ BioBeer. Suggest a place for the next Helsinki BioBeer
 
 ## The BioWebinar {.mt-0}
 
-On a summer break: Next in autumn 2026
+**Speaker**: Huaiwu Zhang, PhD Candidate in Bioinformatics
 
-**Speaker**: To be announced
+**Affiliation**: University of Helsinki, [Precision Medicine
+Group](https://www.helsinki.fi/en/researchgroups/network-pharmacology-for-precision-medicine/people),
+Finland
 
-**Topic**: To be announced
+**Topic**: A Causal Inference Framework for Identifying Essential Genes to Enhance
+Drug Synergy Prediction
 
-**Abstract**: To be announced
+**Date**: 10th September 2026, Thursday 14:00 (Helsinki Time/EET)
+
+::: {.d-flex .gap-2}
+
+[Read the abstract](bioinformatics-webinars.qmd){.btn .btn-dark .rounded-pill}
 
 [Join the webinar](https://utu.zoom.us/my/finnish.bioinformatics.society.webinar){.btn .btn-dark .rounded-pill target="_blank"}
+
+:::
 
 ::::
 
