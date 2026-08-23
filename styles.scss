@@ -46,3 +46,10 @@ a {
   max-height: 50px;
   width: auto;
 }
+
+.board-photo {
+  height: 700px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 80%;
+}
