@@ -19,9 +19,7 @@ format:
 <!-- {.mt-0} is needed to align the image with the title-->
 ## The BioBeers {.mt-0}
 
-BioBeers are local and casual Bioinformaticians get-togethers. Helsinki
-BioBeers are usually on the first Thursday of the month, Turku BioBeers
-are on the first Friday of the month.
+BioBeers are local and casual Bioinformaticians get-togethers.
 
 **Turku** – On a summer break: Next in autumn 2026
 
