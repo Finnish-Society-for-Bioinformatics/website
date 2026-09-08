@@ -92,7 +92,7 @@ Finland
 
 [Read the abstract](pages/bioinformatics-webinars.qmd){.btn .btn-dark .rounded-pill}
 
-[Join the webinar](https://utu.zoom.us/my/finnish.bioinformatics.society.webinar){.btn .btn-dark .rounded-pill target="_blank"}
+[Join the webinar](https://utu.zoom.us/webinar/register/WN_tiQ4w4AlTLaFigkubeRFUg){.btn .btn-dark .rounded-pill target="_blank"}
 
 :::
 

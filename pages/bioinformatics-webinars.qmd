@@ -31,7 +31,7 @@ demonstrate that causal modelling improves the accuracy and interpretability of
 drug synergy prediction.
 
 [Join the
-webinar](https://utu.zoom.us/my/finnish.bioinformatics.society.webinar){.btn .btn-dark .rounded-pill target="_blank"}
+webinar](https://utu.zoom.us/webinar/register/WN_tiQ4w4AlTLaFigkubeRFUg){.btn .btn-dark .rounded-pill target="_blank"}
 :::
 
 ## Past webinars
