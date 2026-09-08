@@ -89,7 +89,7 @@ Board Members
  [Ehsan Zangene](https://www.linkedin.com/in/ehsan-zangene-42003777/)
 :::
 
-::: {.g-col-4}
+::: {.g-col-4 .text-center}
 ![](../images/board/elisabeth-putri.jpeg){.board-photo .mb-3}
  [Elisabeth Putri](https://www.linkedin.com/in/elisabethgrasia/)
 :::
@@ -106,7 +106,7 @@ Board Members
  [Miina Vulli](https://www.linkedin.com/in/miinavulli/)
 :::
 
-::: {.g-col-4}
+::: {.g-col-4 .text-center}
 ![](../images/board/anna-kaisanlahti.jpg){.board-photo .mb-3}
  Anna Kaisanlahti
 :::
