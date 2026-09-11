@@ -63,9 +63,9 @@ Also @media is useful to target small devices
 
 **Turku:** 2nd October 2026, Friday, 18:00 @ Saaristobaari, Aurakatu 14
 
-**Oulu:** 10th September 2026, Thursday, 18:00 @ Pub Graali, Saaristonkatu 5
+**Oulu:** 8th October 2026, Thursday, 18:00 @ Pub Graali, Saaristonkatu 5
 
-**Tampere:** Next in October!
+**Tampere:** 1st October 2026, Thursday, 18:00 @ TBA
 
 [More information](pages/events.qmd){.btn .btn-dark .rounded-pill}
 
