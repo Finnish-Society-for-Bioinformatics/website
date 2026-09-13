@@ -81,7 +81,7 @@ community for bioinformatics is what inspires us the most.
 
 :::: {.g-col-12 .g-col-md-6}
 
-### Why do you need to know my email address and the City where I live in Finland?
+### Why do you need to know my email address and the city where I live in Finland?
 
 The Finnish Society for Bioinformatics is an officially registered society. By
 the law, all registered societies in Finland need to keep a record of their
