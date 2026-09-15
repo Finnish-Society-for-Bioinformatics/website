@@ -33,7 +33,7 @@ website:
   page-footer:
     left: |
       We would love to hear from you! Send us an email: fsfbioinf@gmail.com
-    center: Copyright &copy; 2026 The Finnish Society for Bioinformatics
+    center: Copyright &copy; 2026 The Finnish Society for Bioinformatics. Website's source code is available under the MIT License.
     right:
       - href: https://github.com/Finnish-Society-for-Bioinformatics
         icon: github
