@@ -17,7 +17,7 @@ webinars:
       framework for the rational design of combinatorial therapies across
       complex diseases.
   - speaker: "Dennis Völkl"
-    affiliation: "University of Bergen"
+    affiliation: "University of Bergen, Norway"
     title: "HIDE: Hierarchical Cell Type Deconvolution"
     video: "https://www.youtube.com/watch?v=DELQE1zIgTc"
     abstract: |
@@ -34,7 +34,7 @@ webinars:
       even if fine-grained subtypes are hard to resolve—while still enabling
       subtype resolution when the signal supports it.
   - speaker: "Dewei Hu"
-    affiliation: "University of Copenhagen"
+    affiliation: "University of Copenhagen, Denmark"
     title: "SPACE: STRING proteins as complementary embeddings"
     video: "https://www.youtube.com/watch?v=8gX7q18jC90"
     abstract: |
