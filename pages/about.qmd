@@ -3,6 +3,7 @@ toc: false
 format:
   html:
     page-layout: full
+    css: styles.scss
 ---
 
 # About us
@@ -47,13 +48,13 @@ Board Members
 
 ::: {.g-col-4 .text-center}
 
-![](../images/board/tuomas-borman.jpeg){.img-fluid}
+![](../images/board/tuomas-borman.jpeg){.board-photo .mb-3}
  [Tuomas Borman](https://www.linkedin.com/in/tuomasborman/)
 
 :::
 
 ::: {.g-col-4 .text-center}
-![](../images/board/iivari-kleino.jpg){.img-fluid}
+![](../images/board/iivari-kleino.jpg){.board-photo .mb-3}
  [Iivari Kleino](https://www.linkedin.com/in/iivarikleino/)
 :::
 
@@ -67,12 +68,12 @@ Board Members
 :::
 
 ::: {.g-col-4 .text-center}
-![](../images/board/xin-lai.jpg){.img-fluid}
+![](../images/board/xin-lai.jpg){.board-photo .mb-3}
  [Xin Lai](https://www.linkedin.com/in/xin-lai-312b0827/)
 :::
 
 ::: {.g-col-4 .text-center}
-![](../images/board/artur-sannikov.jpg){.img-fluid}
+![](../images/board/artur-sannikov.jpg){.board-photo .mb-3}
  [Artur Sannikov](https://www.linkedin.com/in/artur-sannikov-1b245a111/)
 :::
 
@@ -84,12 +85,12 @@ Board Members
 :::
 
 ::: {.g-col-4 .text-center}
-![](../images/board/ehsan-zangene.jpg){.img-fluid}
+![](../images/board/ehsan-zangene.jpg){.board-photo .mb-3}
  [Ehsan Zangene](https://www.linkedin.com/in/ehsan-zangene-42003777/)
 :::
 
-::: {.g-col-4}
-![](../images/board/elisabeth-putri.jpeg){.img-fluid}
+::: {.g-col-4 .text-center}
+![](../images/board/elisabeth-putri.jpeg){.board-photo .mb-3}
  [Elisabeth Putri](https://www.linkedin.com/in/elisabethgrasia/)
 :::
 
@@ -101,13 +102,13 @@ Board Members
 :::
 
 ::: {.g-col-4 .text-center}
-![](../images/board/Miina_Vulli2.jpg){.img-fluid}
+![](../images/board/Miina_Vulli2.jpg){.board-photo .mb-3}
  [Miina Vulli](https://www.linkedin.com/in/miinavulli/)
 :::
 
-::: {.g-col-4}
-![](../images/board/anna-kaisanlahti.jpg){.img-fluid}
- Anna Kaisanlahti
+::: {.g-col-4 .text-center}
+![](../images/board/anna-kaisanlahti.jpg){.board-photo .mb-3}
+ [Anna Kaisanlahti](https://www.linkedin.com/in/anna-kaisanlahti-1a0744206/)
 :::
 
 :::
@@ -118,7 +119,7 @@ Board Members
 :::
 
 ::: {.g-col-4 .text-center}
-![](../images/board/Teemu-Daniel-Laajala.jpg){.img-fluid}
+![](../images/board/Teemu-Daniel-Laajala.jpg){.board-photo .mb-3}
  [Teemu Daniel Laajala](https://orcid.org/0000-0002-7016-7354)
 :::
 
