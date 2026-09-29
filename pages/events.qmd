@@ -190,8 +190,6 @@ The webinar is aimed for all bioinformaticians and everyone interested in
 bioinformatics. If you know someone interested in bioinformatics or in the
 topic of a specific webinar, you can share the webinar link with them. Our
 webinar link is always the same.
-
-[Join the webinar](https://utu.zoom.us/my/finnish.bioinformatics.society.webinar){.btn .btn-dark .rounded-pill target="_blank"}
 ::::
 
 
