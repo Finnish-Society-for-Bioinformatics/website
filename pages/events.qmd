@@ -47,19 +47,19 @@ BioBeer. Suggest a place for the next Helsinki BioBeer
 
 ## The BioWebinar {.mt-0}
 
-**Speaker**: TBA
+**Speaker**: Jason Hilton
 
-**Affiliation**: TBA
+**Affiliation**: Stanford University
 
-**Topic**: TBA
+**Topic**: CZ CELLxGENE Discover
 
-**Date**: Next in November!
+**Date**: 5th November, 14:00 EEST (Finnish time)
 
 ::: {.d-flex .gap-2}
 
 [Read the abstract](bioinformatics-webinars.qmd){.btn .btn-dark .rounded-pill}
 
-[Join the webinar](https://utu.zoom.us/my/finnish.bioinformatics.society.webinar){.btn .btn-dark .rounded-pill target="_blank"}
+<!-- [Join the webinar](https://utu.zoom.us/my/finnish.bioinformatics.society.webinar){.btn .btn-dark .rounded-pill target="_blank"} -->
 
 :::
 

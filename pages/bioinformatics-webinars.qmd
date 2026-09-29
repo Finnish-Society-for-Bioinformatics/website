@@ -10,18 +10,16 @@ format:
 
 # Upcoming Webinars {.mt-0}
 
-**Speaker**: TBA
+**Speaker**: Jason Hilton
 
-**Affiliation**: TBA
+**Affiliation**: Stanford University
 
-**Topic**: TBA
-
-**Date**: Next in November!
+**Topic**: CZ CELLxGENE Discover
 
 **Abstract**: TBA
 
-[Join the
-webinar](https://utu.zoom.us/webinar/register/WN_tiQ4w4AlTLaFigkubeRFUg){.btn .btn-dark .rounded-pill target="_blank"}
+<!-- [Join the -->
+<!-- webinar](https://utu.zoom.us/webinar/register/WN_tiQ4w4AlTLaFigkubeRFUg){.btn .btn-dark .rounded-pill target="_blank"} -->
 :::
 
 ## Past webinars

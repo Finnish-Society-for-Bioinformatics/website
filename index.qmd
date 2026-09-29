@@ -77,13 +77,13 @@ Also @media is useful to target small devices
 
 ### BioWebinar
 
-**Speaker**: TBA
+**Speaker**: Jason Hilton
 
-**Affiliation**: TBA
+**Affiliation**: Stanford University
 
-**Topic**: TBA
+**Topic**: CZ CELLxGENE Discover
 
-**Date**: Next in November!
+**Date**: 5th November, 14:00 EEST (Finnish time)
 
 ::: {.d-flex .gap-2}
 
