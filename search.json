@@ -123,7 +123,7 @@
     "href": "pages/bioinformatics-webinars.html",
     "title": "BioWebinars",
     "section": "",
-    "text": "Speaker: Jason Hilton\nAffiliation: Stanford University\nTopic: CZ CELLxGENE Discover\nAbstract: TBA"
+    "text": "Speaker: Jason Hilton\nAffiliation: Stanford University\nTopic: CZ CELLxGENE Discover\nAbstract: CZ CELLxGENE Discover is the largest standardized collection of single-cell data available. Beyond single-dataset exploration, the standards enable Census, where consumers query and filter cells, rather than files, across all submissions and feed them directly into analyses. CELLxGENE features built on Census expose marker genes, custom differential expression, and flexible expression comparisons across any metadata slice without writing code. Insights from these features are only as reliable as the data behind them. Before trusting a data resource, consumers must first understand how its corpus is assembled.\nJoin me for a demo of CELLxGENE data and features, and to learn how CELLxGENE is built through careful schema design and a collaborative submission model – yielding a corpus where every submission is described consistently and verified for quality."
   },
   {
     "objectID": "pages/bioinformatics-webinars.html#past-webinars",
