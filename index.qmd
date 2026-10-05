@@ -59,13 +59,13 @@ Also @media is useful to target small devices
 
 ### BioBeer
 
-**Helsinki:** 2nd October 2026, Friday, 17:00 @ Street Bar Kallio, Hämeentie 10
+**Helsinki:** Next in November!
 
-**Turku:** 2nd October 2026, Friday, 18:00 @ Saaristobaari, Aurakatu 14
+**Turku:** Next in November!
 
-**Oulu:** 8th October 2026, Thursday, 18:00 @ Pub Graali, Saaristonkatu 5
+**Oulu:** Next in November!
 
-**Tampere:** 1st October 2026, Thursday, 18:00 @ Ruby & Fellas, Hämeenkatu 15
+**Tampere:** Next in November!
 
 [More information](pages/events.qmd){.btn .btn-dark .rounded-pill}
 
