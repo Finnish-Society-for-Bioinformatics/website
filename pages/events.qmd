@@ -21,14 +21,14 @@ format:
 
 BioBeers are local and casual Bioinformaticians get-togethers.
 
-**Helsinki:** Next in November!
+```{r}
+#| echo: false
+#| results: asis
 
-**Turku:** Next in November!
+source("../R/render-biobeers.R")
 
-**Oulu:** 8th October 2026, Thursday, 18:00 @ Pub Graali, Saaristonkatu 5
-
-**Tampere:** Next in November!
-
+cat(render_biobeers(path = "../data/biobeers.yaml"))
+```
 
 Helsinki BioBeers aims to try different restaurants and bars at each
 BioBeer. Suggest a place for the next Helsinki BioBeer
