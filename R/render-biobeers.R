@@ -18,8 +18,13 @@ render_biobeers <- function(path) {
       weekday <- format(as.Date(biobeer$date), "%A")
 
       details <- paste(
-        paste(date, weekday, biobeer$time, sep = ", "),
-        sprintf("@ %s, %s", biobeer$place, biobeer$address)
+        paste(
+          date,
+          weekday,
+          biobeer$time,
+          sep = ", "
+        ),
+        sprintf("@ %s", biobeer$place)
       )
 
       sprintf("**%s:** %s", biobeer$city, details)
