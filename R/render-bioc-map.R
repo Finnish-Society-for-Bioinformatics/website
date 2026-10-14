@@ -10,7 +10,7 @@
 render_bioc_map <- function(path, outline_path) {
   data <- yaml::read_yaml(path)
   keys <- c(
-    "name", "role", "city", "country", "lat", "lon", "affiliation", "github", "linkedin",
+    "name", "role", "city", "country", "lat", "lon", "title", "affiliation", "github", "linkedin",
     "bluesky", "website"
   )
   members <- lapply(data$members, function(m) m[intersect(keys, names(m))])

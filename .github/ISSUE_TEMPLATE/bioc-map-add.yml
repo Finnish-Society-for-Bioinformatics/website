@@ -44,6 +44,12 @@ body:
     validations:
       required: true
   - type: input
+    id: title
+    attributes:
+      label: Job title
+      description: Optional. Your current position.
+      placeholder: Doctoral researcher
+  - type: input
     id: affiliation
     attributes:
       label: Affiliation

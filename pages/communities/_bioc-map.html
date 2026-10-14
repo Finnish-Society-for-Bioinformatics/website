@@ -129,6 +129,7 @@ data/bioconductor_members.yaml by R/render-bioc-map.R.
     return h("div", { class: "bioc-card" }, [
       avatar(m),
       h("div", { class: "bioc-name", text: m.name }),
+      m.title && h("div", { class: "bioc-title", text: m.title }),
       role,
       h("div", { class: "bioc-meta" }, [
         h("i", { class: "bi bi-geo-alt" }),
@@ -189,7 +190,7 @@ data/bioconductor_members.yaml by R/render-bioc-map.R.
         h("span", { class: "bioc-person-name", text: m.name }),
         h("span", {
           class: "bioc-person-meta",
-          text: [ROLES[m.role] || ROLES.user, place(m), m.affiliation].filter(Boolean).join(" · "),
+          text: [m.title || ROLES[m.role] || ROLES.user, place(m), m.affiliation].filter(Boolean).join(" · "),
         }),
       ]),
     ]);
@@ -232,6 +233,8 @@ data/bioconductor_members.yaml by R/render-bioc-map.R.
   map.on("moveend", updateList);
   updateMarkers();
 
+  const plural = (n, word) => `${n} ${word}${n === 1 ? "" : "s"}`;
+
   // Summary next to the legend
   const summary = document.getElementById("bioc-map-summary");
   if (summary) {
@@ -240,7 +243,7 @@ data/bioconductor_members.yaml by R/render-bioc-map.R.
       members.length === 0
         ? "No one is on the map yet. Be the first!"
         : `${members.length} ${members.length === 1 ? "person" : "people"} ` +
-          `(${members.length - developers} users, ${developers} developers)` +
+          `(${plural(members.length - developers, "user")}, ${plural(developers, "developer")})` +
           (data.updated ? ` · Last updated ${data.updated}` : "");
   }
 })();

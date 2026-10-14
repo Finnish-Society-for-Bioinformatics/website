@@ -25,6 +25,7 @@ FIELDS <- c(
   "Role" = "role",
   "City" = "city",
   "Country" = "country",
+  "Job title" = "title",
   "Affiliation" = "affiliation",
   "GitHub handle" = "github",
   "LinkedIn" = "linkedin",
@@ -33,7 +34,7 @@ FIELDS <- c(
   "Consent" = "consent",
   "Reason" = "reason"
 )
-OPTIONAL <- c("affiliation", "github", "linkedin", "bluesky", "website")
+OPTIONAL <- c("title", "affiliation", "github", "linkedin", "bluesky", "website")
 ROLES <- c("Bioconductor user" = "user", "Bioconductor developer" = "developer")
 
 # ---- Parsing -----------------------------------------------------------------
@@ -140,6 +141,7 @@ check_field <- function(key, value) {
   switch(key,
     name = check_text(value, "Name", 100),
     role = check_role(value),
+    title = check_text(value, "Job title", 100),
     affiliation = check_text(value, "Affiliation", 150),
     github = check_github(value),
     linkedin = check_linkedin(value),
@@ -292,7 +294,7 @@ process_request <- function(action, fields, members, author, today) {
 }
 
 MEMBER_KEYS <- c(
-  "name", "role", "city", "country", "lat", "lon", "affiliation", "github", "linkedin",
+  "name", "role", "city", "country", "lat", "lon", "title", "affiliation", "github", "linkedin",
   "bluesky", "website", "submitted_by", "added", "updated"
 )
 
