@@ -22,8 +22,13 @@ jobs:
     steps:
       - name: Create labels
         run: |
+          failed=()
           while IFS='|' read -r name color description; do
-            gh label create "$name" --color "$color" --description "$description" --force
+            # Retry because the GitHub API occasionally fails with HTTP 500
+            for attempt in 1 2 3; do
+              gh label create "$name" --color "$color" --description "$description" --force && break
+              if [ "$attempt" = 3 ]; then failed+=("$name"); else sleep 5; fi
+            done
           done <<'LABELS'
           approved|0e8a16|Approved by a maintainer; opens a pull request
           bioc-map|3792ad|Bioconductor map request
@@ -37,3 +42,7 @@ jobs:
           job-ad: valid|c2e0c6|Job advertisement passed the checks
           job-ad: needs changes|f9d0c4|Job advertisement needs changes
           LABELS
+          if [ ${#failed[@]} -gt 0 ]; then
+            printf '::error::Could not create label: %s\n' "${failed[@]}"
+            exit 1
+          fi
