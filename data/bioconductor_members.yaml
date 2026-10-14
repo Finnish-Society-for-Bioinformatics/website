@@ -5,6 +5,17 @@
 # requests by .github/workflows/bioc-map.yml.
 updated: '2026-10-14'
 members:
+  - name: Artur Sannikov
+    role: user
+    city: Turku
+    country: Finland
+    lat: 60.4516
+    lon: 22.267
+    title: Doctoral researcher
+    affiliation: University of Turku
+    submitted_by: TuomasBorman
+    added: '2026-10-14'
+    updated: '2026-10-14'
   - name: Tuomas Borman
     role: developer
     city: Turku
