@@ -10,11 +10,14 @@ format:
 
 # Upcoming Webinars {.mt-0}
 
-**Speaker**: Jason Hilton
+```{r}
+#| echo: false
+#| results: asis
 
-**Affiliation**: Stanford University
+source("../R/render-events.R")
 
-**Topic**: CZ CELLxGENE Discover
+cat(render_events("../data/events.yaml", type = "webinars"))
+```
 
 **Abstract**: CZ CELLxGENE Discover is the largest standardized collection of
 single-cell data available. Beyond single-dataset exploration, the standards

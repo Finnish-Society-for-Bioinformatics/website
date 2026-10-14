@@ -23,3 +23,9 @@ biobeers:
     time: 18:00
     place: TBA
     status: null
+
+webinars:
+  - speaker: Jason Hilton
+    affiliation: Stanford University
+    topic: CZ CELLxGENE Discover
+    date: "5 November, Thursday, 14:00 EEST (Finnish time)"

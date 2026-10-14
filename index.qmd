@@ -63,9 +63,9 @@ Also @media is useful to target small devices
 #| echo: false
 #| results: asis
 
-source("R/render-biobeers.R")
+source("R/render-events.R")
 
-cat(render_biobeers(path = "data/biobeers.yaml"))
+cat(render_events(path = "data/events.yaml", type = "biobeers"))
 ```
 
 [More information](pages/events.qmd){.btn .btn-dark .rounded-pill}
@@ -78,13 +78,23 @@ cat(render_biobeers(path = "data/biobeers.yaml"))
 
 ### BioWebinar
 
-**Speaker**: Jason Hilton
 
-**Affiliation**: Stanford University
+```{r}
+#| echo: false
+#| results: asis
 
-**Topic**: CZ CELLxGENE Discover
+source("R/render-events.R")
 
-**Date**: 5th November, 14:00 EEST (Finnish time)
+cat(render_events("data/events.yaml", type = "webinars"))
+```
+
+<!-- **Speaker**: Jason Hilton -->
+<!---->
+<!-- **Affiliation**: Stanford University -->
+<!---->
+<!-- **Topic**: CZ CELLxGENE Discover -->
+<!---->
+<!-- **Date**: 5th November, 14:00 EEST (Finnish time) -->
 
 ::: {.d-flex .gap-2}
 

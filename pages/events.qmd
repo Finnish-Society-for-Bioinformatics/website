@@ -25,9 +25,9 @@ BioBeers are local and casual Bioinformaticians get-togethers.
 #| echo: false
 #| results: asis
 
-source("../R/render-biobeers.R")
+source("../R/render-events.R")
 
-cat(render_biobeers(path = "../data/biobeers.yaml"))
+cat(render_events("../data/events.yaml", type = "biobeers"))
 ```
 
 Helsinki BioBeers aims to try different restaurants and bars at each
@@ -47,24 +47,24 @@ BioBeer. Suggest a place for the next Helsinki BioBeer
 
 ## The BioWebinar {.mt-0}
 
-**Speaker**: Jason Hilton
+```{r}
+#| echo: false
+#| results: asis
 
-**Affiliation**: Stanford University
+source("../R/render-events.R")
 
-**Topic**: CZ CELLxGENE Discover
-
-**Date**: 5th November, 14:00 EEST (Finnish time)
+cat(render_events("../data/events.yaml", type = "webinars"))
+```
 
 ::: {.d-flex .gap-2}
 
 [Read the abstract](bioinformatics-webinars.qmd){.btn .btn-dark .rounded-pill}
 
-<!-- [Join the webinar](https://utu.zoom.us/my/finnish.bioinformatics.society.webinar){.btn .btn-dark .rounded-pill target="_blank"} -->
+<!-- [Join the webinar](link){.btn .btn-dark .rounded-pill target="_blank"} -->
 
 :::
 
 ::::
-
 
 <!-- Third event -->
 
