@@ -35,6 +35,7 @@ REMOVE_FIELDS <- c(
   "Advertisement" = "job",
   "Reason" = "reason"
 )
+OPTIONAL <- "link"
 JOB_KEYS <- c(
   "id", "title", "company", "location", "description", "link", "contact",
   "expires", "submitted_by", "added"
@@ -75,7 +76,9 @@ process_job <- function(fields, jobs, issue_number, author, today) {
   for (key in unname(FIELDS)) {
     value <- get(key)
     if (!nzchar(value)) {
-      errors <- c(errors, sprintf("`%s` is required.", names(FIELDS)[FIELDS == key]))
+      if (!key %in% OPTIONAL) {
+        errors <- c(errors, sprintf("`%s` is required.", names(FIELDS)[FIELDS == key]))
+      }
       next
     }
     res <- switch(key,

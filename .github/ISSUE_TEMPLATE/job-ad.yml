@@ -42,10 +42,8 @@ body:
     id: link
     attributes:
       label: Link to more information
-      description: Link to the full advertisement or application form.
+      description: Optional. Link to the full advertisement or application form.
       placeholder: https://example.com/jobs/123
-    validations:
-      required: true
   - type: input
     id: contact
     attributes:

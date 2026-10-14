@@ -25,7 +25,7 @@ render_jobs <- function(path, today = Sys.Date()) {
         "</div>",
         '<div class="job-description">%s</div>',
         '<div class="job-contact"><i class="bi bi-person"></i> Contact: %s</div>',
-        '<a class="btn btn-dark rounded-pill" href="%s" target="_blank" rel="noopener">More information</a>',
+        "%s",
         "</article>",
         sep = "\n"
       ),
@@ -36,7 +36,14 @@ render_jobs <- function(path, today = Sys.Date()) {
       format(expires, "%-d %B %Y"),
       format_paragraphs(job$description),
       link_emails(escape_html(job$contact)),
-      escape_html(job$link)
+      if (is.null(job$link)) {
+        ""
+      } else {
+        sprintf(
+          '<a class="btn btn-dark rounded-pill" href="%s" target="_blank" rel="noopener">More information</a>',
+          escape_html(job$link)
+        )
+      }
     )
   }, character(1))
 
