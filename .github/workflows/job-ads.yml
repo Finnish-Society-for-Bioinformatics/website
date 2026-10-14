@@ -28,8 +28,10 @@ env:
 
 jobs:
   validate:
+    # Also runs when a request label is added by hand, e.g., when the issue was
+    # opened before the labels existed
     if: >-
-      github.event.action != 'labeled' &&
+      (github.event.action != 'labeled' || contains(fromJSON('["job-ad", "job-ad: remove"]'), github.event.label.name)) &&
       github.event.issue.state == 'open' &&
       contains(github.event.issue.labels.*.name, 'job-ad')
     runs-on: ubuntu-latest
@@ -55,9 +57,6 @@ jobs:
       - name: Report result
         run: |
           .github/scripts/issue-report.sh "$RUNNER_TEMP/job-ad-report.md"
-          for label in "job-ad: valid" "job-ad: needs changes"; do
-            gh label create "$label" --color ededed --force
-          done
           if [ "${{ steps.check.outputs.valid }}" = "true" ]; then
             gh issue edit "$ISSUE" --add-label "job-ad: valid" --remove-label "job-ad: needs changes"
           else

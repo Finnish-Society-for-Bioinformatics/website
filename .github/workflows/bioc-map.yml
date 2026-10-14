@@ -27,8 +27,10 @@ env:
 
 jobs:
   validate:
+    # Also runs when a request label is added by hand, e.g., when the issue was
+    # opened before the labels existed
     if: >-
-      github.event.action != 'labeled' &&
+      (github.event.action != 'labeled' || contains(fromJSON('["bioc-map", "bioc-map: add", "bioc-map: modify", "bioc-map: remove"]'), github.event.label.name)) &&
       github.event.issue.state == 'open' &&
       contains(github.event.issue.labels.*.name, 'bioc-map')
     runs-on: ubuntu-latest
@@ -54,9 +56,6 @@ jobs:
       - name: Report result
         run: |
           .github/scripts/issue-report.sh "$RUNNER_TEMP/bioc-map-report.md"
-          for label in "bioc-map: valid" "bioc-map: needs changes"; do
-            gh label create "$label" --color ededed --force
-          done
           if [ "${{ steps.check.outputs.valid }}" = "true" ]; then
             gh issue edit "$ISSUE" --add-label "bioc-map: valid" --remove-label "bioc-map: needs changes"
           else

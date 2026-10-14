@@ -68,9 +68,11 @@ templates:
 
 One-time setup:
 
-- Create the labels used by the templates: `gh label create bioc-map`,
-  `gh label create "bioc-map: add"`, `gh label create "bioc-map: modify"`,
-  `gh label create "bioc-map: remove"`, and `gh label create approved`.
+- The labels used by the templates are created by the
+  [Labels workflow](.github/workflows/labels.yml). It runs automatically when
+  that file changes on `main`; run it manually from the Actions tab in a new
+  fork. If an issue was opened before the labels existed, add the labels to
+  the issue by hand and the check runs.
 - Enable _Settings > Actions > General > Allow GitHub Actions to create and
   approve pull requests_.
 
@@ -97,5 +99,5 @@ when the position has been filled, open an issue from the `job-ad-remove`
 template. It is checked and approved the same way; the report tells whether
 the issue author is the person who submitted the advertisement.
 
-One-time setup: `gh label create job-ad`. The `approved` label and the GitHub
-Actions setting are shared with the Bioconductor map.
+The labels and the GitHub Actions setting are shared with the Bioconductor
+map (see above).
