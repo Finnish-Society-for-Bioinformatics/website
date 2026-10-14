@@ -122,7 +122,7 @@ data/bioconductor_members.yaml by R/render-bioc-map.R.
     role.style.color = TEXT_COLORS[m.role] || TEXT_COLORS.user;
     const links = [
       m.github && link(`https://github.com/${encodeURIComponent(m.github)}`, "github", "GitHub"),
-      m.linkedin && link(m.linkedin, "linkedin", "LinkedIn"),
+      m.linkedin && link(`https://www.linkedin.com/in/${encodeURIComponent(m.linkedin)}`, "linkedin", "LinkedIn"),
       m.bluesky && link(`https://bsky.app/profile/${encodeURIComponent(m.bluesky)}`, "bluesky", "Bluesky"),
       m.website && link(m.website, "globe", "Website"),
     ].filter(Boolean);

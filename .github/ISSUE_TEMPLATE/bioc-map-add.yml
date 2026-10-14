@@ -59,19 +59,19 @@ body:
     id: github
     attributes:
       label: GitHub handle
-      description: Optional. Your GitHub profile picture is shown on the map card.
+      description: Optional. Your GitHub username or a link to your profile. Your GitHub profile picture is shown on the map card.
       placeholder: octocat
   - type: input
     id: linkedin
     attributes:
       label: LinkedIn
-      description: Optional. Link to your LinkedIn profile.
-      placeholder: https://www.linkedin.com/in/your-name
+      description: Optional. Your LinkedIn profile name (the part after linkedin.com/in/) or a link to your profile.
+      placeholder: your-name
   - type: input
     id: bluesky
     attributes:
       label: Bluesky
-      description: Optional. Your Bluesky handle.
+      description: Optional. Your Bluesky handle or a link to your profile.
       placeholder: name.bsky.social
   - type: input
     id: website

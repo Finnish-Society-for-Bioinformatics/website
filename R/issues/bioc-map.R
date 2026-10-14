@@ -80,19 +80,21 @@ check_github <- function(value, token = Sys.getenv("GITHUB_TOKEN")) {
   ok(user$login)
 }
 
+#' Returns the LinkedIn profile name (the part after linkedin.com/in/).
 check_linkedin <- function(value) {
   pattern <- "^(https?://)?([a-z]{2,3}\\.)?linkedin\\.com/in/([^/?#]+)/?([?#].*)?$"
   slug <- if (grepl(pattern, value, ignore.case = TRUE)) {
     sub(pattern, "\\3", value, ignore.case = TRUE)
   } else {
-    value
+    sub("^@", "", value)
   }
   if (!grepl("^[A-Za-z0-9_%-]{3,100}$", slug)) {
-    return(fail(
-      "LinkedIn must be a profile URL (https://www.linkedin.com/in/...)."
-    ))
+    return(fail(sprintf(
+      "`%s` is not a valid LinkedIn profile name or link (https://www.linkedin.com/in/...).",
+      value
+    )))
   }
-  ok(paste0("https://www.linkedin.com/in/", slug))
+  ok(slug)
 }
 
 check_bluesky <- function(value) {
