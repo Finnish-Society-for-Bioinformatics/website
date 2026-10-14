@@ -47,12 +47,12 @@ jobs:
         with:
           use-public-rspm: true
 
+      # Uses pak instead of install.packages() because the repository's
+      # .Rprofile replaces the profile that would set the CRAN mirror
       - name: Install R dependencies
-        # The user library does not exist by default, and the system library is
-        # not writable
-        run: |
-          mkdir -p "$R_LIBS_USER"
-          Rscript -e 'install.packages(c("yaml", "jsonlite"), lib = Sys.getenv("R_LIBS_USER"))'
+        uses: r-lib/actions/setup-r-dependencies@v2
+        with:
+          packages: any::yaml, any::jsonlite
 
       - name: Validate request
         id: check
@@ -105,12 +105,12 @@ jobs:
         with:
           use-public-rspm: true
 
+      # Uses pak instead of install.packages() because the repository's
+      # .Rprofile replaces the profile that would set the CRAN mirror
       - name: Install R dependencies
-        # The user library does not exist by default, and the system library is
-        # not writable
-        run: |
-          mkdir -p "$R_LIBS_USER"
-          Rscript -e 'install.packages(c("yaml", "jsonlite"), lib = Sys.getenv("R_LIBS_USER"))'
+        uses: r-lib/actions/setup-r-dependencies@v2
+        with:
+          packages: any::yaml, any::jsonlite
 
       - name: Apply request
         id: apply
