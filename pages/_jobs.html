@@ -1,0 +1,19 @@
+<!--
+Hides job advertisements after their expiry date, so that the Jobs page does
+not need to be rendered again. Included at the end of jobs.qmd.
+-->
+<script>
+(function () {
+  // Today's date in Finland as YYYY-MM-DD
+  const today = new Intl.DateTimeFormat("sv-SE", { timeZone: "Europe/Helsinki" }).format(new Date());
+  const cards = document.querySelectorAll(".job-card[data-expires]");
+  let open = 0;
+  cards.forEach((card) => {
+    // A job is shown until the end of its expiry date
+    if (card.dataset.expires < today) card.remove();
+    else open++;
+  });
+  const empty = document.querySelector(".job-empty");
+  if (empty) empty.hidden = open > 0;
+})();
+</script>

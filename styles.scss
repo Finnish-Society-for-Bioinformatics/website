@@ -53,3 +53,283 @@ a {
   object-fit: cover;
   border-radius: 80%;
 }
+
+/*-- Bioconductor map (pages/communities/bioconductor.qmd) --*/
+// Colours of the Bioconductor logo. The darker blue is used for text so that
+// it has enough contrast on white.
+$bioc-blue: #3792ad;
+$bioc-blue-dark: #276b80;
+$bioc-green: #8aca25;
+$bioc-grey: #393536;
+
+.bioc-page {
+  --bs-link-color-rgb: 39, 107, 128;
+  --bs-link-hover-color-rgb: 55, 146, 173;
+
+  h1.title,
+  h2 {
+    color: $bioc-grey;
+  }
+
+  h2 {
+    border-bottom: 3px solid $bioc-green;
+    margin-top: 2.5rem;
+  }
+
+  .btn-dark {
+    --bs-btn-bg: #{$bioc-blue-dark};
+    --bs-btn-border-color: #{$bioc-blue-dark};
+    --bs-btn-hover-bg: #{$bioc-blue};
+    --bs-btn-hover-border-color: #{$bioc-blue};
+    --bs-btn-active-bg: #{$bioc-blue};
+    --bs-btn-active-border-color: #{$bioc-blue};
+  }
+
+  .btn-outline-dark {
+    --bs-btn-color: #{$bioc-blue-dark};
+    --bs-btn-border-color: #{$bioc-blue-dark};
+    --bs-btn-hover-bg: #{$bioc-blue-dark};
+    --bs-btn-hover-border-color: #{$bioc-blue-dark};
+    --bs-btn-active-bg: #{$bioc-blue};
+    --bs-btn-active-border-color: #{$bioc-blue};
+  }
+
+  // Clusters of pins on the map
+  .marker-cluster {
+    background-color: rgba($bioc-green, 0.4);
+  }
+
+  .marker-cluster div {
+    background-color: rgba($bioc-blue, 0.9);
+    color: #fff;
+    font-weight: 600;
+  }
+}
+
+#bioc-map {
+  height: 600px;
+  max-height: 75vh;
+  border-radius: 0.5rem;
+  z-index: 0;
+  // Sea
+  background: #e8f2f6;
+}
+
+.bioc-map-legend > p {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.bioc-dot {
+  display: inline-block;
+  width: 0.9rem;
+  height: 0.9rem;
+  border-radius: 50%;
+  margin-right: 0.4rem;
+  vertical-align: -0.1rem;
+}
+
+.bioc-user {
+  background: $bioc-blue;
+}
+
+.bioc-developer {
+  background: $bioc-green;
+}
+
+#bioc-map-summary {
+  color: var(--bs-secondary-color);
+}
+
+// The default divIcon style draws a white box around the pin
+.bioc-pin {
+  background: none;
+  border: none;
+}
+
+.bioc-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.35rem;
+}
+
+.bioc-avatar {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  border: 3px solid;
+  object-fit: cover;
+}
+
+.bioc-initials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.bioc-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.bioc-role {
+  color: #fff;
+  border-radius: 1rem;
+  padding: 0.1rem 0.6rem;
+  font-size: 0.8rem;
+}
+
+.bioc-meta {
+  color: var(--bs-secondary-color);
+}
+
+// List of people next to the map
+#bioc-people {
+  display: flex;
+  flex-direction: column;
+  height: 600px;
+  max-height: 75vh;
+}
+
+// Below the map on small screens, so it only needs to be as tall as its content
+@media (max-width: 991.98px) {
+  #bioc-people {
+    height: auto;
+  }
+}
+
+.bioc-filters {
+  display: flex;
+  gap: 0.4rem;
+
+  .btn {
+    border-radius: 1rem;
+    border: 1px solid $bioc-blue-dark;
+    color: $bioc-blue-dark;
+  }
+
+  .btn.active {
+    background: $bioc-blue-dark;
+    color: #fff;
+  }
+}
+
+.bioc-people-status {
+  color: var(--bs-secondary-color);
+  font-size: 0.9rem;
+  margin: 0.5rem 0;
+}
+
+.bioc-people-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  overflow-y: auto;
+  flex: 1;
+}
+
+.bioc-person {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  width: 100%;
+  padding: 0.4rem;
+  border: none;
+  border-radius: 0.5rem;
+  background: none;
+  text-align: left;
+
+  &:hover,
+  &:focus-visible {
+    background: rgba($bioc-blue, 0.1);
+  }
+
+  .bioc-avatar {
+    flex: none;
+    width: 42px;
+    height: 42px;
+    border-width: 2px;
+    font-size: 0.95rem;
+  }
+}
+
+.bioc-person-text {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.bioc-person-name {
+  font-weight: 600;
+}
+
+.bioc-person-meta {
+  color: var(--bs-secondary-color);
+  font-size: 0.85rem;
+}
+
+.bioc-links {
+  display: flex;
+  gap: 0.8rem;
+  font-size: 1.3rem;
+  margin-top: 0.25rem;
+}
+
+.bioc-logo {
+  width: 320px;
+  max-width: 100%;
+  margin-bottom: 1rem;
+}
+
+/*-- Jobs page (pages/jobs.qmd) --*/
+.job-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.job-card {
+  border: 1px solid var(--bs-border-color);
+  border-radius: 0.75rem;
+  padding: 1.25rem 1.5rem;
+
+  h3 {
+    margin-top: 0;
+  }
+}
+
+.job-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 1.25rem;
+  color: var(--bs-secondary-color);
+  margin-bottom: 0.75rem;
+}
+
+.job-contact {
+  margin-bottom: 1rem;
+}
+
+.job-empty {
+  color: var(--bs-secondary-color);
+}
+
+.job-advertise {
+  background: var(--bs-tertiary-bg);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+
+  img {
+    max-width: 160px;
+    display: block;
+    margin: 0 auto 1rem;
+  }
+}

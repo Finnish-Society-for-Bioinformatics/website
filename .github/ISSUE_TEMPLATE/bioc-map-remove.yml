@@ -1,0 +1,29 @@
+name: "Bioconductor map: remove me"
+description: Remove yourself from the map of the Finnish Bioconductor community.
+title: "[Bioconductor map] Remove: "
+labels: ["bioc-map", "bioc-map: remove"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Sorry to see you go! Requests from the GitHub user linked to the entry are the easiest to verify.
+        If you cannot open the issue yourself, email fsfbioinf@gmail.com instead.
+  - type: input
+    id: entry
+    attributes:
+      label: Current entry
+      description: The name or GitHub handle of the entry as it currently appears on the map.
+    validations:
+      required: true
+  - type: textarea
+    id: reason
+    attributes:
+      label: Reason
+      description: Optional.
+  - type: checkboxes
+    id: consent
+    attributes:
+      label: Consent
+      options:
+        - label: I confirm that I am the person in this entry or have their permission to remove it.
+          required: true

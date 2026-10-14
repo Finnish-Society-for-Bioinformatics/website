@@ -1,0 +1,110 @@
+---
+title: "Bioconductor in Finland"
+description: "The Finnish Bioconductor community"
+toc: false
+include-after-body: _bioc-map.html
+body-classes: bioc-page
+---
+
+<!-- Links to the issue templates that add, modify, and remove people on the map -->
+<!-- See .github/ISSUE_TEMPLATE/bioc-map-*.yml and .github/workflows/bioc-map.yml -->
+
+[![](../../images/bioconductor_logo.svg){.bioc-logo fig-alt="Bioconductor logo"}](https://bioconductor.org){target="_blank"}
+
+::::: {.grid}
+
+:::: {.g-col-12 .g-col-lg-6}
+
+## What is Bioconductor?
+
+[Bioconductor](https://bioconductor.org){target="_blank"} is an open-source,
+open-development project that provides thousands of R packages for the
+analysis and comprehension of biological data, such as genomics,
+transcriptomics, single-cell, proteomics, metabolomics, and microbiome data.
+Behind the software is a welcoming, international community of users and
+developers who share code, teach courses, and meet at conferences.
+
+[Visit Bioconductor](https://bioconductor.org){.btn .btn-dark .rounded-pill target="_blank"}
+
+::::
+
+:::: {.g-col-12 .g-col-lg-6}
+
+## The Finnish Bioconductor community
+
+The Finnish Society for Bioinformatics brings together people in Finland who
+use or develop Bioconductor. **Everyone is welcome** — whether you have just
+installed your first package or maintain several of them.
+
+Come and meet the community at the [BioBeers](../events.qmd) and our other
+events. We are also planning Bioconductor-related events, such as hackathons.
+
+Would you like to help organise them? Join the organising committee by
+contacting the society at
+[fsfbioinf@gmail.com](mailto:fsfbioinf@gmail.com) or on
+[Slack](https://bioinffi.slack.com/){target="_blank"}.
+
+::::
+
+:::::
+
+## Who is who
+
+Find Bioconductor people near you and get in touch. Click a pin or a name
+to see who they are. The list shows the people in the visible part of the map.
+
+Anyone in Finland who uses or develops Bioconductor tools is welcome on the
+map. You do not need to be a member of the Finnish Society for Bioinformatics.
+If you move abroad, you can stay on the map in your new location. Zoom out to
+see the Finnish Bioconductor people around the world.
+
+```{r}
+#| echo: false
+#| results: asis
+
+source("../../R/render-bioc-map.R")
+
+cat(render_bioc_map(
+  "../../data/bioconductor_members.yaml",
+  "../../data/country_outlines.geojson"
+))
+```
+
+::: {.bioc-map-legend}
+[[]{.bioc-dot .bioc-user}Bioconductor user]{.text-nowrap}
+[[]{.bioc-dot .bioc-developer}Bioconductor developer]{.text-nowrap}
+[]{#bioc-map-summary}
+:::
+
+:::: {.grid}
+
+::: {.g-col-12 .g-col-lg-8}
+<div id="bioc-map" role="region" aria-label="Map of Bioconductor people in Finland"></div>
+:::
+
+::: {.g-col-12 .g-col-lg-4}
+<div id="bioc-people" role="region" aria-label="List of Bioconductor people in Finland"></div>
+:::
+
+::::
+
+## Put yourself on the map
+
+Add yourself to the map, update your details, or remove yourself by opening an
+issue on GitHub. The request is checked automatically, and after a maintainer
+approves it, the map is updated. Only your city is shown on the map, not your
+exact location. All information you provide is public.
+
+::: {.d-flex .flex-wrap .gap-2}
+
+[Add me](https://github.com/Finnish-Society-for-Bioinformatics/website/issues/new?template=bioc-map-add.yml){.btn .btn-dark .rounded-pill target="_blank"}
+
+[Update my details](https://github.com/Finnish-Society-for-Bioinformatics/website/issues/new?template=bioc-map-modify.yml){.btn .btn-outline-dark .rounded-pill target="_blank"}
+
+[Remove me](https://github.com/Finnish-Society-for-Bioinformatics/website/issues/new?template=bioc-map-remove.yml){.btn .btn-outline-dark .rounded-pill target="_blank"}
+
+:::
+
+No GitHub account? Email us at
+[fsfbioinf@gmail.com](mailto:fsfbioinf@gmail.com) and we will make the change
+for you.

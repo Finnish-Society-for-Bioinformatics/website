@@ -1,0 +1,247 @@
+<!--
+Map of the Finnish Bioconductor community. Included at the end of
+bioconductor.qmd. The data (window.biocMap) is rendered from
+data/bioconductor_members.yaml by R/render-bioc-map.R.
+-->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css">
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+<script>
+(function () {
+  const el = document.getElementById("bioc-map");
+  if (!el || !window.L) return;
+
+  const data = window.biocMap || { members: [] };
+  const members = (data.members || []).filter(
+    (m) => Number.isFinite(m.lat) && Number.isFinite(m.lon)
+  );
+  // Bioconductor logo colours
+  const COLORS = { user: "#3792ad", developer: "#8aca25" };
+  // Text colours on top of COLORS with enough contrast
+  const TEXT_COLORS = { user: "#fff", developer: "#393536" };
+  const ROLES = {
+    user: "Bioconductor user",
+    developer: "Bioconductor developer",
+  };
+
+  const map = L.map(el, {
+    scrollWheelZoom: false,
+    minZoom: 2,
+    maxZoom: 9,
+    // People who have moved abroad are shown in their new location, but the
+    // map opens zoomed to Finland
+    maxBounds: [[-60, -200], [85, 200]],
+    attributionControl: false,
+    zoomSnap: 0.25,
+  }).fitBounds([[59.7, 19.5], [70.1, 31.6]], { padding: [10, 10] });
+  // Simple outline map instead of detailed map tiles so that the pins stand out
+  if (data.outline) {
+    L.geoJSON(data.outline, {
+      interactive: false,
+      style: (f) =>
+        f.properties.finland
+          ? { color: COLORS.user, weight: 1.5, fillColor: "#fff", fillOpacity: 1 }
+          : { color: "#d5d5d5", weight: 1, fillColor: "#ececec", fillOpacity: 1 },
+    }).addTo(map);
+  }
+  L.control
+    .attribution({ prefix: false })
+    .addAttribution('<a href="https://www.naturalearthdata.com/">Natural Earth</a>')
+    .addTo(map);
+  // Zoom with the scroll wheel only after the user has clicked the map
+  map.on("click", () => map.scrollWheelZoom.enable());
+  map.on("mouseout", () => map.scrollWheelZoom.disable());
+
+  // Country is shown only for people outside Finland
+  function place(m) {
+    return m.country && m.country !== "Finland" ? `${m.city}, ${m.country}` : m.city;
+  }
+
+  function pin(role) {
+    const color = COLORS[role] || COLORS.user;
+    return L.divIcon({
+      className: "bioc-pin",
+      html:
+        '<svg viewBox="0 0 24 34" width="26" height="37" aria-hidden="true">' +
+        `<path fill="${color}" stroke="#fff" stroke-width="1.5" ` +
+        'd="M12 1C6 1 1 5.7 1 11.7 1 19.5 12 33 12 33s11-13.5 11-21.3C23 5.7 18 1 12 1z"/>' +
+        '<circle cx="12" cy="11.5" r="4.2" fill="#fff"/></svg>',
+      iconSize: [26, 37],
+      iconAnchor: [13, 37],
+      popupAnchor: [0, -32],
+    });
+  }
+
+  // Small helper that builds DOM nodes. Text is always set with textContent so
+  // that user-submitted data cannot inject HTML.
+  function h(tag, attrs, children) {
+    const node = document.createElement(tag);
+    Object.entries(attrs || {}).forEach(([k, v]) => {
+      if (k === "text") node.textContent = v;
+      else node.setAttribute(k, v);
+    });
+    (children || []).forEach((c) => c && node.appendChild(c));
+    return node;
+  }
+
+  function avatar(m) {
+    const color = COLORS[m.role] || COLORS.user;
+    const initials = m.name
+      .split(/\s+/)
+      .map((p) => p[0])
+      .slice(0, 2)
+      .join("")
+      .toUpperCase();
+    const fallback = h("div", { class: "bioc-avatar bioc-initials", text: initials });
+    fallback.style.borderColor = color;
+    fallback.style.background = color;
+    fallback.style.color = TEXT_COLORS[m.role] || TEXT_COLORS.user;
+    if (!m.github) return fallback;
+    const img = h("img", {
+      class: "bioc-avatar",
+      src: `https://github.com/${encodeURIComponent(m.github)}.png?size=160`,
+      alt: `GitHub profile picture of ${m.name}`,
+      loading: "lazy",
+    });
+    img.style.borderColor = color;
+    img.addEventListener("error", () => img.replaceWith(fallback));
+    return img;
+  }
+
+  function link(href, icon, label) {
+    return h("a", { href, target: "_blank", rel: "noopener", title: label, "aria-label": label }, [
+      h("i", { class: `bi bi-${icon}` }),
+    ]);
+  }
+
+  function card(m) {
+    const role = h("span", { class: "bioc-role", text: ROLES[m.role] || ROLES.user });
+    role.style.background = COLORS[m.role] || COLORS.user;
+    role.style.color = TEXT_COLORS[m.role] || TEXT_COLORS.user;
+    const links = [
+      m.github && link(`https://github.com/${encodeURIComponent(m.github)}`, "github", "GitHub"),
+      m.linkedin && link(m.linkedin, "linkedin", "LinkedIn"),
+      m.bluesky && link(`https://bsky.app/profile/${encodeURIComponent(m.bluesky)}`, "bluesky", "Bluesky"),
+      m.website && link(m.website, "globe", "Website"),
+    ].filter(Boolean);
+    return h("div", { class: "bioc-card" }, [
+      avatar(m),
+      h("div", { class: "bioc-name", text: m.name }),
+      role,
+      h("div", { class: "bioc-meta" }, [
+        h("i", { class: "bi bi-geo-alt" }),
+        h("span", { text: " " + place(m) }),
+      ]),
+      m.affiliation &&
+        h("div", { class: "bioc-meta" }, [
+          h("i", { class: "bi bi-building" }),
+          h("span", { text: " " + m.affiliation }),
+        ]),
+      links.length > 0 && h("div", { class: "bioc-links" }, links),
+    ]);
+  }
+
+  const cluster = L.markerClusterGroup({
+    showCoverageOnHover: false,
+    maxClusterRadius: 40,
+  });
+  const entries = members.map((m) => ({
+    member: m,
+    marker: L.marker([m.lat, m.lon], {
+      icon: pin(m.role),
+      title: m.name,
+      alt: `${m.name}, ${ROLES[m.role] || ROLES.user}, ${place(m)}`,
+      keyboard: true,
+    }).bindPopup(() => card(m), { className: "bioc-popup", maxWidth: 260, minWidth: 200 }),
+  }));
+  map.addLayer(cluster);
+
+  // List of people next to the map. It shows the people that match the role
+  // filter and whose pin is inside the visible part of the map.
+  const people = document.getElementById("bioc-people");
+  let role = "all";
+  const matchesRole = (e) => role === "all" || e.member.role === role;
+
+  function filterButton(value, label) {
+    const button = h("button", { type: "button", class: "btn btn-sm", "data-role": value, text: label });
+    button.addEventListener("click", () => {
+      role = value;
+      updateMarkers();
+    });
+    return button;
+  }
+  const filters = h("div", { class: "bioc-filters", role: "group", "aria-label": "Show" }, [
+    filterButton("all", "All"),
+    filterButton("user", "Users"),
+    filterButton("developer", "Developers"),
+  ]);
+  const status = h("div", { class: "bioc-people-status", "aria-live": "polite" });
+  const list = h("ul", { class: "bioc-people-list" });
+  if (people) people.append(filters, status, list);
+
+  function personItem(e) {
+    const m = e.member;
+    const button = h("button", { type: "button", class: "bioc-person" }, [
+      avatar(m),
+      h("span", { class: "bioc-person-text" }, [
+        h("span", { class: "bioc-person-name", text: m.name }),
+        h("span", {
+          class: "bioc-person-meta",
+          text: [ROLES[m.role] || ROLES.user, place(m), m.affiliation].filter(Boolean).join(" · "),
+        }),
+      ]),
+    ]);
+    // Show the person on the map
+    button.addEventListener("click", () =>
+      cluster.zoomToShowLayer(e.marker, () => e.marker.openPopup())
+    );
+    return h("li", {}, [button]);
+  }
+
+  function updateList() {
+    if (!people) return;
+    const bounds = map.getBounds();
+    const shown = entries.filter(matchesRole);
+    const visible = shown.filter((e) => bounds.contains(e.marker.getLatLng()));
+    list.replaceChildren(...visible.map(personItem));
+    if (entries.length === 0) {
+      status.textContent = "No one is on the map yet.";
+    } else if (visible.length === 0) {
+      status.textContent = "No one in this area. Zoom out to see more people.";
+    } else {
+      status.textContent =
+        visible.length === shown.length
+          ? `Showing ${visible.length} ${visible.length === 1 ? "person" : "people"}`
+          : `Showing ${visible.length} of ${shown.length} people in this area`;
+    }
+  }
+
+  function updateMarkers() {
+    filters.querySelectorAll("button").forEach((b) => {
+      const active = b.dataset.role === role;
+      b.classList.toggle("active", active);
+      b.setAttribute("aria-pressed", active);
+    });
+    cluster.clearLayers();
+    cluster.addLayers(entries.filter(matchesRole).map((e) => e.marker));
+    updateList();
+  }
+
+  map.on("moveend", updateList);
+  updateMarkers();
+
+  // Summary next to the legend
+  const summary = document.getElementById("bioc-map-summary");
+  if (summary) {
+    const developers = members.filter((m) => m.role === "developer").length;
+    summary.textContent =
+      members.length === 0
+        ? "No one is on the map yet. Be the first!"
+        : `${members.length} ${members.length === 1 ? "person" : "people"} ` +
+          `(${members.length - developers} users, ${developers} developers)` +
+          (data.updated ? ` · Last updated ${data.updated}` : "");
+  }
+})();
+</script>

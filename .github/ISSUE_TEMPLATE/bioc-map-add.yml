@@ -1,0 +1,82 @@
+name: "Bioconductor map: add me"
+description: Add yourself to the map of the Finnish Bioconductor community.
+title: "[Bioconductor map] Add: "
+labels: ["bioc-map", "bioc-map: add"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for joining the [Finnish Bioconductor community map](https://bioinf.fi/pages/communities/bioconductor.html)!
+        Your request is checked automatically and approved by a maintainer, after which you appear on the map.
+        All information you give here is **public**.
+        Anyone who uses or develops Bioconductor tools is welcome; you do not need to be a member of the Finnish Society for Bioinformatics.
+  - type: input
+    id: name
+    attributes:
+      label: Name
+      description: Your name as it should appear on the map.
+    validations:
+      required: true
+  - type: dropdown
+    id: role
+    attributes:
+      label: Role
+      description: Developers maintain or contribute to a Bioconductor package.
+      options:
+        - Bioconductor user
+        - Bioconductor developer
+    validations:
+      required: true
+  - type: input
+    id: city
+    attributes:
+      label: City
+      description: City where you are based. Only the city is shown, not an exact location. The map location is looked up automatically.
+      placeholder: Turku
+    validations:
+      required: true
+  - type: input
+    id: country
+    attributes:
+      label: Country
+      description: Country where you are based. You are welcome on the map also if you have moved abroad.
+      placeholder: Finland
+    validations:
+      required: true
+  - type: input
+    id: affiliation
+    attributes:
+      label: Affiliation
+      description: Optional. University, institute, or company.
+      placeholder: University of Turku
+  - type: input
+    id: github
+    attributes:
+      label: GitHub handle
+      description: Optional. Your GitHub profile picture is shown on the map card.
+      placeholder: octocat
+  - type: input
+    id: linkedin
+    attributes:
+      label: LinkedIn
+      description: Optional. Link to your LinkedIn profile.
+      placeholder: https://www.linkedin.com/in/your-name
+  - type: input
+    id: bluesky
+    attributes:
+      label: Bluesky
+      description: Optional. Your Bluesky handle.
+      placeholder: name.bsky.social
+  - type: input
+    id: website
+    attributes:
+      label: Website
+      description: Optional. Personal or group website.
+      placeholder: https://example.com
+  - type: checkboxes
+    id: consent
+    attributes:
+      label: Consent
+      options:
+        - label: I agree that the information above is published on the Finnish Society for Bioinformatics website and in this public GitHub repository.
+          required: true

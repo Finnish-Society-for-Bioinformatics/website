@@ -5,3 +5,4 @@ _quarto_internal_scss_error.scss
 
 
 **/*.quarto_ipynb
+.Rproj.user

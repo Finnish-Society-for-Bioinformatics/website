@@ -1,0 +1,6 @@
+# Job advertisements shown on the Jobs page (pages/jobs.qmd).
+#
+# Advertisements are submitted through GitHub issues, which are validated and
+# turned into pull requests by .github/workflows/job-ads.yml. Jobs are hidden
+# from the page automatically after their expiry date.
+jobs:
