@@ -21,8 +21,16 @@ about:
       icon: mailbox
       href: mailto:fsfbioinf@gmail.com
 ---
+
 <!-- The standard markdown heading size is too small -->
+
 [Welcome to the Finnish Society for Bioinformatics!]{style="font-size: 3em"}
+
+[Bioinformatics Day 2027 is scheduled for late spring 2027! Stay
+tuned!]{style="font-size: 2em"}
+
+[Click here to check out the previous Day!](pages/join-the-society.qmd){style="font-size:
+1.5em; color: black; text-decoration: none;"}
 
 The Finnish Society for Bioinformatics is for everyone interested in
 bioinformatics. Whether you're an experienced researcher, an early-career
@@ -51,6 +59,7 @@ docs if you need to adjust anything
 
 Also @media is useful to target small devices
 -->
+
 :::: {.index-grid}
 
 ::: {.index-column}
@@ -78,7 +87,6 @@ cat(render_events(path = "data/events.yaml", type = "biobeers"))
 
 ### BioWebinar
 
-
 ```{r}
 #| echo: false
 #| results: asis
@@ -98,9 +106,11 @@ cat(render_events("data/events.yaml", type = "webinars"))
 
 ::: {.d-flex .gap-2}
 
-[Read the abstract](pages/bioinformatics-webinars.qmd){.btn .btn-dark .rounded-pill}
+[Read the abstract](pages/bioinformatics-webinars.qmd){.btn .btn-dark
+.rounded-pill}
 
-[Join the webinar](https://utu.zoom.us/webinar/register/WN_tiQ4w4AlTLaFigkubeRFUg){.btn .btn-dark .rounded-pill target="_blank"}
+[Join the webinar](https://utu.zoom.us/webinar/register/WN_tiQ4w4AlTLaFigkubeRFUg){.btn
+.btn-dark .rounded-pill target="_blank"}
 
 :::
 
@@ -117,6 +127,5 @@ We cannot wait for you to become one of us!
 [Join the Society](pages/join-the-society.qmd){.btn .btn-dark .rounded-pill}
 
 :::
-
 
 ::::
