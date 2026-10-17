@@ -1,17 +1,21 @@
 #' Render the country outlines used by the Bioconductor map
 #'
+#' @param path Path to the yaml file containing Bioconductor members.
 #' @param outline_path Path to the GeoJSON file containing country outlines.
 #' @param height Height of the Leaflet widget in pixels.
 #'
 #' @return A Leaflet HTML widget.
-# outline <- sf::st_read("data/country_outlines.geojson")
-# old <- outline$finland
-#
-# outline$finland <- tolower(as.character(outline$finland)) %in%
-#   c("true", "1", "yes", "finland")
-# new <- outline$finland
-# identical(old, new)
-render_bioc_outline <- function(outline_path, height = 550) {
+render_bioc_outline <- function(path, outline_path, height = 550) {
+  data <- yaml::read_yaml(path)
+
+  members <- dplyr::bind_rows(data$members)
+
+  members$lat <- as.numeric(members$lat)
+  members$lon <- as.numeric(members$lon)
+
+  # members <- members[
+  #   is.finite(members$lat) & is.finite(members$lon),
+  # ]
   outline <- sf::st_read(outline_path, quiet = TRUE) |>
     # Transform lon and lat in degrees since Leaflet expects all
     # coordinates to be in WGS 84 (a.k.a. EPSG:4326) format
@@ -39,6 +43,27 @@ render_bioc_outline <- function(outline_path, height = 550) {
       smoothFactor = 0.5,
       options = leaflet::pathOptions(
         interactive = FALSE
+      )
+    ) |>
+    leaflet::addCircleMarkers(
+      data = members,
+      lng = ~lon,
+      lat = ~lat,
+      radius = 7,
+      color = "#ffffff",
+      weight = 2,
+      fillColor = ~ ifelse(
+        role == "developer",
+        "#8aca25",
+        "#3792ad"
+      ),
+      fillOpacity = 1,
+      label = ~name,
+      # For clustering of circles if they are close to each other
+      clusterOptions = leaflet::markerClusterOptions(
+        showCoverageOnHover = FALSE,
+        maxClusterRadius = 40,
+        spiderfyOnMaxZoom = TRUE
       )
     ) |>
     leaflet::addControl(
