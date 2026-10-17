@@ -3,6 +3,13 @@ $h1-font-size: 1.8rem !default;
 $navbar-color: #1141f3;
 $navbar-hover-color: #1141f3;
 
+// Bioconductor colors
+// See https://bioconductor.org/about/logo/
+$bioc-blue: #1a81c2;
+$bioc-blue-dark: #276b80;
+$bioc-green: #87b13f;
+$bioc-grey: #393536;
+
 /*-- Size of the larges h1
 Custom grid for the index page
 By default uses one column, and sets it to three if the screen width is at
@@ -52,4 +59,28 @@ a {
   aspect-ratio: 1 / 1;
   object-fit: cover;
   border-radius: 80%;
+}
+
+// CSS for pages/communities/bioconductor.qmd
+.bioc-page {
+  // Modify default dark button to follow Bioconductor colors
+  .btn-dark {
+    --bs-btn-bg: #{$bioc-blue-dark};
+    --bs-btn-border-color: #{$bioc-blue-dark};
+    --bs-btn-hover-bg: #{$bioc-blue};
+    --bs-btn-hover-border-color: #{$bioc-blue};
+    --bs-btn-active-bg: #{$bioc-blue};
+    --bs-btn-active-border-color: #{$bioc-blue};
+  }
+
+  // https://getbootstrap.com/docs/4.1/components/buttons/#outline-buttons
+  // Modify default outline dark button to follow Bioconductor colors
+  .btn-outline-dark {
+    --bs-btn-color: #{$bioc-blue-dark};
+    --bs-btn-border-color: #{$bioc-blue-dark};
+    --bs-btn-hover-bg: #{$bioc-blue-dark};
+    --bs-btn-hover-border-color: #{$bioc-blue-dark};
+    --bs-btn-active-bg: #{$bioc-blue};
+    --bs-btn-active-border-color: #{$bioc-blue};
+  }
 }
