@@ -56,3 +56,30 @@ Anyone in Finland who uses or develops Bioconductor tools is welcome on the map.
 You do not need to be a member of the Finnish Society for Bioinformatics. If you
 move abroad, you can stay on the map in your new location. Zoom out to see the
 Finnish Bioconductor people around the world.
+
+:::: {.grid}
+
+::::
+
+## Put yourself on the map
+
+Add yourself to the map, update your details, or remove yourself by opening an
+issue on GitHub. The request is checked automatically, and after a maintainer
+approves it, the map is updated. Only your city is shown on the map, not your
+exact location. All information you provide is public.
+
+::: {.d-flex .flex-wrap .gap-2}
+
+[Add me](https://github.com/Finnish-Society-for-Bioinformatics/website/issues/new?template=bioc-map-add.yml){.btn
+.btn-dark .rounded-pill target="_blank"}
+
+[Update my details](https://github.com/Finnish-Society-for-Bioinformatics/website/issues/new?template=bioc-map-modify.yml){.btn
+.btn-outline-dark .rounded-pill target="_blank"}
+
+[Remove me](https://github.com/Finnish-Society-for-Bioinformatics/website/issues/new?template=bioc-map-remove.yml){.btn
+.btn-outline-dark .rounded-pill target="_blank"}
+
+:::
+
+No GitHub account? Email us at [fsfbioinf@gmail.com](mailto:fsfbioinf@gmail.com)
+and we will make the change for you.
