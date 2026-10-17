@@ -3,6 +3,7 @@ library(rix)
 rix(
   r_ver = "4.6.1",
   r_pkgs = c(
+    "dplyr",
     "quarto",
     "knitr",
     "leaflet",
