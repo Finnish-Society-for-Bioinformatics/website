@@ -83,4 +83,10 @@ a {
     --bs-btn-active-bg: #{$bioc-blue};
     --bs-btn-active-border-color: #{$bioc-blue};
   }
+
+  h2 {
+    // Green line under section names on the Bioconductor community page
+    border-bottom: 3px solid $bioc-green;
+    margin-top: 1rem;
+  }
 }
