@@ -8,9 +8,9 @@ body-classes: bioc-page
 
 [![](../../images/bioconductor_logo.svg){.bioc-logo fig-alt="Bioconductor logo"}](https://bioconductor.org){target="_blank"}
 
-::::: {.grid}
+:::: {.grid}
 
-:::: {.g-col-12 .g-col-lg-6}
+::: {.g-col-12 .g-col-lg-6}
 
 ## What is Bioconductor?
 
@@ -24,11 +24,9 @@ teach courses, and meet at conferences.
 [Visit Bioconductor](https://bioconductor.org){.btn .btn-dark .rounded-pill
 target="_blank"}
 
-::::
+:::
 
-:::: {.g-col-12 .g-col-lg-6}
-
-:::: {.g-col-12 .g-col-lg-6}
+::: {.g-col-12 .g-col-lg-6}
 
 ## The Finnish Bioconductor community
 
@@ -43,9 +41,9 @@ Would you like to help organise them? Join the organising committee by
 contacting the society at [fsfbioinf@gmail.com](mailto:fsfbioinf@gmail.com) or
 on [Slack](https://bioinffi.slack.com/){target="_blank"}.
 
-::::
+:::
 
-:::::
+::::
 
 ## Who is who
 
@@ -57,9 +55,23 @@ You do not need to be a member of the Finnish Society for Bioinformatics. If you
 move abroad, you can stay on the map in your new location. Zoom out to see the
 Finnish Bioconductor people around the world.
 
-:::: {.grid}
+::: {role="region" aria-label="Outline map of Finland"}
 
-::::
+```{r}
+#| echo: false
+#| warning: false
+#| message: false
+
+source("../../R/render-bioc-map.R")
+
+render_bioc_outline(
+  path = "../../data/bioconductor_members.yaml",
+  outline_path = "../../data/country_outlines.geojson",
+  height = 550
+)
+```
+
+:::
 
 ## Put yourself on the map
 
