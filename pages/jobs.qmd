@@ -1,39 +1,54 @@
 ---
 title: "Jobs"
 toc: false
+include-after-body: _jobs.html
 format:
   html:
     page-layout: full
 ---
 
-
-## Open Bioinformatics Positions
+<!-- Jobs are submitted through the job-ad issue template and stored in -->
+<!-- data/jobs.yaml. See .github/workflows/job-ads.yml. -->
 
 ::::: {.grid}
-<!-- Small screens: one listing -->
-<!-- Medium screens: two listings -->
-<!-- Large screens: three listings -->
 
-:::: {.g-col-12 .g-col-md-6 .g-col-lg-4 .d-flex .flex-column}
+:::: {.g-col-12 .g-col-lg-8}
+
+## Open bioinformatics positions
+
+```{r}
+#| echo: false
+#| results: asis
+
+source("../R/render-jobs.R")
+
+cat(render_jobs("../data/jobs.yaml"))
+```
 
 ::::
 
-:::: {.g-col-12 .g-col-md-6 .g-col-lg-4 .d-flex .flex-column}
+:::: {.g-col-12 .g-col-lg-4}
 
-![Finnish Society for Bioinformatics](../images/round_logo.jpg){.img-fluid}
+::: {.job-advertise}
+
+![](../images/round_logo.jpg){.img-fluid fig-alt="Finnish Society for Bioinformatics logo"}
 
 ### Would you like to advertise an open position here?
 
 Reach bioinformaticians where they are and find the best candidates in the field.
 
-Send us information about your open position, and we will add it to this page.
+Submit your advertisement through GitHub. After a quick review, it is added to
+this page and removed automatically after the expiry date.
 
-[Contact us](mailto:fsfbioinf@gmail.com){.btn .btn-dark .rounded-pill}
+[Submit a job advertisement](https://github.com/Finnish-Society-for-Bioinformatics/website/issues/new?template=job-ad.yml){.btn .btn-dark .rounded-pill target="_blank"}
+
+Position already filled?
+[Remove the advertisement](https://github.com/Finnish-Society-for-Bioinformatics/website/issues/new?template=job-ad-remove.yml){target="_blank"}.
+
+No GitHub account? [Send us an email](mailto:fsfbioinf@gmail.com) instead.
+
+:::
 
 ::::
-
-:::: {.g-col-12 .g-col-md-6 .g-col-lg-4 .d-flex .flex-column}
-::::
-
 
 :::::

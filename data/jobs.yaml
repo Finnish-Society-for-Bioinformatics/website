@@ -1,0 +1,16 @@
+# Job advertisements shown on the Jobs page (pages/jobs.qmd).
+#
+# Advertisements are submitted through GitHub issues, which are validated and
+# turned into pull requests by .github/workflows/job-ads.yml. Jobs are hidden
+# from the page automatically after their expiry date.
+jobs:
+  - id: 5
+    title: data analyst
+    company: UTU
+    location: Here
+    description: I have position for you.
+    link: https://github.com/TuomasBorman/bioinfo-website/actions/runs/38574824252
+    contact: Tuomas
+    expires: '2026-10-31'
+    submitted_by: TuomasBorman
+    added: '2026-10-14'

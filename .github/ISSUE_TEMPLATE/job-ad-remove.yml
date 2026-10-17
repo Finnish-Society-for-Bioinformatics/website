@@ -1,0 +1,22 @@
+name: "Remove a job advertisement"
+description: Remove a job advertisement from the Jobs page before its expiry date, e.g., when the position has been filled.
+title: "[Job] Remove: "
+labels: ["job-ad", "job-ad: remove"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Advertisements are removed automatically after their expiry date. Use this form to remove one earlier, for example when the position has been filled.
+        Requests from the GitHub user who submitted the advertisement are the easiest to verify.
+  - type: input
+    id: job
+    attributes:
+      label: Advertisement
+      description: The job title exactly as shown on the Jobs page, or the number of the issue that added it (e.g., #42).
+    validations:
+      required: true
+  - type: textarea
+    id: reason
+    attributes:
+      label: Reason
+      description: Optional.
