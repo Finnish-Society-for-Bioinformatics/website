@@ -17,6 +17,124 @@ read_bioc_members <- function(path) {
   list(updated = data$updated, members = members)
 }
 
+#' List the cities that have people on the map
+#'
+#' @param members Data frame of Bioconductor members.
+#'
+#' @return Character vector of city names, the most common city first.
+bioc_cities <- function(members) {
+  city <- if ("city" %in% names(members)) {
+    as.character(members$city)
+  } else {
+    character(0)
+  }
+  city <- city[!is.na(city) & nzchar(city)]
+
+  if (length(city) == 0) {
+    return(character(0))
+  }
+
+  # Sort by the number of people so that the most relevant cities come first
+  names(sort(table(city), decreasing = TRUE))
+}
+
+#' JavaScript that filters the map and the people list by city
+#'
+#' The filter buttons and the `data-city` attributes are generated in R. This
+#' script only shows and hides the matching Leaflet markers and person cards
+#' when a button is clicked.
+#'
+#' @return Character string of JavaScript.
+bioc_city_filter_js <- function() {
+  r"---(
+function(el, x) {
+  "use strict";
+
+  // htmlwidgets calls this hook with the Leaflet map as `this`
+  var map = this && typeof this.eachLayer === "function" ? this : null;
+  if (!map) {
+    var widget = window.HTMLWidgets && window.HTMLWidgets.find("#" + el.id);
+    map = widget && widget.getMap ? widget.getMap() : null;
+  }
+  if (!map) return;
+
+  // The marker cluster group is created by addCircleMarkers() with
+  // clusterOptions() and clusterId = "bioc-cluster"
+  var cluster = map.layerManager && map.layerManager.getLayer
+    ? map.layerManager.getLayer("cluster", "bioc-cluster")
+    : null;
+  if (!cluster) return;
+
+  function cityOf(marker) {
+    return marker.options && marker.options.city ? marker.options.city : "";
+  }
+
+  function setup(markers) {
+    var filters = document.querySelector(".bioc-filters");
+    var status = document.querySelector(".bioc-people-status");
+    var cards = Array.prototype.slice.call(
+      document.querySelectorAll(".bioc-person[data-city]")
+    );
+    var buttons = filters
+      ? Array.prototype.slice.call(filters.querySelectorAll("button[data-city]"))
+      : [];
+
+    function people(n) {
+      return n === 1 ? "1 person" : n + " people";
+    }
+
+    function apply(city) {
+      cluster.clearLayers();
+      cluster.addLayers(
+        city === "all" ? markers : markers.filter(function(marker) {
+          return cityOf(marker) === city;
+        })
+      );
+
+      buttons.forEach(function(button) {
+        var active = button.dataset.city === city;
+        button.classList.toggle("active", active);
+        button.setAttribute("aria-pressed", active ? "true" : "false");
+      });
+
+      var shown = 0;
+      cards.forEach(function(card) {
+        var visible = city === "all" || card.dataset.city === city;
+        card.hidden = !visible;
+        if (visible) shown++;
+      });
+
+      if (status) {
+        status.textContent = city === "all"
+          ? "Showing all " + people(cards.length)
+          : "Showing " + shown + " of " + people(cards.length) + " in " + city;
+      }
+    }
+
+    buttons.forEach(function(button) {
+      button.addEventListener("click", function() {
+        apply(button.dataset.city);
+      });
+    });
+  }
+
+  // The cluster group is filled only after the map has finished its initial
+  // zoom animation, so wait until the markers are available.
+  var attempts = 0;
+  function waitForMarkers() {
+    var markers = cluster.getLayers().slice();
+    if (markers.length === 0 && attempts < 50) {
+      attempts++;
+      window.setTimeout(waitForMarkers, 50);
+      return;
+    }
+    setup(markers);
+  }
+  waitForMarkers();
+}
+)---"
+}
+
 #' Render the country outlines used by the Bioconductor map
 #'
 #' @param path Path to the yaml file containing Bioconductor members.
@@ -30,16 +148,27 @@ render_bioc_outline <- function(path, outline_path, height = 550) {
   # members <- members[
   #   is.finite(members$lat) & is.finite(members$lon),
   # ]
+  # The city is passed to the markers so that the JavaScript filter can find
+  # out which markers belong to which city.
+  if (!"city" %in% names(members)) {
+    members$city <- rep(NA_character_, nrow(members))
+  }
+  if (!"role" %in% names(members)) {
+    members$role <- rep("user", nrow(members))
+  }
+
   outline <- sf::st_read(outline_path, quiet = TRUE) |>
     # Transform lon and lat in degrees since Leaflet expects all
     # coordinates to be in WGS 84 (a.k.a. EPSG:4326) format
     # See https://rstudio.github.io/leaflet/articles/projections.html
     sf::st_transform(4326)
 
-  leaflet::leaflet(
+  map <- leaflet::leaflet(
     data = outline,
     width = "100%",
     height = height,
+    # The JavaScript filter looks up the map by this id
+    elementId = "bioc-map",
     options = leaflet::leafletOptions(
       scrollWheelZoom = TRUE,
       minZoom = 2,
@@ -58,31 +187,42 @@ render_bioc_outline <- function(path, outline_path, height = 550) {
       options = leaflet::pathOptions(
         interactive = FALSE
       )
-    ) |>
-    leaflet::addCircleMarkers(
-      data = members,
-      lng = ~lon,
-      lat = ~lat,
-      radius = 7,
-      color = "#ffffff",
-      weight = 2,
-      fillColor = ~ ifelse(
-        role == "developer",
-        "#8aca25",
-        "#3792ad"
-      ),
-      fillOpacity = 1,
-      label = ~name,
-      # For clustering of circles if they are close to each other
-      clusterOptions = leaflet::markerClusterOptions(
-        showCoverageOnHover = FALSE,
-        maxClusterRadius = 40,
-        spiderfyOnMaxZoom = TRUE,
-        # Without this option, one of the names was not showing up
-        # when zoomed in
-        spiderfyDistanceMultiplier = 2
+    )
+
+  if (nrow(members) > 0 && all(c("lat", "lon") %in% names(members))) {
+    map <- map |>
+      leaflet::addCircleMarkers(
+        data = members,
+        lng = ~lon,
+        lat = ~lat,
+        radius = 7,
+        color = "#ffffff",
+        weight = 2,
+        fillColor = ~ ifelse(
+          role == "developer",
+          "#8aca25",
+          "#3792ad"
+        ),
+        fillOpacity = 1,
+        label = ~name,
+        # city is not a Leaflet option, but it is kept in marker.options so
+        # that the JavaScript filter can show only the markers of one city
+        options = leaflet::pathOptions(city = ~city),
+        # For clustering of circles if they are close to each other
+        clusterOptions = leaflet::markerClusterOptions(
+          showCoverageOnHover = FALSE,
+          maxClusterRadius = 40,
+          spiderfyOnMaxZoom = TRUE,
+          # Without this option, one of the names was not showing up
+          # when zoomed in
+          spiderfyDistanceMultiplier = 2
+        ),
+        # Id used by the JavaScript filter to find the cluster group
+        clusterId = "bioc-cluster"
       )
-    ) |>
+  }
+
+  map |>
     leaflet::addControl(
       html = paste0(
         '<a href="https://www.naturalearthdata.com/" ',
@@ -95,13 +235,16 @@ render_bioc_outline <- function(path, outline_path, height = 550) {
       lat1 = 59.7,
       lng2 = 31.6,
       lat2 = 70.1
-    )
+    ) |>
+    # Filter the map markers when a city button is clicked
+    htmlwidgets::onRender(bioc_city_filter_js())
 }
 
 #' Render the list of Bioconductor members shown next to the map
 #'
-#' The list is plain HTML generated from the same YAML file as the map, so it
-#' needs no JavaScript.
+#' The list and its city filter are plain HTML generated from the same YAML
+#' file as the map. A small script included with the map shows only the people
+#' of the selected city.
 #'
 #' @param path Path to the yaml file containing Bioconductor members.
 #' @param height Height of the panel in pixels. Use the same value as the map
@@ -153,6 +296,7 @@ render_bioc_people <- function(path, height = 550) {
   role <- field("role")
   role[is.na(role) | !role %in% names(role_label)] <- "user"
   city <- field("city")
+  cities <- bioc_cities(members)
   country <- field("country")
   title <- field("title")
   affiliation <- field("affiliation")
@@ -306,6 +450,8 @@ render_bioc_people <- function(path, height = 550) {
     # Build a card for one person
     htmltools::tags$li(
       class = "bioc-person",
+      # Used by the city filter to show only the people of one city
+      `data-city` = if (filled(city[i])) city[i] else "",
       avatar,
       htmltools::tags$div(
         class = "bioc-person-body",
@@ -339,6 +485,26 @@ render_bioc_people <- function(path, height = 550) {
     )
   }
 
+  # Buttons that filter the map and the list by city. The actual filtering is
+  # done by the JavaScript that is attached to the map widget.
+  city_button <- function(value, label, active = FALSE) {
+    htmltools::tags$button(
+      type = "button",
+      class = c("btn", "btn-sm", if (active) "active"),
+      `data-city` = value,
+      `aria-pressed` = if (active) "true" else "false",
+      label
+    )
+  }
+  city_filter <- htmltools::tags$div(
+    class = "bioc-filters",
+    role = "group",
+    `aria-label` = "Filter by city",
+    htmltools::tags$span(class = "bioc-filters-label", "City"),
+    city_button("all", "All", active = TRUE),
+    lapply(cities, function(value) city_button(value, value))
+  )
+
   developers <- sum(role == "developer")
   # Make roles plural if required
   plural <- function(n, word) {
@@ -370,6 +536,12 @@ render_bioc_people <- function(path, height = 550) {
   # Generate the html panel
   html <- as.character(panel(
     htmltools::tags$p(class = "bioc-people-summary", summary),
+    city_filter,
+    htmltools::tags$p(
+      class = "bioc-people-status",
+      `aria-live` = "polite",
+      paste("Showing all", people)
+    ),
     htmltools::tags$ul(
       class = "bioc-people-list",
       lapply(seq_len(nrow(members)), card)

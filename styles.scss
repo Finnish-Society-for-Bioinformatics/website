@@ -107,6 +107,56 @@ a {
   margin-bottom: 0.75rem;
 }
 
+// City filter above the list of people
+.bioc-filters {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem;
+  margin-bottom: 0.4rem;
+
+  .btn {
+    padding: 0.15rem 0.65rem;
+    border: 1px solid $bioc-blue-dark;
+    border-radius: 1rem;
+    color: $bioc-blue-dark;
+    font-size: 0.8rem;
+    line-height: 1.4;
+  }
+
+  .btn:hover {
+    background: rgba($bioc-blue-dark, 0.1);
+  }
+
+  .btn.active {
+    background: $bioc-blue-dark;
+    border-color: $bioc-blue-dark;
+    color: #fff;
+  }
+
+  .btn.active:hover {
+    background: $bioc-blue;
+    border-color: $bioc-blue;
+  }
+}
+
+.bioc-filters-label {
+  color: var(--bs-secondary-color);
+  font-size: 0.8rem;
+  margin-right: 0.1rem;
+}
+
+.bioc-people-status {
+  color: var(--bs-secondary-color);
+  font-size: 0.85rem;
+  margin-bottom: 0.5rem;
+}
+
+// `hidden` must override the flex display of .bioc-person
+.bioc-person[hidden] {
+  display: none;
+}
+
 .bioc-people-list {
   display: flex;
   flex: 1;

@@ -27,6 +27,7 @@ let
   rpkgs = builtins.attrValues {
     inherit (pkgs.rPackages) 
       dplyr
+      htmlwidgets
       knitr
       leaflet
       quarto

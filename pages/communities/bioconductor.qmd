@@ -47,8 +47,8 @@ on [Slack](https://bioinffi.slack.com/){target="_blank"}.
 
 ## Who is who
 
-Find Bioconductor people near you and get in touch. Click a pin or a name to see
-who they are. The list shows the people in the visible part of the map.
+Find Bioconductor people near you and get in touch. Hover over a pin to see who
+it is, and use the city buttons to show only the people based in one city.
 
 Anyone in Finland who uses or develops Bioconductor tools is welcome on the map.
 You do not need to be a member of the Finnish Society for Bioinformatics. If you

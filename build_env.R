@@ -4,6 +4,7 @@ rix(
   r_ver = "4.6.1",
   r_pkgs = c(
     "dplyr",
+    "htmlwidgets",
     "quarto",
     "knitr",
     "leaflet",

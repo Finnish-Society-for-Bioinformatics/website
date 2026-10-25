@@ -6,6 +6,7 @@ Depends: R (>= 4.3.0)
 Imports:
     dplyr,
     htmltools,
+    htmlwidgets,
     knitr,
     leaflet,
     rmarkdown,
