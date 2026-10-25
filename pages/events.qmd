@@ -124,12 +124,12 @@ cat(render_events("../data/events.yaml", type = "webinars"))
 
 :::: {.g-col-12 .g-col-md-6}
 
-### What is The BioEvening about?
+### What is the BioBeer about?
 
-We organize BioEvening to offer Bioinformaticians and everyone interested in
+We organize BioBeer to offer Bioinformaticians and everyone interested in
 Bioinformatics a possibility to network with like-minded people. Its a great
 opportunity to talk about bioinformatics or just come an meet new people and
-old friends. BioEvening events are organized every first Friday of the month in
+old friends. BioBeer events are organized every first Friday of the month in
 Turku and every first Thursday of the month in Helsinki.
 ::::
 
@@ -147,12 +147,12 @@ ideas and knowledge, thus spread open knowledge in bioinformatics.
 
 :::: {.g-col-12 .g-col-md-6}
 
-### Do I get free food and drinks at the BioEvening events?
+### Do I get free food and drinks at the BioBeer events?
 
 Unfortunately the society cannot (afford to) offer free food and drinks at the
-BioEvenings. However, in Turku BioEvenings Bioinformaticans get a nice discount
+BioBeers. However, in Turku BioBeers Bioinformaticans get a nice discount
 for the foods and drinks at Saaristobaari. Also, it is not required to buy
-anything at the BioEvening events, just come along to meet like minded people!
+anything at the BioBeer events, just come along to meet like minded people!
 And there is always free water available at the restaurants and bars.
 ::::
 
@@ -170,15 +170,14 @@ webinar link is always the same.
 
 :::: {.g-col-12 .g-col-md-6}
 
-### Why there is no BioEvening event in my town?
+### Why there is no BioBeer event in my town?
 
-Currently we organize BioEvening events only in Turku, Helsinki, and Tampere
+Currently we organize BioBeer events only in Turku, Helsinki, Tampere, and Oulu
 because of more active Bioinformatics community in these cities. If you would
-like to start organize BioEvening events in your town, please contact us by
+like to start organize BioBeer events in your town, please contact us by
 email: [fsfbioinf@gmail.com](mailto:fsfbioinf@gmail.com) and we will help you
 with everything to set up the events!
 ::::
-
 
 :::: {.g-col-12 .g-col-md-6}
 
