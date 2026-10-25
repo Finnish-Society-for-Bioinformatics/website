@@ -63,7 +63,10 @@ render_bioc_outline <- function(path, outline_path, height = 550) {
       clusterOptions = leaflet::markerClusterOptions(
         showCoverageOnHover = FALSE,
         maxClusterRadius = 40,
-        spiderfyOnMaxZoom = TRUE
+        spiderfyOnMaxZoom = TRUE,
+        # Without this option, one of the names was not showing up
+        # when zoomed in
+        spiderfyDistanceMultiplier = 2
       )
     ) |>
     leaflet::addControl(
