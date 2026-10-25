@@ -29,6 +29,37 @@ members:
     lon: 22.267
     title: Doctoral researcher
     affiliation: University of Turku
+    github: artur-sannikov
+    linkedin: Artur
+    submitted_by: TuomasBorman
+    added: "2026-10-14"
+    updated: "2026-10-14"
+  - name: Some Guy
+    role: developer
+    city: Turku
+    country: Finland
+    lat: 60.4516
+    lon: 22.267
+    title: Doctoral researcher
+    affiliation: University of Turku
+    github: TuomasBorman
+    linkedin: TuomasBorman
+    bluesky: tuomasborman.bsky.social
+    website: https://tuomasborman.github.io
+    submitted_by: TuomasBorman
+    added: "2026-10-14"
+    updated: "2026-10-14"
+
+  - name: Some Other Guy
+    role: user
+    city: Turku
+    country: Finland
+    lat: 60.4516
+    lon: 22.267
+    title: Doctoral researcher
+    affiliation: University of Turku
+    bluesky: tuomasborman.bsky.social
+    website: https://tuomasborman.github.io
     submitted_by: TuomasBorman
     added: "2026-10-14"
     updated: "2026-10-14"

@@ -55,14 +55,24 @@ You do not need to be a member of the Finnish Society for Bioinformatics. If you
 move abroad, you can stay on the map in your new location. Zoom out to see the
 Finnish Bioconductor people around the world.
 
-::: {role="region" aria-label="Outline map of Finland"}
-
 ```{r}
 #| echo: false
 #| warning: false
 #| message: false
 
 source("../../R/render-bioc-map.R")
+```
+
+::::: {.grid .bioc-map-layout}
+
+:::: {.g-col-12 .g-col-lg-8}
+
+::: {role="region" aria-label="Outline map of Finland"}
+
+```{r}
+#| echo: false
+#| warning: false
+#| message: false
 
 render_bioc_outline(
   path = "../../data/bioconductor_members.yaml",
@@ -72,6 +82,26 @@ render_bioc_outline(
 ```
 
 :::
+
+::::
+
+:::: {.g-col-12 .g-col-lg-4}
+
+```{r}
+#| echo: false
+#| warning: false
+#| message: false
+#| results: asis
+
+cat(render_bioc_people(
+  path = "../../data/bioconductor_members.yaml",
+  height = 550
+))
+```
+
+::::
+
+:::::
 
 ## Put yourself on the map
 

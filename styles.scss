@@ -9,6 +9,9 @@ $bioc-blue: #1a81c2;
 $bioc-blue-dark: #276b80;
 $bioc-green: #87b13f;
 $bioc-grey: #393536;
+// Colors of the map pins, reused by the role badges in the people list
+$bioc-user: #3792ad;
+$bioc-developer: #8aca25;
 
 /*-- Size of the larges h1
 Custom grid for the index page
@@ -88,5 +91,135 @@ a {
     // Green line under section names on the Bioconductor community page
     border-bottom: 3px solid $bioc-green;
     margin-top: 1rem;
+  }
+}
+
+// List of Bioconductor people shown next to the map
+.bioc-people {
+  display: flex;
+  flex-direction: column;
+  height: var(--bioc-panel-height, 550px);
+}
+
+.bioc-people-summary {
+  color: var(--bs-secondary-color);
+  font-size: 0.9rem;
+  margin-bottom: 0.75rem;
+}
+
+.bioc-people-list {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;
+  list-style: none;
+}
+
+.bioc-person {
+  display: flex;
+  gap: 0.75rem;
+  padding: 0.75rem;
+  border: 1px solid var(--bs-border-color);
+  border-radius: 0.5rem;
+}
+
+.bioc-avatar {
+  flex: none;
+  width: 52px;
+  height: 52px;
+  border: 2px solid;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.bioc-initials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+}
+
+.bioc-avatar.bioc-role--user {
+  border-color: $bioc-user;
+}
+
+.bioc-avatar.bioc-role--developer {
+  border-color: $bioc-developer;
+}
+
+.bioc-initials.bioc-role--user {
+  background: $bioc-user;
+  color: #fff;
+}
+
+.bioc-initials.bioc-role--developer {
+  background: $bioc-developer;
+  color: $bioc-grey;
+}
+
+.bioc-person-body {
+  min-width: 0;
+}
+
+.bioc-person-heading {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.bioc-person-name {
+  font-weight: 600;
+}
+
+.bioc-role {
+  border-radius: 1rem;
+  padding: 0.05rem 0.5rem;
+  font-size: 0.75rem;
+  white-space: nowrap;
+}
+
+.bioc-role--user {
+  background: $bioc-user;
+  color: #fff;
+}
+
+.bioc-role--developer {
+  background: $bioc-developer;
+  color: $bioc-grey;
+}
+
+.bioc-person-title {
+  font-size: 0.9rem;
+}
+
+.bioc-person-meta {
+  color: var(--bs-secondary-color);
+  font-size: 0.85rem;
+}
+
+.bioc-person-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.25rem;
+  font-size: 0.85rem;
+}
+
+.bioc-person-links a:hover {
+  text-decoration: underline;
+}
+
+// Below the map on small screens, so it only needs to be as tall as its content
+@media (max-width: 991.98px) {
+  .bioc-people {
+    height: auto;
+  }
+
+  .bioc-people-list {
+    overflow-y: visible;
   }
 }
