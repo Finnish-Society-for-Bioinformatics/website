@@ -68,31 +68,6 @@ cat(render_events("../data/events.yaml", type = "webinars"))
 
 <!-- Third event -->
 
-:::: {.g-col-12 .g-col-md-6}
-![](../images/hackaton.jpg){.img-fluid}
-::::
-
-:::: {.g-col-12 .g-col-md-6}
-
-## The Beginners Bioinformatics “Chat and Code” in Turku {.mt-0}
-
-**NEXT: AUTUMN**
-
-The Finnish Society for Bioinformatics is excited to host beginners
-Bioinformatics chat and code event to learn the basics of coding in
-collaboration with InFlames Research Flagship and CompLifeSci in Turku.
-
-The beginners Bioinformatics hackathon is aimed for everyone interested in
-Bioinformatics – no prior coding experience is needed. The chat and code events
-are low threshold, fun events to get everyone as excited of bioinformatics as
-we are. We will cover topics like command line, Git, workflows, and even
-containers.
-
-No registration needed, just appear in BioCity 4th floor seminar room and bring
-your laptop, you might end up writing your first line of code!
-
-::::
-
 <!-- Use the template below to add the webinar with the collapsible abstract -->
 
 <!-- :::: {.g-col-12 .g-col-md-6} -->
