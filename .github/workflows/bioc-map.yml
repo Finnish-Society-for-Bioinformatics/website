@@ -1,0 +1,144 @@
+# Handles requests to add, modify, or remove people on the Bioconductor map
+# (pages/communities/bioconductor.qmd).
+#
+# 1. Someone opens an issue from one of the .github/ISSUE_TEMPLATE/bioc-map-*
+#    templates. The `validate` job checks it, posts a report as a comment, and
+#    labels the issue `bioc-map: valid` or `bioc-map: needs changes`.
+# 2. A maintainer reviews the issue and adds the `approved` label. The `apply`
+#    job checks the request again, updates data/bioconductor_members.yaml, and
+#    opens a pull request that closes the issue when merged.
+#
+# Requires "Allow GitHub Actions to create and approve pull requests" to be
+# enabled in Settings > Actions > General.
+
+name: Bioconductor map
+
+on:
+  issues:
+    types: [opened, edited, reopened, labeled]
+
+env:
+  GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  ISSUE: ${{ github.event.issue.number }}
+
+jobs:
+  validate:
+    # Also runs when a request label is added by hand, e.g., when the issue was
+    # opened before the labels existed
+    if: >-
+      (github.event.action != 'labeled' || contains(fromJSON('["bioc-map", "bioc-map: add", "bioc-map: modify", "bioc-map: remove"]'), github.event.label.name)) &&
+      github.event.issue.state == 'open' &&
+      contains(github.event.issue.labels.*.name, 'bioc-map')
+    runs-on: ubuntu-latest
+    # Only the newest check of an issue matters, e.g., after several edits
+    concurrency:
+      group: bioc-map-validate-${{ github.event.issue.number }}
+      cancel-in-progress: true
+    permissions:
+      contents: read
+      issues: write
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v7
+
+      - name: Setup R
+        uses: r-lib/actions/setup-r@v2
+        with:
+          use-public-rspm: true
+
+      # Uses pak instead of install.packages() because the repository's
+      # .Rprofile replaces the profile that would set the CRAN mirror
+      - name: Install R dependencies
+        uses: r-lib/actions/setup-r-dependencies@v2
+        with:
+          packages: any::yaml, any::jsonlite
+
+      - name: Validate request
+        id: check
+        run: Rscript R/issues/bioc-map.R validate
+
+      - name: Report result
+        run: |
+          .github/scripts/issue-report.sh "$RUNNER_TEMP/bioc-map-report.md"
+          if [ "${{ steps.check.outputs.valid }}" = "true" ]; then
+            gh issue edit "$ISSUE" --add-label "bioc-map: valid" --remove-label "bioc-map: needs changes"
+          else
+            gh issue edit "$ISSUE" --add-label "bioc-map: needs changes" --remove-label "bioc-map: valid"
+          fi
+          # Changes made after approval must be approved again
+          if [ "${{ github.event.action }}" = "edited" ]; then
+            gh issue edit "$ISSUE" --remove-label approved
+          fi
+
+  apply:
+    if: >-
+      github.event.action == 'labeled' &&
+      github.event.label.name == 'approved' &&
+      github.event.issue.state == 'open' &&
+      contains(github.event.issue.labels.*.name, 'bioc-map')
+    runs-on: ubuntu-latest
+    concurrency:
+      group: bioc-map-apply-${{ github.event.issue.number }}
+    permissions:
+      contents: write
+      issues: write
+      pull-requests: write
+    steps:
+      - name: Check that a maintainer approved the request
+        env:
+          SENDER: ${{ github.event.sender.login }}
+        run: |
+          permission=$(gh api "repos/$GITHUB_REPOSITORY/collaborators/$SENDER/permission" --jq .permission)
+          case "$permission" in
+            admin|maintain|write) ;;
+            *) echo "::error::$SENDER cannot approve requests"; exit 1 ;;
+          esac
+
+      - name: Check out repository
+        uses: actions/checkout@v7
+        with:
+          ref: main
+
+      - name: Setup R
+        uses: r-lib/actions/setup-r@v2
+        with:
+          use-public-rspm: true
+
+      # Uses pak instead of install.packages() because the repository's
+      # .Rprofile replaces the profile that would set the CRAN mirror
+      - name: Install R dependencies
+        uses: r-lib/actions/setup-r-dependencies@v2
+        with:
+          packages: any::yaml, any::jsonlite
+
+      - name: Apply request
+        id: apply
+        run: Rscript R/issues/bioc-map.R apply
+
+      - name: Report invalid request
+        if: steps.apply.outputs.valid != 'true'
+        run: |
+          .github/scripts/issue-report.sh "$RUNNER_TEMP/bioc-map-report.md"
+          gh issue edit "$ISSUE" --remove-label approved --remove-label "bioc-map: valid" --add-label "bioc-map: needs changes"
+          exit 1
+
+      - name: Create pull request
+        id: pr
+        uses: peter-evans/create-pull-request@v7
+        with:
+          branch: bioc-map/issue-${{ github.event.issue.number }}
+          add-paths: data/bioconductor_members.yaml
+          commit-message: "chore(bioc-map): ${{ steps.apply.outputs.action }} ${{ steps.apply.outputs.name }}"
+          title: "chore(bioc-map): ${{ steps.apply.outputs.action }} ${{ steps.apply.outputs.name }}"
+          body: |
+            Updates the Bioconductor map as requested in #${{ github.event.issue.number }}.
+
+            Closes #${{ github.event.issue.number }}
+          delete-branch: true
+
+      - name: Link pull request
+        if: steps.pr.outputs.pull-request-url != ''
+        env:
+          PR_URL: ${{ steps.pr.outputs.pull-request-url }}
+        run: gh issue comment "$ISSUE" --body "🚀 Approved! The map will be updated once $PR_URL is merged."

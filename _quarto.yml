@@ -21,6 +21,10 @@ website:
       - href: pages/jobs.qmd
       - href: pages/collaborators.qmd
         text: Collaborators
+      - text: Sub-communities
+        menu:
+          - href: pages/communities/bioconductor.qmd
+            text: Bioconductor
       - href: pages/research-highlights.qmd
         text: Research Highlights
       - href: pages/bioinformatics-webinars.qmd

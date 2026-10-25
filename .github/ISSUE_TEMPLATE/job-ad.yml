@@ -1,0 +1,62 @@
+name: "Job advertisement"
+description: Advertise an open bioinformatics position on the Jobs page.
+title: "[Job] "
+labels: ["job-ad"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Advertise an open position on the [Jobs page](https://bioinf.fi/pages/jobs.html) of the Finnish Society for Bioinformatics.
+        Your advertisement is checked automatically and published after a maintainer approves it. It is removed from the page automatically after the expiry date.
+        All information you give here is **public**.
+  - type: input
+    id: title
+    attributes:
+      label: Job title
+      placeholder: Postdoctoral researcher in single-cell bioinformatics
+    validations:
+      required: true
+  - type: input
+    id: company
+    attributes:
+      label: Company or organisation
+      placeholder: University of Turku
+    validations:
+      required: true
+  - type: input
+    id: location
+    attributes:
+      label: Location
+      description: City, or "Remote".
+      placeholder: Turku, Finland
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: A short description of the position (at most 3000 characters). Plain text; separate paragraphs with an empty line.
+    validations:
+      required: true
+  - type: input
+    id: link
+    attributes:
+      label: Link to more information
+      description: Optional. Link to the full advertisement or application form.
+      placeholder: https://example.com/jobs/123
+  - type: input
+    id: contact
+    attributes:
+      label: Contact person
+      description: Name and email address of the contact person.
+      placeholder: Jane Doe, jane.doe@example.com
+    validations:
+      required: true
+  - type: input
+    id: expiry
+    attributes:
+      label: Expiry date
+      description: The last day the advertisement is shown, in the format YYYY-MM-DD. Usually the application deadline.
+      placeholder: "2026-12-31"
+    validations:
+      required: true

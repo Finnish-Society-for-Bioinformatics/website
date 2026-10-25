@@ -6,7 +6,8 @@
 #  > "readr",
 #  > "rix",
 #  > "rmarkdown",
-#  > "yaml"),
+#  > "yaml",
+#  > "jsonlite"),
 #  > system_pkgs = c("quarto",
 #  > "radian"),
 #  > ide = "none",
@@ -24,6 +25,7 @@ let
  
   rpkgs = builtins.attrValues {
     inherit (pkgs.rPackages) 
+      jsonlite
       knitr
       quarto
       readr

@@ -48,3 +48,56 @@ BioBeer.
 Just keep on inserting the "first" event after the "second" event to keep the
 structure. The "first" event refers to the event with the image to the left,
 and the "second" even refers to the event with the image to the right.
+
+# Bioconductor Community Map
+
+The map on the [Bioconductor page](pages/communities/bioconductor.qmd) shows
+people from `data/bioconductor_members.yaml`. People add, modify, and remove
+their entries by opening an issue from one of the `bioc-map-*` issue
+templates:
+
+1. The [Bioconductor map workflow](.github/workflows/bioc-map.yml) checks the
+   issue (the city exists, GitHub user exists, valid links, etc.;
+   the map location is looked up from the city and country), posts a
+   report as a comment, and labels the issue `bioc-map: valid` or
+   `bioc-map: needs changes`. Editing the issue runs the check again.
+2. A maintainer reviews the request. For modifications and removals, the
+   report tells whether the issue author is the person in the entry.
+3. The maintainer adds the `approved` label. The workflow opens a pull request
+   that updates the data file and closes the issue when merged.
+
+One-time setup:
+
+- The labels used by the templates are created by the
+  [Labels workflow](.github/workflows/labels.yml). It runs automatically when
+  that file changes on `main`; run it manually from the Actions tab in a new
+  fork. If an issue was opened before the labels existed, add the labels to
+  the issue by hand and the check runs.
+- Enable _Settings > Actions > General > Allow GitHub Actions to create and
+  approve pull requests_.
+
+Note that pull requests opened by GitHub Actions do not trigger other
+workflows. The website is published when the pull request is merged.
+
+# Job Advertisements
+
+The [Jobs page](pages/jobs.qmd) lists the jobs in `data/jobs.yaml`. Anyone can
+submit a job by opening an issue from the `job-ad` issue template:
+
+1. The [job advertisement workflow](.github/workflows/job-ads.yml) checks the
+   issue (required fields, valid link, expiry date in the future), posts a
+   report as a comment, and labels the issue `job-ad: valid` or
+   `job-ad: needs changes`. Editing the issue runs the check again.
+2. A maintainer reviews the advertisement and adds the `approved` label. The
+   workflow opens a pull request that adds the job to the data file and closes
+   the issue when merged.
+
+Expired jobs are hidden in the browser (see `pages/_jobs.html`), so the website
+does not need to be rendered again when a job expires. Expired jobs are also
+left out whenever the website is rendered. To remove a job early, for example
+when the position has been filled, open an issue from the `job-ad-remove`
+template. It is checked and approved the same way; the report tells whether
+the issue author is the person who submitted the advertisement.
+
+The labels and the GitHub Actions setting are shared with the Bioconductor
+map (see above).
