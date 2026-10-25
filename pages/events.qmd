@@ -191,26 +191,6 @@ questions (usually 45+15 minutes), while two younger researchers often share
 one webinar (25+5 minutes each).
 ::::
 
-
-:::: {.g-col-12 .g-col-md-6}
-
-### Why the Turku BioEvening is always in the same restaurant while in Helsinki the place is always different?
-
-Bioinformaticians in Turku prefer Saaristobaari because of its size, games, and
-karaoke booth.
-
-Because we enjoy Saaristobaari so much—and they enjoy hosting us—we receive a
-dThe Bioinformaticians in Turku prefer Saaristobaari, due to its size, games
-and even a karaoke booth. Due to the fact that we love Saaristobaari so much
-(and they love us) we get a nice discount for food and drinks during the
-BioEvening events. The Bioinformaticians in Helsinki on the other hand are more
-adventurous and they prefer to test new restaurants every time to keep things
-exciting. If you know a restaurant or a bar in Helsinki that we should
-definitely try out at our BioEvening events, you can suggest it
-[here](https://link.webropolsurveys.com/S/54EAE005F8199416iscount).
-::::
-
-
 :::: {.g-col-12 .g-col-md-6}
 
 ### How can I present my work at the BioWebinar?
