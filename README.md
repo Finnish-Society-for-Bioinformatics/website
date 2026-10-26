@@ -4,8 +4,7 @@ _Note_: The following instructions have been tested on desktop Linux. They
 should work on Windows Subsystem for Linux and macOS.
 
 1. Install [Quarto](https://docs.posit.co/resources/install-quarto.html) and
-   [R](https://www.r-project.org/). Now you have two options below.
-2. If you want ease-of-use for the future website updates and know git:
+   [R](https://www.r-project.org/).
    1. [Install](https://git-scm.com/downloads/linux) git.
    2. [Generate](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
       and
