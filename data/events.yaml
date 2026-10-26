@@ -28,4 +28,6 @@ webinars:
   - speaker: Jason Hilton
     affiliation: Stanford University
     topic: CZ CELLxGENE Discover
-    date: "5 November, Thursday, 14:00 EEST (Finnish time)"
+    date: 2026-11-05
+    time: 14:00
+    timezone: Europe/Helsinki

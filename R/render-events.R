@@ -1,3 +1,25 @@
+#' Formats a webinar's date, time, and timezone.
+#'
+#' @param date Date in ISO format (YYYY-MM-DD).
+#' @param time Time in 24-hour format (HH:MM).
+#' @param tz Timezone name.
+#'
+#' @return Formatted date and time.
+format_datetime <- function(date, time, tz = "Europe/Helsinki") {
+  dt <- as.POSIXct(
+    paste(date, time),
+    format = "%Y-%m-%d %H:%M",
+    tz = tz
+  )
+
+  label <- paste0(
+    format(dt, "%-d %B %Y, %A, %H:%M %Z", tz = tz),
+    " (",
+    tz,
+    ")"
+  )
+}
+
 #' Renders events (BioBeers and BioWebinars) from a YAML file.
 #'
 #' @param path Path to yaml file with events.
@@ -17,10 +39,12 @@ render_events <- function(path, type) {
           sprintf("**Speaker**: %s", item$speaker),
           sprintf("**Affiliation**: %s", item$affiliation),
           sprintf("**Topic**: %s", item$topic),
-          sprintf("**Date**: %s", item$date),
+          sprintf(
+            "**Date**: %s",
+            format_datetime(item$date, item$time, item$timezone)
+          ),
           sep = "\n\n"
         )
-        # Use status if event's date/place are still unknown
       } else {
         if (!is.null(item$status)) {
           return(sprintf("**%s:** %s", item$city, item$status))
