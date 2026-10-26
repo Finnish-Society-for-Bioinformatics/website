@@ -127,9 +127,9 @@ cat(render_events("../data/events.yaml", type = "webinars"))
 
 ### What is the BioBeer about?
 
-We organize BioBeer to offer Bioinformaticians and everyone interested in
-Bioinformatics a possibility to network with like-minded people. Its a great
-opportunity to talk about bioinformatics or just come an meet new people and
+We organize BioBeer to offer bioinformaticians and everyone interested in
+Bioinformatics a possibility to network with like-minded people. It's a great
+opportunity to talk about bioinformatics or just come and meet new people and
 old friends.
 ::::
 
@@ -158,7 +158,7 @@ water available at the restaurants and bars.
 
 :::: {.g-col-12 .g-col-md-6}
 
-### Who are can participate the webinar?
+### Who can participate in the webinar?
 
 The webinar is aimed for all bioinformaticians and everyone interested in
 bioinformatics. If you know someone interested in bioinformatics or in the
@@ -182,7 +182,7 @@ with everything to set up the events!
 
 ### How do you select your speakers?
 
-We aim to have variety in our speakers so they from all career stages,
+We aim to have variety in our speakers so they come from all career stages,
 different fields of bioinformatics and from all corners of the world. For
 late-career stage researcher we have reserved a full hour of presentation and
 questions (usually 45+15 minutes), while two younger researchers often share
