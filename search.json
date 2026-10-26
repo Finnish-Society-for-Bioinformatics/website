@@ -11,7 +11,7 @@
     "href": "pages/events.html",
     "title": "Events",
     "section": "",
-    "text": "BioBeers are local and casual Bioinformaticians get-togethers.\nHelsinki: 6 November 2026, Friday, 17:00 @ Street Bar Kallio, Hämeentie 10\nTurku: 6 November 2026, Friday, 16:30-20:00 @ Proffan Kellari, Rehtorinpellonkatu 6\nOulu: 13 November 2026, Friday, 18:00 @ Teerenpeli, Kauppurienkatu 8\nTampere: 3 December 2026, Thursday, 18:00 @ TBA\nHelsinki BioBeers aims to try different restaurants and bars at each BioBeer. Suggest a place for the next Helsinki BioBeer here.\n\n\n\n\n\n\n\n\nSpeaker: Jason Hilton\nAffiliation: Stanford University\nTopic: CZ CELLxGENE Discover\nDate: 5 November, Thursday, 14:00 EEST (Finnish time)\n\nRead the abstract\nSign up for the webinar"
+    "text": "BioBeers are local and casual Bioinformaticians get-togethers.\nHelsinki: 6 November 2026, Friday, 17:00 @ Street Bar Kallio, Hämeentie 10\nTurku: 6 November 2026, Friday, 16:30-20:00 @ Proffan Kellari, Rehtorinpellonkatu 6\nOulu: 13 November 2026, Friday, 18:00 @ Teerenpeli, Kauppurienkatu 8\nTampere: 3 December 2026, Thursday, 18:00 @ TBA\nHelsinki BioBeers aims to try different restaurants and bars at each BioBeer. Suggest a place for the next Helsinki BioBeer here.\n\n\n\n\n\n\n\n\nSpeaker: Jason Hilton\nAffiliation: Stanford University\nTopic: CZ CELLxGENE Discover\nDate: 5 November 2026, Thursday, 14:00 EET (Europe/Helsinki)\n\nRead the abstract\nSign up for the webinar"
   },
   {
     "objectID": "pages/events.html#the-biobeers",
@@ -25,7 +25,7 @@
     "href": "pages/events.html#the-biowebinar",
     "title": "Events",
     "section": "",
-    "text": "Speaker: Jason Hilton\nAffiliation: Stanford University\nTopic: CZ CELLxGENE Discover\nDate: 5 November, Thursday, 14:00 EEST (Finnish time)\n\nRead the abstract\nSign up for the webinar"
+    "text": "Speaker: Jason Hilton\nAffiliation: Stanford University\nTopic: CZ CELLxGENE Discover\nDate: 5 November 2026, Thursday, 14:00 EET (Europe/Helsinki)\n\nRead the abstract\nSign up for the webinar"
   },
   {
     "objectID": "pages/events.html#frequently-asked-questions",
@@ -116,7 +116,7 @@
     "href": "pages/bioinformatics-webinars.html",
     "title": "BioWebinars",
     "section": "",
-    "text": "Speaker: Jason Hilton\nAffiliation: Stanford University\nTopic: CZ CELLxGENE Discover\nDate: 5 November, Thursday, 14:00 EEST (Finnish time)\nAbstract: CZ CELLxGENE Discover is the largest standardized collection of single-cell data available. Beyond single-dataset exploration, the standards enable Census, where consumers query and filter cells, rather than files, across all submissions and feed them directly into analyses. CELLxGENE features built on Census expose marker genes, custom differential expression, and flexible expression comparisons across any metadata slice without writing code. Insights from these features are only as reliable as the data behind them. Before trusting a data resource, consumers must first understand how its corpus is assembled.\nJoin me for a demo of CELLxGENE data and features, and to learn how CELLxGENE is built through careful schema design and a collaborative submission model – yielding a corpus where every submission is described consistently and verified for quality.\nSign up for the webinar"
+    "text": "Speaker: Jason Hilton\nAffiliation: Stanford University\nTopic: CZ CELLxGENE Discover\nDate: 5 November 2026, Thursday, 14:00 EET (Europe/Helsinki)\nAbstract: CZ CELLxGENE Discover is the largest standardized collection of single-cell data available. Beyond single-dataset exploration, the standards enable Census, where consumers query and filter cells, rather than files, across all submissions and feed them directly into analyses. CELLxGENE features built on Census expose marker genes, custom differential expression, and flexible expression comparisons across any metadata slice without writing code. Insights from these features are only as reliable as the data behind them. Before trusting a data resource, consumers must first understand how its corpus is assembled.\nJoin me for a demo of CELLxGENE data and features, and to learn how CELLxGENE is built through careful schema design and a collaborative submission model – yielding a corpus where every submission is described consistently and verified for quality.\nSign up for the webinar"
   },
   {
     "objectID": "pages/bioinformatics-webinars.html#past-webinars",
