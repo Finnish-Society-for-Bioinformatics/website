@@ -33,6 +33,8 @@ Join me for a demo of CELLxGENE data and features, and to learn how CELLxGENE
 is built through careful schema design and a collaborative submission model –
 yielding a corpus where every submission is described consistently and verified
 for quality.
+
+[Sign up for the webinar](https://tuni.zoom.us/meeting/register/XmbaHI2YQsuET8nMZDi2nQ){.btn .btn-dark .rounded-pill target="_blank"}
 <!-- [Join the -->
 <!-- webinar](https://utu.zoom.us/webinar/register/WN_tiQ4w4AlTLaFigkubeRFUg){.btn .btn-dark .rounded-pill target="_blank"} -->
 :::

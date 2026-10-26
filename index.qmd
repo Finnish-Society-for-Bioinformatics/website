@@ -109,7 +109,7 @@ cat(render_events("data/events.yaml", type = "webinars"))
 [Read the abstract](pages/bioinformatics-webinars.qmd){.btn .btn-dark
 .rounded-pill}
 
-[Join the webinar](https://utu.zoom.us/webinar/register/WN_tiQ4w4AlTLaFigkubeRFUg){.btn
+[Sign up for the webinar](https://tuni.zoom.us/meeting/register/XmbaHI2YQsuET8nMZDi2nQ){.btn
 .btn-dark .rounded-pill target="_blank"}
 
 :::
