@@ -6,6 +6,7 @@ execute:
 
 website:
   title: "The Finnish Society for Bioinformatics"
+  site-url: https://bioinf.fi
   open-graph: true
   favicon: images/round_logo.jpg
   image: images/logo_white.jpg
