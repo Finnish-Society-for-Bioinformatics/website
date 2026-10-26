@@ -14,7 +14,7 @@ website:
   navbar:
     toggle-position: right
     logo: images/logo_white.jpg
-    logo-alt: "Finnish Society for Bionformatics"
+    logo-alt: "Finnish Society for Bioinformatics"
     title: false
     right:
       - href: pages/about.qmd
