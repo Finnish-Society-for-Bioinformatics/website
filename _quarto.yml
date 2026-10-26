@@ -13,7 +13,7 @@ website:
   navbar:
     toggle-position: right
     logo: images/logo_white.jpg
-    logo-alt: "Finnsh Society for Bionformatics"
+    logo-alt: "Finnish Society for Bionformatics"
     title: false
     right:
       - href: pages/about.qmd
@@ -24,7 +24,7 @@ website:
       - href: pages/research-highlights.qmd
         text: Research Highlights
       - href: pages/bioinformatics-webinars.qmd
-        text: Bionformatics Webinars
+        text: Bioinformatics Webinars
       - href: pages/join-the-society.qmd
         text: Join the Society
       - href: pages/bioinformatics-day-2026.qmd
