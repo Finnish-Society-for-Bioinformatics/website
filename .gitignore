@@ -2,6 +2,6 @@
 /_site/
 _quarto_internal_scss_error.scss
 .flox/
-
+_freeze/
 
 **/*.quarto_ipynb
