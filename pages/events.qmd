@@ -130,8 +130,7 @@ cat(render_events("../data/events.yaml", type = "webinars"))
 We organize BioBeer to offer Bioinformaticians and everyone interested in
 Bioinformatics a possibility to network with like-minded people. Its a great
 opportunity to talk about bioinformatics or just come an meet new people and
-old friends. BioBeer events are organized every first Friday of the month in
-Turku and every first Thursday of the month in Helsinki.
+old friends.
 ::::
 
 
@@ -150,11 +149,10 @@ ideas and knowledge, thus spread open knowledge in bioinformatics.
 
 ### Do I get free food and drinks at the BioBeer events?
 
-Unfortunately the society cannot (afford to) offer free food and drinks at the
-BioBeers. However, in Turku BioBeers Bioinformaticans get a nice discount
-for the foods and drinks at Saaristobaari. Also, it is not required to buy
-anything at the BioBeer events, just come along to meet like minded people!
-And there is always free water available at the restaurants and bars.
+Unfortunately the society cannot (afford to) offer free food and drinks at
+the BioBeers. However, it is not required to buy anything at the BioBeer
+events, just come along to meet like minded people! And there is always free
+water available at the restaurants and bars.
 ::::
 
 
