@@ -2,7 +2,7 @@ biobeers:
   - city: Helsinki
     date: 2026-11-06 # Use ISO format (YYYY-MM-DD)
     time: 17:00
-    place: Street Bar Kallio, Hämeentie 10
+    place: Kallio Bar, Hämeentie 10
     # null by default; use it when the date/time/place/address are unknown
     status: null
 
