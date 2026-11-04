@@ -64,7 +64,7 @@ Also @media is useful to target small devices
 
 ::: {.index-column}
 
-![](images/biobeer.jpg){.img-fluid .w-100}
+![](images/biobeer.png){.img-fluid .w-100}
 
 ### BioBeer
 
@@ -83,7 +83,7 @@ cat(render_events(path = "data/events.yaml", type = "biobeers"))
 
 ::: {.index-column}
 
-![](images/webinar.jpg){.img-fluid .w-100}
+![](images/webinar.png){.img-fluid .w-100}
 
 ### BioWebinar
 
@@ -118,7 +118,7 @@ cat(render_events("data/events.yaml", type = "webinars"))
 
 ::: {.index-column}
 
-![](images/logo_white.jpg){.img-fluid .w-100}
+![](images/join-the-society.png){.img-fluid .w-100}
 
 ### Join the Society
 

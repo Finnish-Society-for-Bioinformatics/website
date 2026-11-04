@@ -11,7 +11,7 @@ format:
 <!-- First event -->
 
 :::: {.g-col-12 .g-col-md-6}
-![](../images/biobeer.jpg){.img-fluid}
+![](../images/biobeer.png){.img-fluid}
 ::::
 
 :::: {.g-col-12 .g-col-md-6}
@@ -39,7 +39,7 @@ BioBeer. Suggest a place for the next Helsinki BioBeer
 <!-- Second event -->
 
 :::: {.g-col-12 .g-col-md-6 .text-center}
-![](../images/webinar.jpg){.img-fluid}
+![](../images/webinar.png){.img-fluid}
 ::::
 
 :::: {.g-col-12 .g-col-md-6}
