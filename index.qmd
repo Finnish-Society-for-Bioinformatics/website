@@ -106,11 +106,11 @@ cat(render_events("data/events.yaml", type = "webinars"))
 
 ::: {.d-flex .gap-2}
 
-[Read the abstract](pages/bioinformatics-webinars.qmd){.btn .btn-dark
-.rounded-pill}
+<!-- [Read the abstract](pages/bioinformatics-webinars.qmd){.btn .btn-dark -->
+<!-- .rounded-pill} -->
 
-[Sign up for the webinar](https://tuni.zoom.us/meeting/register/XmbaHI2YQsuET8nMZDi2nQ){.btn
-.btn-dark .rounded-pill target="_blank"}
+<!-- [Sign up for the webinar](https://tuni.zoom.us/meeting/register/XmbaHI2YQsuET8nMZDi2nQ){.btn -->
+<!-- .btn-dark .rounded-pill target="_blank"} -->
 
 :::
 

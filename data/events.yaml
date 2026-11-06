@@ -25,9 +25,9 @@ biobeers:
     status: null
 
 webinars:
-  - speaker: Jason Hilton
-    affiliation: Stanford University
-    topic: CZ CELLxGENE Discover
-    date: 2026-11-05
-    time: 14:00
+  - speaker: TBA
+    affiliation: TBA
+    topic: TBA
+    date: TBA
+    time: TBA
     timezone: Europe/Helsinki
