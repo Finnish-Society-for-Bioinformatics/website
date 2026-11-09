@@ -21,7 +21,8 @@ cat(render_events("../data/events.yaml", type = "webinars"))
 
 **Abstract**: TBA
 
-<!-- [Sign up for the webinar](https://tuni.zoom.us/meeting/register/XmbaHI2YQsuET8nMZDi2nQ){.btn .btn-dark .rounded-pill target="_blank"} -->
+[Sign up for the webinar](https://tuni.zoom.us/meeting/register/XmbaHI2YQsuET8nMZDi2nQ){.btn
+.btn-dark .rounded-pill target="_blank"}
 <!-- [Join the -->
 <!-- webinar](https://utu.zoom.us/webinar/register/WN_tiQ4w4AlTLaFigkubeRFUg){.btn .btn-dark .rounded-pill target="_blank"} -->
 

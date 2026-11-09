@@ -25,9 +25,9 @@ biobeers:
     status: null
 
 webinars:
-  - speaker: TBA
-    affiliation: TBA
-    topic: TBA
-    date: TBA
-    time: TBA
+  - speaker: Birong Wang
+    affiliation: Eindhoven University of Technology
+    topic: Informing agent-based models with spatial data using convolutional autoencoders
+    date: 2027-01-07
+    time: 14:00
     timezone: Europe/Helsinki
