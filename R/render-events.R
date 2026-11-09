@@ -20,7 +20,24 @@ format_datetime <- function(date, time, tz = "Europe/Helsinki") {
   )
 }
 
+#' Creates a markdown link when the URL is available.
+#'
+#' @param text Text to display.
+#' @param url Optional URL. When NULL or empty, the text is returned as is.
+#'
+#' @return Text, optionally formatted as a Markdown link.
+md_link <- function(text, url = NULL) {
+  if (is.null(url) || length(url) == 0 || is.na(url) || !nzchar(url)) {
+    return(text)
+  }
+
+  sprintf("[%s](%s)", text, url)
+}
+
 #' Renders events (BioBeers and BioWebinars) from a YAML file.
+#'
+#' Webinar entries may optionally include `speaker_url` (ex. speaker website or
+#' LinkedIn) and `topic_url`.
 #'
 #' @param path Path to yaml file with events.
 #' @param type Type of event (biobeers or webinars).
@@ -36,9 +53,15 @@ render_events <- function(path, type) {
     function(item) {
       if (type == "webinars") {
         paste(
-          sprintf("**Speaker**: %s", item$speaker),
+          sprintf(
+            "**Speaker**: %s",
+            md_link(item$speaker, item$speaker_url)
+          ),
           sprintf("**Affiliation**: %s", item$affiliation),
-          sprintf("**Topic**: %s", item$topic),
+          sprintf(
+            "**Topic**: %s",
+            md_link(item$topic, item$topic_url)
+          ),
           sprintf(
             "**Date**: %s",
             format_datetime(item$date, item$time, item$timezone)

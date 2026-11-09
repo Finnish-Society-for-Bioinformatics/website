@@ -26,8 +26,10 @@ biobeers:
 
 webinars:
   - speaker: Birong Wang
+    speaker_url: "https://www.linkedin.com/in/bi-rong-wang-24a138203/"
     affiliation: Eindhoven University of Technology
     topic: Informing agent-based models with spatial data using convolutional autoencoders
+    topic_url: "https://doi.org/10.1093/bioinformatics/btag444"
     date: 2027-01-07
     time: 14:00
     timezone: Europe/Helsinki
