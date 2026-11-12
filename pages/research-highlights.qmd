@@ -72,7 +72,7 @@ precision medicine.
 
 ::: {.mt-auto}
 [Read the
-thesis](http://urn.fi/URN:ISBN:978-952-64-2352-4){.btn .btn-dark .rounded-pill target="_blank"}
+thesis](https://aaltodoc.aalto.fi/items/6763bc50-e308-4267-9c8f-072657d443f0){.btn .btn-dark .rounded-pill target="_blank"}
 :::
 
 ::::

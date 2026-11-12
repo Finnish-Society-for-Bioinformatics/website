@@ -6,6 +6,7 @@
 #  > "knitr",
 #  > "leaflet",
 #  > "readr",
+#  > "readr",
 #  > "rix",
 #  > "rmarkdown",
 #  > "yaml"),
@@ -19,48 +20,55 @@
 # Apple Silicon computers.
 # Report any issues to https://github.com/ropensci/rix
 let
-  pkgs = import (fetchTarball {
-    url = "https://github.com/rstats-on-nix/nixpkgs/archive/2026-08-24.tar.gz";
-    sha256 = "13xkcmz9ixcgymkfal299fcm27jjmqrw17cclyc5dkn9wflkvw4v";
-  }) {};
- 
+  pkgs =
+    import (fetchTarball "https://github.com/rstats-on-nix/nixpkgs/archive/2026-10-13.tar.gz")
+      { };
+
   rpkgs = builtins.attrValues {
-    inherit (pkgs.rPackages) 
+    inherit (pkgs.rPackages)
       dplyr
       htmlwidgets
       knitr
       leaflet
       quarto
-      readr
       rix
       rmarkdown
-      yaml;
+      yaml
+      ;
   };
-      
+
   system_packages = builtins.attrValues {
-    inherit (pkgs) 
+    inherit (pkgs)
       glibcLocales
       nix
       quarto
       R
       radian
       which
-      pandoc;
+      pandoc
+      ;
   };
-  
+
   shell = pkgs.mkShell {
-    LOCALE_ARCHIVE = if pkgs.stdenv.hostPlatform.isx86_64 && pkgs.stdenv.isLinux then "${pkgs.glibcLocales}/lib/locale/locale-archive" else "";
+    LOCALE_ARCHIVE =
+      if pkgs.stdenv.hostPlatform.system == "x86_64-linux" then
+        "${pkgs.glibcLocales}/lib/locale/locale-archive"
+      else
+        "";
     LANG = "en_US.UTF-8";
     LC_ALL = "en_US.UTF-8";
     LC_TIME = "en_US.UTF-8";
     LC_MONETARY = "en_US.UTF-8";
     LC_PAPER = "en_US.UTF-8";
     LC_MEASUREMENT = "en_US.UTF-8";
-    
-    buildInputs = pkgs.lib.flatten [ rpkgs system_packages ];
-    
-  }; 
+
+    buildInputs = [
+      rpkgs
+      system_packages
+    ];
+
+  };
 in
-  {
-    inherit pkgs shell;
-  }
+{
+  inherit pkgs shell;
+}

@@ -13,6 +13,7 @@ rix(
     "rmarkdown",
     "yaml"
   ),
+  r_pkgs = c("quarto", "knitr", "readr", "rix", "rmarkdown", "yaml"),
   system_pkgs = c("quarto", "radian"),
   ide = "none",
   project_path = ".",

@@ -6,6 +6,7 @@ execute:
 
 website:
   title: "The Finnish Society for Bioinformatics"
+  site-url: https://bioinf.fi
   open-graph: true
   favicon: images/round_logo.jpg
   image: images/logo_white.jpg
@@ -13,7 +14,7 @@ website:
   navbar:
     toggle-position: right
     logo: images/logo_white.jpg
-    logo-alt: "Finnsh Society for Bionformatics"
+    logo-alt: "Finnish Society for Bioinformatics"
     title: false
     right:
       - href: pages/about.qmd
@@ -28,7 +29,7 @@ website:
           - href: pages/communities/bioconductor.qmd
             text: Bioconductor
       - href: pages/bioinformatics-webinars.qmd
-        text: Bionformatics Webinars
+        text: Bioinformatics Webinars
       - href: pages/join-the-society.qmd
         text: Join the Society
       - href: pages/bioinformatics-day-2026.qmd
