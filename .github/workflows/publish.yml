@@ -3,7 +3,6 @@ on:
   push:
     branches: main
   pull_request:
-    branches: main
 
 name: Quarto Publish
 
@@ -47,6 +46,11 @@ jobs:
   render-check:
     if: github.event_name == 'pull_request'
     runs-on: ubuntu-latest
+    timeout-minutes: 20
+    # Cancel an older build when a pull request is updated
+    concurrency:
+      group: quarto-render-${{ github.ref }}
+      cancel-in-progress: true
     permissions:
       contents: read
     steps:

@@ -20,6 +20,24 @@ git@github.com:Finnish-Society-for-Bioinformatics/website.git`
       - Enter R console with `R` command.
       - Run `install.packages(c("knitr", "rmarkdown", "yaml"))`.
 
+# Checks before approving a pull request
+
+Every pull request runs the **render-check** job from
+`.github/workflows/publish.yml`. It installs the R dependencies and renders the
+whole site with Quarto, so a broken page or R chunk fails the check.
+
+Maintainers should approve and merge a pull request only after the
+`Quarto Publish / render-check` check has passed. To enforce this in GitHub,
+open **Settings → Branches → Branch protection rules** for `main`, enable
+**Require status checks to pass before merging**, and select
+**Quarto Publish / render-check**.
+
+To run the same check locally before opening a pull request:
+
+```bash
+quarto render
+```
+
 # How to Add New Events?
 
 Adding/modifying events on the Events pages is a straightforward but a bit
