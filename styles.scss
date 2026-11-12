@@ -251,6 +251,17 @@ a {
   font-size: 0.85rem;
 }
 
+.bioc-person-meta-icon {
+  display: inline-flex;
+  margin-right: 0.2rem;
+  vertical-align: -0.125em;
+}
+
+.bioc-person-meta-icon svg {
+  width: 1em;
+  height: 1em;
+}
+
 .bioc-person-links {
   display: flex;
   flex-wrap: wrap;
