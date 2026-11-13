@@ -38,6 +38,31 @@ To run the same check locally before opening a pull request:
 quarto render
 ```
 
+# Publishing a branch preview on GitHub Pages
+
+The `Website preview` workflow renders a branch and copies it to a
+subdirectory of `gh-pages`, leaving the live site at the repository root
+untouched. The preview path is derived from the branch name, with characters
+that are not URL-friendly replaced by `-`:
+
+```text
+https://bioinf.fi/preview/<branch-name>/
+```
+
+For example, `bioconductor-communities` is published at:
+
+```text
+https://bioinf.fi/preview/bioconductor-communities/
+```
+
+The workflow runs automatically when any branch other than `main` is pushed.
+To run it manually or choose a custom preview path, open
+**Actions → Website preview → Run workflow**. The workflow must exist on the
+default branch before the manual trigger is available.
+
+A later deployment of `main` force-pushes `gh-pages` and removes the preview.
+Re-run the preview workflow when you need it again.
+
 # How to Add New Events?
 
 Adding/modifying events on the Events pages is a straightforward but a bit

@@ -1,0 +1,110 @@
+# Builds a branch and publishes it under a preview path on the gh-pages
+# branch, without changing the live site at the repository root.
+#
+# Examples:
+#   https://bioinf.fi/preview/bioconductor-communities/
+#   https://bioinf.fi/preview/my-feature/
+#
+# The production publishing workflow force-pushes gh-pages, so a later main
+# deployment removes previews. Re-run this workflow when you need the preview
+# again.
+
+name: Website preview
+
+on:
+  workflow_dispatch:
+    inputs:
+      preview_path:
+        description: Optional custom path. Defaults to preview/<branch-name>.
+        required: false
+  push:
+    branches-ignore:
+      - main
+
+jobs:
+  preview:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    concurrency:
+      group: website-preview-${{ github.ref_name }}
+      cancel-in-progress: true
+    permissions:
+      contents: write
+    env:
+      PREVIEW_BRANCH: ${{ github.ref_name }}
+      CUSTOM_PREVIEW_PATH: ${{ inputs.preview_path }}
+    steps:
+      - name: Check out branch
+        uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+          lfs: true
+
+      - name: Setup R
+        uses: r-lib/actions/setup-r@v2
+        with:
+          use-public-rspm: true
+
+      - name: Set up Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+
+      - name: Ensure R library directory exists
+        run: mkdir -p "$R_LIBS_USER"
+
+      - name: Install R dependencies
+        uses: r-lib/actions/setup-r-dependencies@v2
+
+      - name: Render site
+        uses: quarto-dev/quarto-actions/render@v2
+
+      - name: Deploy preview to gh-pages
+        run: |
+          set -euo pipefail
+
+          preview_path="${CUSTOM_PREVIEW_PATH:-}"
+          if [ -z "$preview_path" ]; then
+            # Make branch names such as feature/foo URL-friendly
+            branch_slug="$(printf '%s' "$PREVIEW_BRANCH" | tr -cs 'A-Za-z0-9._-' '-')"
+            branch_slug="${branch_slug#-}"
+            branch_slug="${branch_slug%-}"
+            preview_path="preview/$branch_slug"
+          fi
+
+          # Never allow a preview deployment to replace the live site
+          preview_path="${preview_path#/}"
+          preview_path="${preview_path%/}"
+          if [ -z "$preview_path" ]; then
+            echo "::error::A preview path is required"
+            exit 1
+          fi
+          case "$preview_path" in
+            *..*)
+              echo "::error::The preview path must not contain '..'"
+              exit 1
+              ;;
+          esac
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git fetch origin gh-pages
+          tmp="$(mktemp -d)"
+          worktree="$tmp/gh-pages"
+          git worktree add --detach "$worktree" origin/gh-pages
+
+          rm -rf "$worktree/$preview_path"
+          mkdir -p "$worktree/$preview_path"
+          cp -a _site/. "$worktree/$preview_path/"
+
+          cd "$worktree"
+          git add -A "$preview_path"
+
+          if git diff --cached --quiet; then
+            echo "No preview changes to deploy."
+          else
+            git commit -m "Preview: $PREVIEW_BRANCH"
+            git push origin HEAD:gh-pages
+          fi
+
+          site_url="https://$(cat CNAME)"
+          echo "Preview: $site_url/$preview_path/" >> "$GITHUB_STEP_SUMMARY"
