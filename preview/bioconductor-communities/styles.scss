@@ -1,0 +1,296 @@
+/*-- scss:defaults --*/
+$h1-font-size: 1.8rem !default;
+$navbar-color: #1141f3;
+$navbar-hover-color: #1141f3;
+
+// Bioconductor colors
+// See https://bioconductor.org/about/logo/
+$bioc-blue: #1a81c2;
+$bioc-blue-dark: #276b80;
+$bioc-green: #87b13f;
+$bioc-grey: #393536;
+// Colors of the map pins, reused by the role badges in the people list
+$bioc-user: #3792ad;
+$bioc-developer: #8aca25;
+
+/*-- Size of the larges h1
+Custom grid for the index page
+By default uses one column, and sets it to three if the screen width is at
+least  992px
+992px is the Boostrap CSS lg breakpoint
+https://getbootstrap.com/docs/5.3/layout/breakpoints/
+ --*/
+.index-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  width: 100%;
+}
+
+/* Wrap text */
+.index-column {
+  min-width: 0;
+}
+
+/* Three columns on big screens */
+/* On mobile devices it's just one column */
+@media (min-width: 992px) {
+  .index-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.navbar-logo {
+  width: 30%;
+  max-height: 30%;
+  align-items: baseline;
+}
+
+// Remove underscore from the link
+a {
+  text-decoration: none;
+}
+
+// # .navbar-logo is in the source code: https://github.com/search?q=repo%3Aquarto-dev%2Fquarto-cli+navbar-logo&type=code
+#quarto-header .navbar-logo {
+  max-height: 50px;
+  width: auto;
+}
+
+.board-photo {
+  height: 700px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 80%;
+}
+
+// CSS for pages/communities/bioconductor.qmd
+.bioc-page {
+  // Modify default dark button to follow Bioconductor colors
+  .btn-dark {
+    --bs-btn-bg: #{$bioc-blue-dark};
+    --bs-btn-border-color: #{$bioc-blue-dark};
+    --bs-btn-hover-bg: #{$bioc-blue};
+    --bs-btn-hover-border-color: #{$bioc-blue};
+    --bs-btn-active-bg: #{$bioc-blue};
+    --bs-btn-active-border-color: #{$bioc-blue};
+  }
+
+  // https://getbootstrap.com/docs/4.1/components/buttons/#outline-buttons
+  // Modify default outline dark button to follow Bioconductor colors
+  .btn-outline-dark {
+    --bs-btn-color: #{$bioc-blue-dark};
+    --bs-btn-border-color: #{$bioc-blue-dark};
+    --bs-btn-hover-bg: #{$bioc-blue-dark};
+    --bs-btn-hover-border-color: #{$bioc-blue-dark};
+    --bs-btn-active-bg: #{$bioc-blue};
+    --bs-btn-active-border-color: #{$bioc-blue};
+  }
+
+  h2 {
+    // Green line under section names on the Bioconductor community page
+    border-bottom: 3px solid $bioc-green;
+    margin-top: 1rem;
+  }
+}
+
+// List of Bioconductor people shown next to the map
+.bioc-people {
+  display: flex;
+  flex-direction: column;
+  height: var(--bioc-panel-height, 550px);
+}
+
+.bioc-people-summary {
+  color: var(--bs-secondary-color);
+  font-size: 0.9rem;
+  margin-bottom: 0.75rem;
+}
+
+// City filter above the list of people
+.bioc-filters {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem;
+  margin-bottom: 0.4rem;
+
+  .btn {
+    padding: 0.15rem 0.65rem;
+    border: 1px solid $bioc-blue-dark;
+    border-radius: 1rem;
+    color: $bioc-blue-dark;
+    font-size: 0.8rem;
+    line-height: 1.4;
+  }
+
+  .btn:hover {
+    background: rgba($bioc-blue-dark, 0.1);
+  }
+
+  .btn.active {
+    background: $bioc-blue-dark;
+    border-color: $bioc-blue-dark;
+    color: #fff;
+  }
+
+  .btn.active:hover {
+    background: $bioc-blue;
+    border-color: $bioc-blue;
+  }
+}
+
+.bioc-filters-label {
+  color: var(--bs-secondary-color);
+  font-size: 0.8rem;
+  margin-right: 0.1rem;
+}
+
+.bioc-people-status {
+  color: var(--bs-secondary-color);
+  font-size: 0.85rem;
+  margin-bottom: 0.5rem;
+}
+
+// `hidden` must override the flex display of .bioc-person
+.bioc-person[hidden] {
+  display: none;
+}
+
+.bioc-people-list {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;
+  list-style: none;
+}
+
+.bioc-person {
+  display: flex;
+  gap: 0.75rem;
+  padding: 0.75rem;
+  border: 1px solid var(--bs-border-color);
+  border-radius: 0.5rem;
+}
+
+.bioc-avatar {
+  flex: none;
+  width: 52px;
+  height: 52px;
+  border: 2px solid;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.bioc-initials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+}
+
+.bioc-avatar.bioc-role--user {
+  border-color: $bioc-user;
+}
+
+.bioc-avatar.bioc-role--developer {
+  border-color: $bioc-developer;
+}
+
+.bioc-initials.bioc-role--user {
+  background: $bioc-user;
+  color: #fff;
+}
+
+.bioc-initials.bioc-role--developer {
+  background: $bioc-developer;
+  color: $bioc-grey;
+}
+
+.bioc-person-body {
+  min-width: 0;
+}
+
+.bioc-person-heading {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.bioc-person-name {
+  font-weight: 600;
+}
+
+.bioc-role {
+  border-radius: 1rem;
+  padding: 0.05rem 0.5rem;
+  font-size: 0.75rem;
+  white-space: nowrap;
+}
+
+.bioc-role--user {
+  background: $bioc-user;
+  color: #fff;
+}
+
+.bioc-role--developer {
+  background: $bioc-developer;
+  color: $bioc-grey;
+}
+
+.bioc-person-title {
+  font-size: 0.9rem;
+}
+
+.bioc-person-meta {
+  color: var(--bs-secondary-color);
+  font-size: 0.85rem;
+}
+
+.bioc-person-meta-icon {
+  display: inline-flex;
+  margin-right: 0.2rem;
+  vertical-align: -0.125em;
+}
+
+.bioc-person-meta-icon svg {
+  width: 1em;
+  height: 1em;
+}
+
+.bioc-person-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: 0.25rem;
+  font-size: 1.1rem;
+}
+
+.bioc-person-links a {
+  line-height: 1;
+}
+
+.bioc-person-links a:hover {
+  color: $bioc-blue;
+}
+
+.bioc-person-links svg {
+  display: block;
+  width: 1em;
+  height: 1em;
+}
+
+// Below the map on small screens, so it only needs to be as tall as its content
+@media (max-width: 991.98px) {
+  .bioc-people {
+    height: auto;
+  }
+
+  .bioc-people-list {
+    overflow-y: visible;
+  }
+}
