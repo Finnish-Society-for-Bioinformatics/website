@@ -4,6 +4,11 @@ Version: 0.0.0.9000
 Description: Quarto website for the Finnish Society for Bioinformatics
 Depends: R (>= 4.3.0)
 Imports:
+    dplyr,
+    htmltools,
+    htmlwidgets,
+    jsonlite,
     knitr,
+    leaflet,
     rmarkdown,
     yaml
