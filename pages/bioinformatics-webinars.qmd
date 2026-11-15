@@ -19,7 +19,17 @@ source("../R/render-events.R")
 cat(render_events("../data/events.yaml", type = "webinars"))
 ```
 
-**Abstract**: TBA
+**Abstract**: Spatial computational models, such as agent-based models (ABMs),
+provide powerful in silico tools for studying tumor dynamics. However, their
+parameterization remains challenging, while imaging data are still underused for
+directly informing model development. We develop ABMs to investigate regulatory
+mechanisms in the tumor microenvironment across biological scales. We also
+develop computational pipelines to analyze and optimize these models, combining
+imaging data with feature-extraction approaches like convolutional encoders. Our
+goal is to establish flexible frameworks for ABM development, training, and
+analysis, enabling spatial models to more effectively incorporate image-derived
+information and ultimately support the study of oncogenic interactions and drug
+responses.
 
 [Sign up for the webinar](https://tuni.zoom.us/meeting/register/XmbaHI2YQsuET8nMZDi2nQ){.btn
 .btn-dark .rounded-pill target="_blank"}
