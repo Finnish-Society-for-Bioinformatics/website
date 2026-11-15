@@ -74,7 +74,7 @@
     "href": "pages/bioinformatics-webinars.html",
     "title": "BioWebinars",
     "section": "",
-    "text": "Speaker: Birong Wang\nAffiliation: Eindhoven University of Technology\nTopic: Informing agent-based models with spatial data using convolutional autoencoders\nDate: 7 January 2027, Thursday, 14:00 EET (Europe/Helsinki)\nAbstract: TBA\nSign up for the webinar"
+    "text": "Speaker: Birong Wang\nAffiliation: Eindhoven University of Technology\nTopic: Informing agent-based models with spatial data using convolutional autoencoders\nDate: 7 January 2027, Thursday, 14:00 EET (Europe/Helsinki)\nAbstract: Spatial computational models, such as agent-based models (ABMs), provide powerful in silico tools for studying tumor dynamics. However, their parameterization remains challenging, while imaging data are still underused for directly informing model development. We develop ABMs to investigate regulatory mechanisms in the tumor microenvironment across biological scales. We also develop computational pipelines to analyze and optimize these models, combining imaging data with feature-extraction approaches like convolutional encoders. Our goal is to establish flexible frameworks for ABM development, training, and analysis, enabling spatial models to more effectively incorporate image-derived information and ultimately support the study of oncogenic interactions and drug responses.\nSign up for the webinar"
   },
   {
     "objectID": "pages/bioinformatics-webinars.html#past-webinars",
