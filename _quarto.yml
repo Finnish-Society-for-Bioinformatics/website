@@ -22,8 +22,8 @@ website:
       - href: pages/jobs.qmd
       - href: pages/collaborators.qmd
         text: Collaborators
-      - href: pages/research-highlights.qmd
-        text: Research Highlights
+      - href: pages/society-award.qmd
+        text: Society Award
       - href: pages/bioinformatics-webinars.qmd
         text: Bioinformatics Webinars
       - href: pages/join-the-society.qmd

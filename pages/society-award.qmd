@@ -1,5 +1,5 @@
 ---
-title: "Research Highlights"
+title: "Society Award"
 toc: false
 format:
   html:
@@ -8,6 +8,7 @@ format:
 
 ::: {.lead}
 <!-- Make this paragraph stand-out: https://getbootstrap.com/docs/5.2/content/typography/#lead -->
+
 Here you can find recipients of the Best PhD Thesis Award and research
 highlights from our community.
 
@@ -145,17 +146,15 @@ enhancers. We also show that TFs can be divided into four different,
 non-exclusive classes based on their activities: chromatin opening, enhancing,
 promoting and TSS determining TFs. Interpreting the deep learning models of
 human gene regulatory elements required application of several existing model
-interpretation tools as well as developing new approaches. Here, we describe
-two new methods for visualizing features and interactions learned by deep
-learning models. Firstly, we describe an algorithm for testing if a deep
-learning model has learned an existing binding motif of a TF. Secondly, we
-visualize mutual information between pairwise k-mer distributions in sample
-inputs selected according to predictions by a machine learning model. This
-method highlights pairwise, and positional dependencies learned by a machine
-learning model. We demonstrate the use of this model-agnostic approach with
-classification and regression models trained on DNA, RNA and amino acid
-sequences.
-:::
+interpretation tools as well as developing new approaches. Here, we describe two
+new methods for visualizing features and interactions learned by deep learning
+models. Firstly, we describe an algorithm for testing if a deep learning model
+has learned an existing binding motif of a TF. Secondly, we visualize mutual
+information between pairwise k-mer distributions in sample inputs selected
+according to predictions by a machine learning model. This method highlights
+pairwise, and positional dependencies learned by a machine learning model. We
+demonstrate the use of this model-agnostic approach with classification and
+regression models trained on DNA, RNA and amino acid sequences. :::
 
 ::: {.mt-auto}
 [Read the
