@@ -13,15 +13,15 @@ biobeers:
     status: null
 
   - city: Oulu
-    date: 2026-12-09
+    date: 2026-12-08
     time: 16:30
-    place: Kauppurienkatu 8
+    place: Teerenpeli, Kauppurienkatu 8
     status: null
 
   - city: Tampere
     date: 2026-12-03
     time: 18:00
-    place: TBA
+    place: Kortteliravintola Kalevan Hertta, Teiskontie 1
     status: null
 
 webinars:
