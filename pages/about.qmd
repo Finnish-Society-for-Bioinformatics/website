@@ -128,9 +128,41 @@ Board Members
 
 :::
 
-::: {.text-center .fs-2}
-Former members
-:::
+<br>
+
+## Advisory Board
+
+```{r}
+#| output: asis
+#| echo: false
+
+source("../R/render-committees.R")
+
+advisory_board <- read.csv(
+  "../data/advisory_board.csv",
+  colClasses = "character",
+  check.names = FALSE
+)
+
+render_advisory_board(advisory_board)
+```
+
+<br>
+
+## Local Committees
+
+```{r}
+#| output: asis
+#| echo: false
+
+source("../R/render-committees.R")
+
+local_committees <- yaml::read_yaml("../data/local_committees.yaml")
+
+render_local_committees(local_committees)
+```
+
+## Former members
 
 ```{r}
 #| output: asis
