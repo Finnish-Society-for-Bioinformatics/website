@@ -11,12 +11,15 @@ format:
 <!-- First event -->
 
 :::: {.g-col-12 .g-col-md-6}
+
 ![](../images/biobeer.png){.img-fluid}
+
 ::::
 
 :::: {.g-col-12 .g-col-md-6}
 
 <!-- {.mt-0} is needed to align the image with the title-->
+
 ## The BioBeers {.mt-0}
 
 BioBeers are local and casual Bioinformaticians get-togethers.
@@ -30,8 +33,8 @@ source("../R/render-events.R")
 cat(render_events("../data/events.yaml", type = "biobeers"))
 ```
 
-Helsinki BioBeers aims to try different restaurants and bars at each
-BioBeer. Suggest a place for the next Helsinki BioBeer
+Helsinki BioBeers aims to try different restaurants and bars at each BioBeer.
+Suggest a place for the next Helsinki BioBeer
 [**here**](https://link.webropolsurveys.com/S/54EAE005F8199416).
 
 ::::
@@ -39,11 +42,12 @@ BioBeer. Suggest a place for the next Helsinki BioBeer
 <!-- Second event -->
 
 :::: {.g-col-12 .g-col-md-6 .text-center}
+
 ![](../images/webinar.png){.img-fluid}
+
 ::::
 
 :::: {.g-col-12 .g-col-md-6}
-
 
 ## The BioWebinar {.mt-0}
 
@@ -60,65 +64,19 @@ cat(render_events("../data/events.yaml", type = "webinars"))
 
 [Read the abstract](bioinformatics-webinars.qmd){.btn .btn-dark .rounded-pill}
 
-[Sign up for the webinar](https://tuni.zoom.us/meeting/register/XmbaHI2YQsuET8nMZDi2nQ){.btn .btn-dark .rounded-pill target="_blank"}
-<!-- [Join the webinar](link){.btn .btn-dark .rounded-pill target="_blank"} -->
+[Sign up for the webinar](https://tuni.zoom.us/meeting/register/XmbaHI2YQsuET8nMZDi2nQ){.btn
+.btn-dark .rounded-pill target="_blank"}
 
 :::
 
 ::::
 
-<!-- Third event -->
-
-<!-- Use the template below to add the webinar with the collapsible abstract -->
-
-<!-- :::: {.g-col-12 .g-col-md-6} -->
-
-<!-- ## Bioinformatics Webinar
-
-<!-- **Thursday, 6 March 2025 at 14:00**
-
-<!-- **Next events:** 8 April, 15 May, and 3 June
-
-<!-- **Topic:** KMAP: Kmer Manifold Approximation and Projection for visualizing DNA sequences
-
-<!-- ::: {.callout-note collapse="true"}
-<!-- ## Abstract
-
-<!-- Identifying and illustrating patterns in DNA sequences is a crucial task in -->
-<!-- various biological data analyses. In this task, patterns are often represented -->
-<!-- by sets of kmers, the fundamental building blocks of DNA sequences. -->
-
-<!-- To visually unveil these patterns, we could project each kmer onto a point in -->
-<!-- two-dimensional space. However, this projection poses challenges due to the -->
-<!-- high-dimensional nature of kmers and their unique mathematical properties. -->
-<!---->
-<!-- Here, we established a mathematical system to address the peculiarities of the -->
-<!-- kmer manifold. Leveraging this kmer manifold theory, we developed a statistical -->
-<!-- method named KMAP for detecting kmer patterns and visualizing them in -->
-<!-- two-dimensional space. -->
-<!---->
-<!-- We applied KMAP to three distinct datasets to showcase its utility. KMAP -->
-<!-- achieved performance comparable to the classical method MEME, with -->
-<!-- approximately 90% similarity in motif discovery from HT-SELEX data. -->
-<!---->
-<!-- In the analysis of H3K27ac ChIP-seq data from Ewing Sarcoma, we found that -->
-<!-- BACH1, OTX2, and ERG1 might affect prognosis by binding to promoter and -->
-<!-- enhancer regions across the genome. We also found that FLI1 bound to enhancer -->
-<!-- regions after ETV6 degradation, showing competitive binding between ETV6 and -->
-<!-- FLI1. -->
-<!---->
-<!-- Moreover, KMAP identified four prevalent patterns in gene-editing data from the -->
-<!-- AAVS1 locus, aligning with findings reported in the literature. -->
-<!---->
-<!-- These applications underscore that KMAP could be a valuable tool across various -->
-<!-- biological contexts. -->
-<!-- ::: -->
-<!-- :::: -->
-
 :::::
 
 ::: {.text-center .mt-5}
+
 ## Frequently Asked Questions
+
 :::
 
 ::::: {.grid}
@@ -131,41 +89,41 @@ We organize BioBeer to offer bioinformaticians and everyone interested in
 Bioinformatics a possibility to network with like-minded people. It's a great
 opportunity to talk about bioinformatics or just come and meet new people and
 old friends.
-::::
 
+::::
 
 :::: {.g-col-12 .g-col-md-6}
 
 ### What are the BioWebinars about?
 
-We organize BioWebinars for our members and for everyone interested
-in Bioinformatics as part of our goal to support bioinformatics research, share
-the latest scientific discoveries, and provide opportunities for exchanging
-ideas and knowledge, thus spread open knowledge in bioinformatics.
-::::
+We organize BioWebinars for our members and for everyone interested in
+Bioinformatics as part of our goal to support bioinformatics research, share the
+latest scientific discoveries, and provide opportunities for exchanging ideas
+and knowledge, thus spread open knowledge in bioinformatics.
 
+::::
 
 :::: {.g-col-12 .g-col-md-6}
 
 ### Do I get free food and drinks at the BioBeer events?
 
-Unfortunately the society cannot (afford to) offer free food and drinks at
-the BioBeers. However, it is not required to buy anything at the BioBeer
-events, just come along to meet like minded people! And there is always free
-water available at the restaurants and bars.
-::::
+Unfortunately the society cannot (afford to) offer free food and drinks at the
+BioBeers. However, it is not required to buy anything at the BioBeer events,
+just come along to meet like minded people! And there is always free water
+available at the restaurants and bars.
 
+::::
 
 :::: {.g-col-12 .g-col-md-6}
 
 ### Who can participate in the webinar?
 
 The webinar is aimed for all bioinformaticians and everyone interested in
-bioinformatics. If you know someone interested in bioinformatics or in the
-topic of a specific webinar, you can share the webinar link with them. Our
-webinar link is always the same.
-::::
+bioinformatics. If you know someone interested in bioinformatics or in the topic
+of a specific webinar, you can share the webinar link with them. Our webinar
+link is always the same.
 
+::::
 
 :::: {.g-col-12 .g-col-md-6}
 
@@ -173,9 +131,10 @@ webinar link is always the same.
 
 Currently we organize BioBeer events only in Turku, Helsinki, Tampere, and Oulu
 because of more active Bioinformatics community in these cities. If you would
-like to start organize BioBeer events in your town, please contact us by
-email: [fsfbioinf@gmail.com](mailto:fsfbioinf@gmail.com) and we will help you
-with everything to set up the events!
+like to start organize BioBeer events in your town, please contact us by email:
+[fsfbioinf@gmail.com](mailto:fsfbioinf@gmail.com) and we will help you with
+everything to set up the events!
+
 ::::
 
 :::: {.g-col-12 .g-col-md-6}
@@ -185,8 +144,9 @@ with everything to set up the events!
 We aim to have variety in our speakers so they come from all career stages,
 different fields of bioinformatics and from all corners of the world. For
 late-career stage researcher we have reserved a full hour of presentation and
-questions (usually 45+15 minutes), while two younger researchers often share
-one webinar (25+5 minutes each).
+questions (usually 45+15 minutes), while two younger researchers often share one
+webinar (25+5 minutes each).
+
 ::::
 
 :::: {.g-col-12 .g-col-md-6}
@@ -197,7 +157,7 @@ We would be thrilled to hear about your work in our Bioinformatics webinars! If
 you would like to present your work at the Bioinformatics webinar, please
 contact us by email [fsfbioinf@gmail.com](mailto:fsfbioinf@gmail.com) and we
 will try to get your talk lined up for the next available slot.
+
 ::::
 
 :::::
-
