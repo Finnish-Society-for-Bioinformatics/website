@@ -154,7 +154,8 @@ information between pairwise k-mer distributions in sample inputs selected
 according to predictions by a machine learning model. This method highlights
 pairwise, and positional dependencies learned by a machine learning model. We
 demonstrate the use of this model-agnostic approach with classification and
-regression models trained on DNA, RNA and amino acid sequences. :::
+regression models trained on DNA, RNA and amino acid sequences.
+:::
 
 ::: {.mt-auto}
 [Read the
