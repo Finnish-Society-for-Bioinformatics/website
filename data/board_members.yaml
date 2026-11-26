@@ -1,0 +1,81 @@
+- name: Tuomas Borman
+  role: Chair
+  affiliation: University of Turku
+  title: "Doctoral Researcher"
+  research_area: "Developer of R/BIoconductor packages and training materials for microbiome data science"
+  linkedin: https://www.linkedin.com/in/tuomasborman/
+  website: "https://tuomasborman.github.io"
+  github: "https://github.com/TuomasBorman"
+  image: images/board/tuomas-borman.jpeg
+- name: Iivari Kleino, PhD
+  role: "Treasurer"
+  affiliation: "Medical Bioinformatics Core, University of Turku"
+  title: "Senior Researcher"
+  research_area: "Bioinformatics core services, single-cell omics, transcriptomics, computational immunology, and biomedical data analysis"
+  linkedin: https://www.linkedin.com/in/iivarikleino/
+  website: "https://bioscience.fi/bioinformatics/"
+  github: "https://github.com/elolab"
+  image: images/board/iivari-kleino.jpg
+- name: Xin Lai, PhD
+  role: Vice Chair
+  affiliation: Tampere University
+  title: "Assistant Professor"
+  research_area: "System and Network Medicine"
+  linkedin: https://www.linkedin.com/in/xin-lai-312b0827/
+  website: "https://sites.google.com/view/lai-lab"
+  github: "https://github.com/laixn"
+  image: images/board/xin-lai.jpg
+- name: Artur Sannikov
+  role: Webmaster and BioBeer Coordinator
+  affiliation: University of Turku
+  title: "Doctoral Researcher"
+  research_area: "Metagenomics in Food Sciences"
+  linkedin: https://www.linkedin.com/in/artur-sannikov-1b245a111/
+  website: "https://asannikov.com/"
+  github: "https://github.com/artur-sannikov/"
+  image: images/board/artur-sannikov.jpg
+- name: Ehsan Zangene, PhD
+  role: Partnership & Networking
+  affiliation: FIMM, University of Helsinki
+  title: "Postdoctoral Researcher"
+  research_area: "Statistical Machine Learning for Proteomics and Oncology"
+  linkedin: https://www.linkedin.com/in/ehsan-zangene-42003777/
+  website: ""
+  github: "https://github.com/esnzgn"
+  image: images/board/ehsan-zangene.jpg
+- name: Elisabeth Putri
+  role: Helsinki Events & Social Media Coordinator
+  affiliation: University of Helsinki
+  title: ""
+  research_area: ""
+  linkedin: https://www.linkedin.com/in/elisabethgrasia/
+  website: ""
+  github: ""
+  image: images/board/elisabeth-putri.jpeg
+- name: Miina Vulli
+  role: Tampere Biobeers Coordinator
+  affiliation: Tampere University
+  title: "Project Researcher"
+  research_area: ""
+  linkedin: https://www.linkedin.com/in/miinavulli/
+  website: "https://orcid.org/0009-0009-8292-6563"
+  github: ""
+  image: images/board/Miina_Vulli2.jpg
+- name: Anna Kaisanlahti, PhD
+  role: Secretary
+  affiliation: University of Oulu / Dartmouth College
+  title: "Postdoctoral Researcher"
+  research_area: "Early life gut microbiome and gut microbiome-derived EVs in pregnancy"
+  linkedin: https://www.linkedin.com/in/anna-kaisanlahti-1a0744206/
+  website: "https://orcid.org/0000-0003-2778-5621"
+  github: ""
+  image: images/board/anna-kaisanlahti.jpg
+- name: Teemu Daniel Laajala, PhD
+  role: Partnership & Networking
+  affiliation: University of Helsinki
+  title: "Senior Researcher (Title of Docent)"
+  research_area: "AI and Machine Learning in Oncology"
+  linkedin: "https://www.linkedin.com/in/teemu-daniel-laajala-369a6010b/"
+  website: https://orcid.org/0000-0002-7016-7354
+  github: "https://github.com/Syksy"
+  image: images/board/Teemu-Daniel-Laajala.jpg

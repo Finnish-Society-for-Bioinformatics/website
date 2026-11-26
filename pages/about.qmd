@@ -3,134 +3,84 @@ toc: false
 format:
   html:
     page-layout: full
-    css: styles.scss
 ---
 
 # About us
 
-<div class="text-large" style="font-size:32px;">
-  <center><p>Get to know the Finnish Society for Bioinformatics and meet the
-             board members.</p></center>
+<div class="text-large text-center about-intro">
+  <p>Get to know the Finnish Society for Bioinformatics and meet the
+     board members.</p>
 </div>
 
 ::: {.grid}
 
+::: {.g-col-12 .about-text}
 
-::: {.g-col-12 style="font-size: 1.2rem;"}
-The Finnish Society for Bioinformatics was founded in 2006 with the aim
-of bringing together everyone interested in bioinformatics. For almost
-two decades, our mission has remained the same: We aim to support research,
-share the latest scientific discoveries, and provide opportunities for
-exchanging ideas and knowledge.
+The Finnish Society for Bioinformatics was founded in 2006 with the aim of
+bringing together everyone interested in bioinformatics. For almost two decades,
+our mission has remained the same: We aim to support research, share the latest
+scientific discoveries, and provide opportunities for exchanging ideas and
+knowledge.
 
-We organize regular webinars, seminars, and training sessions. We share
-job opportunities for our society members and host networking and
-collaboration events. Every two years, we proudly recognize outstanding
-work by awarding the Best Bioinformatics Thesis Award. Our monthly BioBeers
-gatherings in Helsinki, Turku, Tampere, Oulu, and occasionally other locations
-offer a relaxed way to meet and connect with fellow bioinformaticians.
+We organize regular webinars, seminars, and training sessions. We share job
+opportunities for our society members and host networking and collaboration
+events. Every two years, we proudly recognize outstanding work by awarding the
+Best Bioinformatics Thesis Award. Our monthly BioBeers gatherings in Helsinki,
+Turku, Tampere, Oulu, and occasionally other locations offer a relaxed way to
+meet and connect with fellow bioinformaticians.
 
-Whether you’re an experienced researcher, an early-career student, a
-research group, or a company, we warmly welcome you to join our community
-and be part of this exciting network of bioinformaticians.
+Whether you’re an experienced researcher, an early-career student, a research
+group, or a company, we warmly welcome you to join our community and be part of
+this exciting network of bioinformaticians.
 
-:::
-
-:::
-
-<br>
-
-::: {.grid}
-
-::: {.g-col-4 style="font-size: 1.9rem;"}
-Board Members
-:::
-
-::: {.g-col-4 .text-center}
-
-![](../images/board/tuomas-borman.jpeg){.board-photo .mb-3}
- [Tuomas Borman](https://www.linkedin.com/in/tuomasborman/)
-
-:::
-
-::: {.g-col-4 .text-center}
-![](../images/board/iivari-kleino.jpg){.board-photo .mb-3}
- [Iivari Kleino](https://www.linkedin.com/in/iivarikleino/)
 :::
 
 :::
 
 <br>
 
-::: {.grid}
+```{r}
+#| output: asis
+#| echo: false
 
-::: {.g-col-4}
-:::
+source("../R/render-board-members.R")
 
-::: {.g-col-4 .text-center}
-![](../images/board/xin-lai.jpg){.board-photo .mb-3}
- [Xin Lai](https://www.linkedin.com/in/xin-lai-312b0827/)
-:::
+board_members <- yaml::read_yaml("../data/board_members.yaml")
 
-::: {.g-col-4 .text-center}
-![](../images/board/artur-sannikov.jpg){.board-photo .mb-3}
- [Artur Sannikov](https://www.linkedin.com/in/artur-sannikov-1b245a111/)
-:::
+render_board_members(board_members)
+```
 
-:::
+<br>
 
-::: {.grid}
+## Advisory Board
 
-::: {.g-col-4}
-:::
+```{r}
+#| output: asis
+#| echo: false
 
-::: {.g-col-4 .text-center}
-![](../images/board/ehsan-zangene.jpg){.board-photo .mb-3}
- [Ehsan Zangene](https://www.linkedin.com/in/ehsan-zangene-42003777/)
-:::
+source("../R/render-committees.R")
 
-::: {.g-col-4 .text-center}
-![](../images/board/elisabeth-putri.jpeg){.board-photo .mb-3}
- [Elisabeth Putri](https://www.linkedin.com/in/elisabethgrasia/)
-:::
+advisory_board <- yaml::read_yaml("../data/advisory_board.yaml")
 
-:::
+render_advisory_board(advisory_board)
+```
 
-::: {.grid}
+<br>
 
-::: {.g-col-4}
-:::
+## Local Committees
 
-::: {.g-col-4 .text-center}
-![](../images/board/Miina_Vulli2.jpg){.board-photo .mb-3}
- [Miina Vulli](https://www.linkedin.com/in/miinavulli/)
-:::
+```{r}
+#| output: asis
+#| echo: false
 
-::: {.g-col-4 .text-center}
-![](../images/board/anna-kaisanlahti.jpg){.board-photo .mb-3}
- [Anna Kaisanlahti](https://www.linkedin.com/in/anna-kaisanlahti-1a0744206/)
-:::
+source("../R/render-committees.R")
 
-:::
+local_committees <- yaml::read_yaml("../data/local_committees.yaml")
 
-::: {.grid}
+render_local_committees(local_committees)
+```
 
-::: {.g-col-4}
-:::
-
-::: {.g-col-4 .text-center}
-![](../images/board/Teemu-Daniel-Laajala.jpg){.board-photo .mb-3}
- [Teemu Daniel Laajala](https://orcid.org/0000-0002-7016-7354)
-:::
-
-::: {.g-col-4}
-:::
-
-:::
-
-::: {.text-center .fs-2}
-Former members
-:::
+## Former members
 
 ```{r}
 #| output: asis
@@ -146,4 +96,3 @@ name_data <- read.csv(
 
 render_past_members(name_data)
 ```
-

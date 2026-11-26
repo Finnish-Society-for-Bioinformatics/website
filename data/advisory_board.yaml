@@ -1,0 +1,21 @@
+---
+- name: Leo Lahti, PhD
+  affiliation: University of Turku
+  linkedin: "https://www.linkedin.com/in/leo-lahti"
+  website: "https://datascience.utu.fi"
+  image: images/advisory_board/leo_lahti.jpg
+- name: Jussi Paananen, PhD
+  affiliation: Switchpoint Bio
+  linkedin: "https://www.linkedin.com/in/jussipaananen"
+  website: "https://www.switchpointbio.com"
+  image: images/advisory_board/jussi_paananen.jpg
+- name: Valerio Izzi, PhD
+  affiliation: University of Oulu
+  linkedin: "https://www.linkedin.com/in/valerio-izzi-b18618293"
+  website: "https://www.genecellnano.fi/people/valerio-izzi-2"
+  image: images/advisory_board/valerio_izzi.jpg
+- name: Julia Mathlin
+  affiliation: University of Turku
+  linkedin: "https://www.linkedin.com/in/julia-mathlin"
+  website: ""
+  image: images/advisory_board/julia_mathlin.png

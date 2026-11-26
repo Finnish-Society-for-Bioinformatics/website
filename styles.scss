@@ -47,9 +47,39 @@ a {
   width: auto;
 }
 
-.board-photo {
-  height: 700px;
-  aspect-ratio: 1 / 1;
+img.board-photo {
+  width: clamp(160px, 22vw, 220px);
+  height: clamp(160px, 22vw, 220px);
   object-fit: cover;
   border-radius: 80%;
+}
+
+img.board-photo.advisory-photo {
+  object-position: center top;
+}
+
+.about-intro {
+  font-size: 2rem;
+}
+
+.about-text {
+  font-size: 1.2rem;
+}
+
+.board-title {
+  font-size: 1.9rem;
+}
+
+.index-hero-title {
+  font-size: 3em;
+}
+
+.index-hero-subtitle {
+  font-size: 2em;
+}
+
+.index-hero-link {
+  font-size: 1.5em;
+  color: black;
+  text-decoration: none;
 }
