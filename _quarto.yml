@@ -9,7 +9,7 @@ website:
   site-url: https://bioinf.fi
   open-graph: true
   favicon: images/round_logo.jpg
-  image: images/logo_white.jpg
+  image: images/round_logo.jpg
   description: "Finnish Society for Bioinformatics website"
   navbar:
     toggle-position: right
